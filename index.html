@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>UnFotografoMasCuu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Un fotografo de la Ciudad de Chihuahua con sesiones a lo largo de esta disponible para trabajar">
+    <meta name="keywords"
+        content="Fotógrafo, Fotografo, Chihuahua, Sesiones, Fotografia, Mexico, Ch, Cuu, CUU, Fotos, Diseño, Diseñador, Andres">
+    <meta name="author" content="Andrés Roberto Gardea Jiménez">
+
+    <meta name="robots" content="index">
+
+    <link rel="shortcut icon" href="Multimedia/Icon.ico" />
+
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+
+    <link rel="canonical" href="https://unfotografomascuu.github.io/UnFotografomasCuu/index.html" />
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEEVB4MDLK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SEEVB4MDLK');
+    </script>
+
+    <!--Etiqueta de verificacion de SC-->
+    <meta name="google-site-verification" content="YJ7W_cfCwZeF7MGmy0FyYP0ENuyZpDdyZewRYiE8S4s" />
+
+    <!-- locomotive-scroll -->
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/locomotive-scroll.min.css'>
+    <script src="Scripts/locomotive-scroll.min.js"></script>
+
+</head>
+
+<body data-barba="wrapper">
+
+    <ul class="transition">
+        <li></li>
+        <li></li>
+        <li id="central">
+            <div class="loader">
+                <div class="load-anim">
+                    <h6 id="loader">Cargando</h6>
+                    <div class="loading-bar"></div>
+                </div>
+            </div>
+        </li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <div class="contenido" data-scroll-container>
+        <main data-barba="container" data-barba-namespace="index">
+
+            <section class="Nav" id="Nav-Section" data-scroll-section-id="section0">
+                <header class="NavBar" id="nav" data-scroll-sticky data-scroll-target="">
+                    <div class="logo">
+                        <h1 id="logo" class="anim-nav">UnFotografomasCuu</h1>
+                    </div>
+                    <nav class="mnvl">
+                        <div class="nav-links">
+                            <div class="nav-links-close" onclick="NavSection();">
+                                <div class="nav-btn from-bottom anim-nav"><a id="btn1" href="#home" data-scroll-to>
+                                        Inicio</a></div>
+                                <div class="nav-btn from-bottom anim-nav"><a id="btn2" href="#about"
+                                        data-scroll-to>Hacerca
+                                        de Mi</a>
+                                </div>
+                                <div class="nav-btn from-bottom anim-nav"><a id="btn3" href="#portfolio"
+                                        data-scroll-to>Favoritas</a>
+                                </div>
+                                <div class="nav-btn from-bottom anim-nav"><a id="btn4" href="#services"
+                                        data-scroll-to>Artículos</a>
+                                </div>
+                                <div class="nav-btn from-bottom anim-nav"><a id="btn5" href="#contact"
+                                        data-scroll-to>Sesiones</a>
+                                </div>
+                            </div>
+
+                            <div class="controler-section" onclick="DarkMode()">
+                                <div class="new-mode-switch" id="theme-toggle" data-state="auto">
+                                    <div class="mode-sections">
+                                        <div class="mode-section">
+                                            <input value="light" name="state-d" type="radio" class="mode-imput"
+                                                id="light-mode" onclick="DarkMode()">
+                                            <label class="mode-ball" for="light"><span class="mode-span"><i
+                                                        class="fas fa-sun"></i></span></label>
+                                        </div>
+                                        <div class="mode-section">
+                                            <input value="auto" name="state-d" type="radio" class="mode-imput"
+                                                id="auto-mode" onclick="DarkMode()" checked>
+                                            <label class="mode-ball" for="auto"> <span
+                                                    class="mode-span">A</span></label>
+                                        </div>
+                                        <div class="mode-section">
+                                            <input value="dark" name="state-d" type="radio" class="mode-imput"
+                                                id="dark-mode" onclick="DarkMode()">
+                                            <label class="mode-ball" for="dark"><span class="mode-span"><i
+                                                        class="fas fa-moon"></i></span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Social-Mobile">
+                                <div class="social-mobile-links Facebook"><a class="iconMobile"
+                                        onclick="NavSocial();"><i class="fab fa-facebook-square"></i></a>
+                                </div>
+                                <div class="social-mobile-links Instagram"><a class="iconMobile"
+                                        href="https://t.co/XdIwIDNkr3?amp=1" target="_blank" onclick="NavSocial();"><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
+                                <div class="social-mobile-links Twitter"><a class="iconMobile"
+                                        href="https://twitter.com/unfotografocuu?s=08" target="_blank"
+                                        onclick="NavSocial();"><i class="fab fa-twitter"></i></a></div>
+                                <div class="social-mobile-links Telegram"><a class="iconMobile"
+                                        href="https://t.me/andres_gardea" target="_blank" onclick="NavSocial();"><i
+                                            class="fab fa-telegram"></i></a>
+                                </div>
+                                <div class="social-mobile-links GitHub"><a class="iconMobile"
+                                        href="https://github.com/AndresGardea/UnFotografomasCuu" target="_blank"><i
+                                            class="fab fa-github" onclick="NavSocial();"></i></a></div>
+                                <div class="social-mobile-links Correo" onclick="NavSocial();"><a class="iconMobile"
+                                        href="mailto:unfotografomascuu@gmail.com"><i class="far fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="menu-btn" id="menu-btn" onclick="BtnAnim(); NavBtn();">
+                        <div class="menu-btn__burger"></div>
+                    </div>
+
+                </header>
+            </section>
+
+            <div class="content">
+                <section class="parallax-area" id="home" data-scroll-section data-scroll-section-id="section1">
+                    <div class="parallax-text-container" data-scroll>
+                        <h2 data-scroll data-scroll-speed="4" data-scroll-delay=".1" id="txt-parallax-1"
+                            class="parallax-text">
+                            UnFotografoMasCuu</h2>
+                        <p data-scroll data-scroll-speed="4" data-scroll-delay=".2" id="txt-parallax-2"
+                            class="parallax-text">El
+                            claro
+                            ejemplo del
+                            adolescente que
+                            se
+                            cree fotógrafo por tener una cámara</p>
+                        <div data-scroll data-scroll-speed="4" data-scroll-delay=".3" class="btn-parallax">
+                            <a href="#about" data-scroll-to>
+                                <h4 id="txt-parallax-3">»</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="parallax" class="parallax-image-container">
+                        <img class="parallax-image" data-scroll data-scroll-sticky data-scroll-target="#parallax"
+                            src="Multimedia/Nubes.webp" alt=""></img>
+                    </div>
+                </section>
+
+                <section class="about-area" id="about" data-scroll-section data-scroll-section-id="section2">
+                    <div class="text-part-about txt-revelar" data-scroll data-scroll-speed="3"
+                        data-scroll-class="revelar" data-scroll-repeat="true">
+                        <blockquote class="text">
+                            Porque evidentemente es mejor idea perder 6 meses haciendo una pagina que nadie va a visitar
+                            que
+                            continuar subiendo fotos a Instagram
+                            <cite class="text">
+                                — Andrés Gardea
+                            </cite>
+                        </blockquote>
+                    </div>
+
+                    <div class="img-part">
+                        <img loading="lazy" src="Multimedia/IMG_6788.webp"
+                            alt="Soy Andres Gardea un fotografo de la Ciudad de Chihuahua" />
+                    </div>
+                </section>
+
+                <section class="port-area" id="portfolio" data-scroll-section data-scroll-section-id="section3">
+                    <div id="pinSection" class="pinned-quote">
+                        <blockquote data-scroll data-scroll-sticky data-scroll-target="#pinSection" class="text">
+                            <div class="esp"></div>
+                            Unas pocas muestras de las fotos que he tomado durante la pandemia y el encierro, todas las
+                            tome
+                            en
+                            Chihuahua.
+                            <cite>
+                                — Generador de Texto
+                            </cite>
+                            <div class="esp"></div>
+                        </blockquote>
+                    </div>
+
+                    <div id="Fotos">
+                        <div class="img-individual">
+                            <div class="img-solo">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/056.webp"
+                                    alt="Varias Cotorras Argentinas descansando en un poste de la luz">
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Individuales/Prueba Indv.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="img-individual">
+                            <div class="img-solo">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/030.webp"
+                                    alt="Zopilote volando de tarde">
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Individuales/Prueba Indv.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="img-individual">
+                            <div class="img-solo">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/003.webp"
+                                    alt="Zopilote en Chihuahua volando con un cielo azul un poco nublado de fondo">
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Individuales/Prueba Indv.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-individual">
+                            <div class="img-solo">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/061 (Recortada).webp"
+                                    alt="Pajarito recojiendo materiales para su nido">
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Individuales/Prueba Indv.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-individual">
+                            <div class="img-solo">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/002.webp"
+                                    alt="Pinzón descansando en una higuera">
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Individuales/Prueba Indv.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-individual">
+                            <div class="img-solo">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/059.webp"
+                                    alt="De mis primeros intentos de fotografia lunar">
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Individuales/Prueba Indv.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-individual">
+                            <div class="img-solo">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/020.webp"
+                                    alt="Pinzón Mexicano de pecho rojo">
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Individuales/Prueba Indv.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-individual">
+                            <div class="img-solo">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/074.webp"
+                                    alt="Palomas descansando">
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Individuales/Prueba Indv.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-individual">
+                            <div class="img-solo">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/077.webp"
+                                    alt="Zopilote en la hora dorada">
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Individuales/Prueba Indv.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-individual">
+                            <div class="img-solo">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/125.webp"
+                                    alt="Pajarito comiendo semillas">
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Individuales/Prueba Indv.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="service-area" id="services" data-scroll-section data-scroll-section-id="section4">
+
+                    <div class="Article-Section">
+                        <div class="Article-Section-Img">
+                            <div class="img-middle">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/075.webp"
+                                    alt="Un pajarito juntando materiales para poder hacer su nido" />
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Articulos/Articulo Zopilotes.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Article-Section-Txt">
+                            <div class="content">
+                                <date>Canon T7</date>
+                                <h2>Zopilotes en la Ciudad de Chihuahua</h2>
+                                <p>No estoy completamente seguro de que si sean esa especie pero están todo el año
+                                    en la ciudad llendo de un lado para otro ya sea buscando comida o agua o
+                                    materiales para hacer sus nidos como se ven en algunas de las fotos. Tanto este
+                                    como otros rojos, en mi experiencia son muy cantadores.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, similique?...</p>
+                                <div class="article-btn from-left-footer"><a class="fab fa-google-drive anim-btn"
+                                        href="Secundarias/Articulos/Articulo Zopilotes.html"></a>
+                                    <h4 class="anim-btn">Leer Mas...</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--
+                            <h5 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">
+                                Se puede ver la falta de una idea de que quiero hacer con mi vida
+                            </h5>
+                            <h5 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
+                                al saltar de un tema o hobby a otro
+                            </h5>
+                            <cite>— UnFotografoMasCuu</cite>
+                        -->
+
+                    </div>
+                    <div class="Article-Section">
+                        <div class="Article-Section-Img">
+                            <div class="img-middle">
+                                <img loading="lazy" src="Multimedia/Comprimidas (1280px)/121 (Recortada).webp"
+                                    alt="Un pajarito juntando materiales para poder hacer su nido" />
+                                <div class="MoreBtn">
+                                    <a href="Secundarias/Articulos/Articulo Colibries.html">
+                                        <h5>+</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Article-Section-Txt">
+                            <div class="content">
+                                <date>Canon T7</date>
+                                <h2>Colibries en Chihuahua</h2>
+                                <p>No estoy completamente seguro de que si sean esa especie pero están todo el año
+                                    en la ciudad llendo de un lado para otro ya sea buscando comida o agua o
+                                    materiales para hacer sus nidos como se ven en algunas de las fotos. Tanto este
+                                    como otros rojos, en mi experiencia son muy cantadores.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, similique?...
+                                </p>
+                                <div class="article-btn from-left-footer"><a class="fab fa-google-drive anim-btn"
+                                        href="Secundarias/Articulos/Articulo Colibries.html"></a>
+                                    <h4 class="anim-btn">Leer Mas...</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-area" id="contact" data-scroll-section data-scroll-section-id="section5">
+                    <div class="text-part">
+                        <h2 data-scroll data-scroll-speed=".6" data-scroll-delay=".1" class="text">Mis Sesiones</h2>
+                        <p data-scroll data-scroll-speed=".5" data-scroll-delay=".2" class="text">A lo largo de lo que
+                            va de
+                            este año
+                            y del año pasado por la pandemia no he podido salir pero he intentado continuar tomando
+                            fotos y sobre todo de mis favoritas son estas fotos de la fauna urbana desde pequeños
+                            pájaros hasta los grandes Zopilotes o Buitres que cada vez se adentran más en la ciudad o
+                            las pequeñas abejas que hacen su trabajo de polinización, obviamente no soy ni un fotógrafo
+                            ni un intento de biólogo así que probablemente no sean las especies específicas, si sabes
+                            que tipo de pájaro es con todo gusto puedes comunicarte para que pueda ponerlo
+                            correctamente.
+                        </p>
+                    </div>
+
+                    <div id="Sesiones">
+                        <div class="Galeria-Sesiones-1" id="Pajarito-Gris">
+                            <div class="middle">
+                                <div class="img-middle">
+                                    <img loading="lazy" src="Multimedia/Comprimidas (1280px)/013.webp"
+                                        alt="Un pajarito juntando materiales para poder hacer su nido" />
+                                    <div class="MoreBtn">
+                                        <a href="Secundarias/Galerias/Pajaritos.html">
+                                            <h5>+</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left">
+                                <div class="content">
+                                    <date>Canon T7</date>
+                                    <h2>Pinzón Mexicano</h2>
+                                    <p>No estoy completamente seguro de que si sean esa especie pero están todo el año
+                                        en la ciudad llendo de un lado para otro ya sea buscando comida o agua o
+                                        materiales para hacer sus nidos como se ven en algunas de las fotos. Tanto este
+                                        como otros rojos, en mi experiencia son muy cantadores.</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/009.webp"
+                                        alt="Pinzón Mexicano" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/011.webp"
+                                        alt="Pajaro llevando materiales para su nido descansando" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/012.webp"
+                                        alt="Pinzón descansando en un cable" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/010.webp"
+                                        alt="Pinzón Mexicano descansando" /></div>
+                            </div>
+                        </div>
+
+                        <div class="Galeria-Sesiones-2" id="Abejas">
+                            <div class="middle">
+                                <div class="img-middle">
+                                    <img loading="lazy" src="Multimedia/Comprimidas (1280px)/005.webp"
+                                        alt="Abeja polinizando flor morada" />
+                                    <div class="MoreBtn">
+                                        <a href="Secundarias/Galerias/Abejas.html">
+                                            <h5>+</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left title">
+                                <div class="content">
+                                    <date>Canon T7</date>
+                                    <h2>Abejas</h2>
+                                    <p>Sobre todo las he podido ver a partir de Marzo cuando todo empieza a florear
+                                        buscando todas las flores de mi jardín y los bebederos que les pongo, en
+                                        invierno apenas he podido verlas y en los días más calurosos su actividad baja
+                                        bastante.</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/006.webp"
+                                        alt="Abejas realizando su trabajo" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/001.webp"
+                                        alt="Abejas polinizando" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/007.webp"
+                                        alt="Varias abejas en unas flores" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/008.webp"
+                                        alt="Abeja polinizando flores blancas" /></div>
+                            </div>
+                        </div>
+
+                        <div class="Galeria-Sesiones-1" id="Zopilotes">
+                            <div class="middle">
+                                <div class="img-middle">
+                                    <img loading="lazy" src="Multimedia/Comprimidas (1280px)/029.webp"
+                                        alt="Zopilote llegando a su hogar en San Felipe Chihuahua" />
+                                    <div class="MoreBtn">
+                                        <a href="Secundarias/Galerias/Zopilotes.html">
+                                            <h5>+</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left">
+                                <div class="content">
+                                    <date>Canon T7</date>
+                                    <h2>Zopilotes en Chihuahua</h2>
+                                    <p>También conocido como Buitre Americano Cabecirrojo o
+                                        Zopilote Aura estos últimos años a estado adentrándose en la ciudad, estas fotos
+                                        fueron tomadas en el centro en la colonia San Felipe del Real, realizando a
+                                        diarios viajes al sur y norte de la ciudad y volviendo alrededor de las 4 o
+                                        5 de la tarde para dormir en los grandes árboles de San Felipe.</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/044.webp"
+                                        alt="Foto de Zopilote en el centro de Chihuahua" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/025.webp"
+                                        alt="Zopilote volando en el cielo de Chihuahua" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/027.webp"
+                                        alt="Varios Zopilotes descansando en un arbol de Sa felipe" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/045.webp"
+                                        alt="Buitre cabeza roja en Chihuahua" /></div>
+                            </div>
+                        </div>
+
+                        <div class="Galeria-Sesiones-2" id="Pajarito-Cafe">
+                            <div class="middle">
+                                <div class="img-middle">
+                                    <img loading="lazy" src="Multimedia/Comprimidas (1280px)/049.webp"
+                                        alt="Pequeño pajaro descansando en una higuera" />
+                                    <div class="MoreBtn">
+                                        <a href="Secundarias/Galerias/Prueba Galeria.html">
+                                            <h5>+</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left title">
+                                <div class="content">
+                                    <date>Canon T7</date>
+                                    <h2>Mas fotos del Pinzón Mexicano</h2>
+                                    <p>Más fotos de estos coloridos pajarito en este caso rojos, están buscando
+                                        comida en la higuera o la que le colocó y descansando al mediodía en el
+                                        cable de luz.</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/050.webp"
+                                        alt="Pinzón descansando" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/038.webp"
+                                        alt="Pinzónes y palomas comiendo" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/040.webp"
+                                        alt="Pinzónes comiendo" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/048.webp"
+                                        alt="Fauna urbana del Centro de Chihuahua" /></div>
+                            </div>
+                        </div>
+
+                        <div class="Galeria-Sesiones-1" id="Cotorra-Argentina">
+                            <div class="middle">
+                                <div class="img-middle">
+                                    <img loading="lazy" src="Multimedia/Comprimidas (1280px)/042.webp"
+                                        alt="Cotorra Argentina en Chihuahua" />
+                                    <div class="MoreBtn">
+                                        <a href="Secundarias/Galerias/Cotorras.html">
+                                            <h5>+</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left">
+                                <div class="content">
+                                    <date>Canon T7</date>
+                                    <h2>Cotorra Argentina</h2>
+                                    <p>No estoy completamente seguro de que si sean esa especie pero están todo el año
+                                        en la ciudad llendo de un lado para otro ya sea buscando comida o agua o
+                                        materiales para hacer sus nidos como se ven en algunas de las fotos. Tanto este
+                                        como otros rojos, en mi experiencia son muy cantadores.</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/035.webp"
+                                        alt="Cotorra en Chihuahua" /></div>
+                                <div class="tile"><img loading="lazy"
+                                        src="Multimedia/Comprimidas (1280px)/149 (Recortada).webp"
+                                        alt="Cotorras descansando en un poste en Chihuahua" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/072.webp"
+                                        alt="Cotorras Argentinas en Chihuahua Chihuahua Mexico" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/032.webp"
+                                        alt="Fotografia de Cotorra Argentinas en Chihuahua" /></div>
+                            </div>
+                        </div>
+
+                        <div class="Galeria-Sesiones-2" id="Colibri">
+                            <div class="middle">
+                                <div class="img-middle">
+                                    <img loading="lazy" src="Multimedia/Comprimidas (1280px)/082.webp"
+                                        alt="Colibri tomando agua de un bebedero." />
+                                    <div class="MoreBtn">
+                                        <a href="Secundarias/Galerias/Colibries.html">
+                                            <h5>+</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left title">
+                                <div class="content">
+                                    <date>Canon T7</date>
+                                    <h2>Colibri</h2>
+                                    <p>Fotos de varios colibries de diferentes tamanos y colores.</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/085.webp"
+                                        alt="Colibri en un comedero" /></div>
+                                <div class="tile"><img loading="lazy"
+                                        src="Multimedia/Comprimidas (1280px)/167 (Recortada).webp"
+                                        alt="Colibri volando" /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/172.webp"
+                                        alt="Colibri descansando en un bebedero" /></div>
+                                <div class="tile"><img loading="lazy"
+                                        src="Multimedia/Comprimidas (1280px)/121 (Recortada).webp"
+                                        alt="Colibri en el centro dfe Chihuahua" /></div>
+                            </div>
+                        </div>
+
+                        <div class="Galeria-Sesiones-1" id="Carpintero">
+                            <div class="middle">
+                                <div class="img-middle">
+                                    <img loading="lazy" src="Multimedia/Comprimidas (1280px)/099 (Recortado).webp"
+                                        alt="Pajaro Carpintero Volando" />
+                                    <div class="MoreBtn">
+                                        <a href="Secundarias/Galerias/Carpinteros.html">
+                                            <h5>+</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left">
+                                <div class="content">
+                                    <date>Canon T7</date>
+                                    <h2>Carpintero Mexicano</h2>
+                                    <p>Los machos tienen una gorra roja, llegaron a finales del verano.</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/093.webp"
+                                        alt="Carpintero Mexicano macho." /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/112.webp"
+                                        alt="Carpintero Mexicano hembra." /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/148.webp"
+                                        alt="Carpintero picoteando un bambu." /></div>
+                                <div class="tile"><img loading="lazy" src="Multimedia/Comprimidas (1280px)/096.webp"
+                                        alt="Pajaro Carpintero en Chihuahua" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Footer" id="footer" data-scroll-section data-scroll-section-id="section6">
+                    <footer>
+                        <div class="FooterInfo">
+                            <div class="left box">
+                                <h6>Hacerca de Mi</h6>
+                                <div class="content">
+                                    <p>Estoy empezando en la fotografia y aunque por la situacion actual no he podido
+                                        tomar
+                                        todas las fotos me gustaria o por flojera todas las que podria tomar si me
+                                        gustaria
+                                        mucho aprender.</p>
+                                    <div class="Social-Footer">
+                                        <div class="footer-btn from-left-footer"><a class="iconMobile"
+                                                href="https://twitter.com/unfotografocuu?s=08" target="_blank"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <h4>@unfotografocuu</h4>
+                                        </div>
+                                        <div class="footer-btn from-left-footer"><a class="iconMobile"
+                                                href="https://t.co/XdIwIDNkr3?amp=1" target="_blank"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <h4>@unfotografomascuu</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center box">
+                                <h6>Informacion</h6>
+                                <div class="content">
+                                    <div class="footer-btn from-left-footer"><a class="fab fa-google-drive"
+                                            href="https://drive.google.com/drive/folders/17Upno49Bbr61Yz7B_ZA55s1FS7aL5PTa?usp=sharing"
+                                            target="_blank"></a>
+                                        <h4>Fotos Originales</h4>
+                                    </div>
+
+                                    <div class="footer-btn from-left-footer"><a class="fab fa-github"
+                                            href="https://github.com/unfotografomascuu/UnFotografomasCuu/tree/2.6.3"
+                                            target="_blank"></a>
+                                        <h4>Codigo de la Pagina</h4>
+                                    </div>
+
+                                    <div class="footer-btn from-left-footer"><a class="far fa-envelope"
+                                            href="mailto:unfotografomascuu@gmail.com"></a>
+                                        <h4>unfotografomascuu<br>@gmail.com</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="right box">
+                                <h6>Contactame</h6>
+                                <div class="content">
+                                    <!--<form action="unfotografomascuu@gmail.com" method="post">
+                                <input type="text" name="nombre" placeholder="Nombre" required></input>
+                                <input type="text" name="correo" placeholder="Correo" required></input>
+                                <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                                <input type="submit" valor="Enviar" id="boton_enviar"></input>
+                            </form>-->
+                                </div>
+                                <div class="prox">
+                                    <h6>Trabajo en Proceso...</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="TextoPequeño">
+                        <p>Pagina hecha por un estudiante de Programacion</p>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/6d7cef546d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="Scripts/barba.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+
+    <script src="index.js"></script>
+    <script src="Scripts/barbaConfig.js" type="module"></script>
+
+    <script src="Scripts/btn.min.js"></script>
+    <script src="Scripts/definitivedark.js"></script>
+    <script src="Scripts/nav.min.js"></script>
+    <script src="Scripts/sticky.min.js"></script>
+    <script src="Scripts/lightbox.min.js"></script>
+    <script src="Scripts/lightbox-zoom.min.js"></script>
+    <script src="Scripts/animaciones.js"></script>
+    <script src="Scripts/definitivedark.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            Sticky(Sticky);
+        });
+    </script>
+
+</body>
+
+
+</html>
