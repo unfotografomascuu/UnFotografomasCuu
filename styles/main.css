@@ -66,6 +66,7 @@ body.theme-dark {
     --clear-btn-1: var(--dark-clear-btn-1);
 }
 
+
 @media (prefers-color-scheme: light) {
     body.theme-light {
         --clear: rgba(255, 255, 255, 0.9);
@@ -99,6 +100,8 @@ html {
 body {
     background: var(--background-1);
     overflow-x: hidden;
+    transition: all 400ms;
+
 }
 
 .contenido {
@@ -717,6 +720,81 @@ ul.transition li {
     }
 }
 
+/*Animaciones de los botones*/
+
+.from-left:before, .from-left:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.from-left:before {
+    right: 0;
+    border: 1px solid var(--text-1);
+    border-left: 0;
+    border-right: 0;
+}
+
+.from-left:after {
+    left: 0;
+}
+
+.from-left:hover:before, .from-left:hover:after {
+    width: 100%;
+}
+
+.from-bottom:before, .from-bottom:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.from-bottom:before {
+    top: 0;
+    border: 1px solid var(--text-2);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.from-bottom:after {
+    bottom: 0;
+    height: 0;
+}
+
+.from-bottom:hover:before, .from-bottom:hover:after {
+    height: 100%;
+    z-index: -1;
+}
+
+.from-bottom:hover:before, .from-bottom:hover:after {
+    height: 100%;
+    z-index: -1;
+}
+
+.from-left-footer:before, .from-left-footer:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.from-left-footer:before {
+    right: 0;
+    border: 1px solid var(--text-2);
+    border-left: 0;
+    border-right: 0;
+}
+
+.from-left-footer:after {
+    left: 0;
+}
+
+.from-left-footer:hover:before, .from-left-footer:hover:after {
+    width: 100%;
+}
+
+
+
 /*Boton del parallax de la pagina*/
 
 .parallax-btn {
@@ -790,101 +868,6 @@ ul.transition li {
     transition-delay: .35s;
 }
 
-.from-bottom:before, .from-bottom:after {
-    left: 0;
-    height: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-.from-bottom:before {
-    top: 0;
-    border: 1px solid var(--text-2);
-    border-top: 0;
-    border-bottom: 0;
-}
-
-.from-bottom:after {
-    bottom: 0;
-    height: 0;
-}
-
-.from-bottom:hover:before, .from-bottom:hover:after {
-    height: 100%;
-    z-index: -1;
-}
-
-.from-bottom:hover:before, .from-bottom:hover:after {
-    height: 100%;
-    z-index: -1;
-}
-
-/*Boton de todo el resto de la pagina*/
-
-.article-btn {
-    position: relative;
-    padding: 1.4rem 4.2rem;
-    color: var(--text-1);
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
-    cursor: pointer;
-    user-select: none;
-    grid-column: 14/19;
-    align-self: baseline;
-    text-align: center;
-    z-index: 10;
-}
-
-.article-btn:before, .article-btn:after {
-    content: '';
-    position: absolute;
-    transition: inherit;
-    z-index: -1;
-}
-
-.article-btn:hover {
-    color: var(--text-2);
-    transition-delay: .5s;
-}
-
-.article-btn:hover:before {
-    transition-delay: 0s;
-}
-
-.article-btn:hover:after {
-    background: var(--clear-btn-1);
-    transition-delay: .35s;
-    width: 100.5%;
-}
-
-.from-left:before, .from-left:after {
-    top: 0;
-    width: 0;
-    height: 100%;
-}
-
-.from-left:before {
-    right: 0;
-    border: 1px solid var(--text-1);
-    border-left: 0;
-    border-right: 0;
-}
-
-.from-left:after {
-    left: 0;
-}
-
-.from-left:hover:before, .from-left:hover:after {
-    width: 100%;
-}
-
-@media(max-width: 1280px) {
-    .article-btn {
-        grid-column: 2/20;
-    }
-}
-
 /* Boton del footer con los links*/
 
 .footer-btn {
@@ -936,30 +919,10 @@ ul.transition li {
     width: 100.5%;
 }
 
-.from-left-footer:before, .from-left-footer:after {
-    top: 0;
-    width: 0;
-    height: 100%;
-}
-
-.from-left-footer:before {
-    right: 0;
-    border: 1px solid var(--text-2);
-    border-left: 0;
-    border-right: 0;
-}
-
-.from-left-footer:after {
-    left: 0;
-}
-
-.from-left-footer:hover:before, .from-left-footer:hover:after {
-    width: 100%;
-}
-
 /* Boton que redirige a los articulos individuales*/
 
 .article-btn {
+    position: relative;
     padding: 1.4rem 0rem;
     color: var(--text-1);
     letter-spacing: 0.6rem;
@@ -967,8 +930,9 @@ ul.transition li {
     transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
     cursor: pointer;
     user-select: none;
-    text-align: center;
     align-self: flex-end;
+    text-align: center;
+    z-index: 10;
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 5% 15% 75% 5%;
@@ -1530,15 +1494,13 @@ ul.transition li {
 
 .Article-Section-Img {
     width: 100%;
+    overflow: hidden;
     grid-column: 1/2;
     transition: 0.3s ease-in-out all;
 }
 
-.Article-Section-Txt{
+.Article-Section-Txt {
     grid-column: 2/3;
-}
-
-.Article-Section-Txt .content{
     height: 100%;
     display: flex;
     align-content: center;
@@ -1546,6 +1508,11 @@ ul.transition li {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    padding: 2rem 3rem;
+}
+
+.Article-Section-Txt h2 {
+    padding: 1rem 0 .5rem 0;
 }
 
 .Article-Section-Img img {
@@ -1555,25 +1522,25 @@ ul.transition li {
     transition: 0.3s ease-in-out all;
 }
 
-.Article-Section .Article-Section-Img {
+.Article-Section-Img {
     z-index: 2;
     padding: 0;
     overflow: hidden;
 }
 
-.Article-Section .Article-Section-Img {
+.Article-Section-Img {
     width: 100%;
     height: 50vh;
     object-fit: cover;
     transition: 0.35s ease-in-out all;
 }
 
-.Article-Section .Article-Section-Img:hover img {
+.Article-Section-Img:hover img {
     z-index: 2;
     transform: scale(1.10);
 }
 
-.Article-Section .Article-Section-Img .img-middle {
+.Article-Section-Img .img-middle {
     position: relative;
     top: 0;
     left: 0;
@@ -1581,7 +1548,7 @@ ul.transition li {
     height: 100%;
 }
 
-.Article-Section .Article-Section-Img .MoreBtn {
+.Article-Section-Img .MoreBtn {
     position: absolute;
     left: 0;
     right: 0;
@@ -1593,7 +1560,7 @@ ul.transition li {
     z-index: 1;
 }
 
-.Article-Section .Article-Section-Img .MoreBtn h5 {
+.Article-Section-Img .MoreBtn h5 {
     opacity: 0;
     transform: rotate(45deg);
     transition: .8s;
@@ -1602,7 +1569,7 @@ ul.transition li {
     padding: 10rem;
 }
 
-.Article-Section .Article-Section-Img .img-middle:before {
+.Article-Section-Img .img-middle:before {
     content: '';
     position: absolute;
     top: 0;
@@ -1616,21 +1583,13 @@ ul.transition li {
     transition: 0.5s;
 }
 
-.Article-Section .Article-Section-Img:hover .img-middle:before {
+.Article-Section-Img:hover .img-middle:before {
     opacity: 1;
 }
 
-.Article-Section .Article-Section-Img:hover h5 {
+.Article-Section-Img:hover h5 {
     opacity: 1;
     transform: rotate(0deg);
-}
-
-.Article-Section-Txt .content{
-    padding: 2rem 3rem;
-}
-
-.Article-Section-Txt .content h2{
-    padding: 1rem 0 .5rem 0;
 }
 
 @media(max-width: 1280px) {
@@ -1640,7 +1599,30 @@ ul.transition li {
         height: 90vh;
         overflow: hidden;
     }
+
+    .Article-Section-Img {
+        height: 30vh;
+    }
+
+    .Article-Section-Img img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .Article-Section-Txt {
+        height: 60vh;
+        padding: 1rem 1.5rem 0rem 1.5rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+
 }
+
 /*-----Galeria de Sesiones------*/
 
 #Sesiones {
@@ -2654,7 +2636,7 @@ footer h1 {
     color: var(--text-2);
 }
 
-.anim-banner{
+.anim-banner {
     opacity: 1;
 }
 
@@ -2701,6 +2683,7 @@ footer h1 {
     margin-bottom: 0.5rem;
     height: 40vh;
 }
+
 .art-size-3 {
     grid-column: 2/7;
     margin-top: 2rem;
@@ -2721,11 +2704,11 @@ footer h1 {
     width: 100%;
 }
 
-.article-title{
+.article-title {
     margin-bottom: 2rem;
 }
 
-.article-subtitle{
+.article-subtitle {
     margin-top: 2rem;
     margin-bottom: .1rem;
     font-weight: bold;
