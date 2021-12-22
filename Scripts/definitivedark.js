@@ -18,7 +18,6 @@ function DarkMode() {
         document.body.classList.add(`theme-dark`);
     }
 
-
     document.addEventListener("DOMContentLoaded", () => {
         const savedTheme = localStorage.getItem("theme") || "auto";
     
