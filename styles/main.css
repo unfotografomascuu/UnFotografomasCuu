@@ -2762,3 +2762,26 @@ footer h1 {
     .content-article {
     }
 }*/
+
+
+/*----------Pagina de las redes sociales----------*/
+
+.social-page{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.slider-zone{
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+}
+
+.social-zone{
+    grid-column: 2/3;
+    width: 100%;
+    background-color: #1b1b1b;
+}
