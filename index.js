@@ -1,6 +1,6 @@
 scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
-    inertia: 0.8,
+    inertia: 0.9,
     smooth: true,
     getDirection: true,
     mobile: {

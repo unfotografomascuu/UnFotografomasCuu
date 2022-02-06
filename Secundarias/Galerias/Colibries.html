@@ -315,24 +315,13 @@
             <footer class="footer-sec" data-scroll-section data-scroll-section-id="g-section3">
                 
                 <div class="controler-section-sec">
-                    <div class="new-mode-switch" id="theme-toggle" data-state="auto">
-                        <div class="mode-sections">
-                            <div class="mode-section">
-                                <input value="light" name="state-d" type="radio" class="mode-imput" id="light-mode" onclick="DarkMode()">
-                                <label class="mode-ball" for="light"><span class="mode-span"><i
-                                            class="fas fa-sun"></i></span></label>
-                            </div>
-                            <div class="mode-section">
-                                <input value="auto" name="state-d" type="radio" class="mode-imput" id="auto-mode" onclick="DarkMode()" checked>
-                                <label class="mode-ball" for="auto"> <span
-                                        class="mode-span">A</span></label>
-                            </div>
-                            <div class="mode-section">
-                                <input value="dark" name="state-d" type="radio" class="mode-imput" id="dark-mode" onclick="DarkMode()">
-                                <label class="mode-ball" for="dark"><span class="mode-span"><i
-                                            class="fas fa-moon"></i></span></label>
-                            </div>
-                        </div>
+                    <div class="select_sec">
+                        <h4 id="theme_selector">Tema</h4>
+                        <select class="select__input" id="selTheme">
+                            <option value="auto">Auto</option>
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
                     </div>
                 </div>
 
