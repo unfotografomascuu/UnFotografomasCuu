@@ -2641,6 +2641,8 @@ footer h1 {
     min-height: 100vh;
     overflow-x: hidden;
     color: var(--text-2);
+    text-align: justify;
+
 }
 
 .anim-banner {
