@@ -33,14 +33,9 @@ barba.init({
             },
 
             async once() {
-                firstVisit();
-                SecondaryfirstVisit();
-            },
-
-            async enter() {
                 principalAnimation();
                 secondaryAnimation();
-            }
+            },
         }
     ],
 
