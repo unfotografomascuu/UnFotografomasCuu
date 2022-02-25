@@ -42,7 +42,7 @@
 
 </head>
 
-<body data-barba="wrapper">
+<body data-barba="wrapper" onwheel="Sticky();">
 
     <div class="transition-container">
         <div class="transition">
@@ -83,19 +83,19 @@
                     <nav class="mnvl">
                         <div class="nav-links">
                             <div class="nav-links-close" onclick="NavSection();">
-                                <div class="nav-btn from-bottom anim-nav"><a id="btn1" href="#home" data-scroll-to>
+                                <div class="nav-btn from-bottom anim-nav" onclick="Sticky();"><a id="btn1" href="#home" data-scroll-to>
                                         Inicio</a></div>
-                                <div class="nav-btn from-bottom anim-nav"><a id="btn2" href="#about"
+                                <div class="nav-btn from-bottom anim-nav" onclick="Sticky();"><a id="btn2" href="#about"
                                         data-scroll-to>Hacerca
                                         de Mi</a>
                                 </div>
-                                <div class="nav-btn from-bottom anim-nav"><a id="btn3" href="#portfolio"
+                                <div class="nav-btn from-bottom anim-nav" onclick="Sticky();"><a id="btn3" href="#portfolio"
                                         data-scroll-to>Favoritas</a>
                                 </div>
-                                <div class="nav-btn from-bottom anim-nav"><a id="btn4" href="#services"
+                                <div class="nav-btn from-bottom anim-nav" onclick="Sticky();"><a id="btn4" href="#services"
                                         data-scroll-to>Artículos</a>
                                 </div>
-                                <div class="nav-btn from-bottom anim-nav"><a id="btn5" href="#contact"
+                                <div class="nav-btn from-bottom anim-nav" onclick="Sticky();"><a id="btn5" href="#contact"
                                         data-scroll-to>Sesiones</a>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
                         </div>
                     </nav>
 
-                    <div class="menu-btn" id="menu-btn" onclick="BtnAnim(); NavBtn();">
+                    <div class="menu-btn" id="menu-btn" onclick="BtnOC();">
                         <div class="menu-btn__burger"></div>
                     </div>
 

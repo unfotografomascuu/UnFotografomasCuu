@@ -28,8 +28,8 @@ function secondaryAnimation() {
     tl.from('#logo-2, #back', { duration: .9, translateY: -50, opacity: 0, delay: -.4});
     tl.from('.NavBar-2', { duration: .9, translateY: -50, opacity: 0});
     tl.from('.anim-banner', { duration: .8, opacity: 0, delay: -.5});
-    tl.from('.anim-gallery', { duration: 1.1, translateY: 50, opacity: 0, stagger: 0.2});
-    tl.from('.imagen-galeria', { duration: 1, opacity: 0 });
+    tl.from('.anim-gallery', { duration: 1, translateY: 50, opacity: 0, stagger: 0.1});
+    tl.to('.imagen-galeria', { duration: 1, opacity: 1, stagger: 0.2,  delay: -1 });
 }
 
 function pageTransition() {

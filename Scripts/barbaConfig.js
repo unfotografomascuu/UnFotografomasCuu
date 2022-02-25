@@ -41,11 +41,11 @@ barba.init({
 
 });
 
-barba.hooks.beforeLeave((data) => { 
+barba.hooks.beforeLeave(() => { 
     scroll.destroy();
 });
 
-barba.hooks.after((data) => {
+barba.hooks.after(() => {
     scroll.init();
 });
 
