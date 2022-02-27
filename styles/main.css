@@ -2888,6 +2888,10 @@ footer h1 {
         width: 100%;
     }
 
+    .pagina-articulo figcaption{
+        width: 90%;
+    }
+
     .img-article img {
         object-fit: cover;
         width: 100%;
