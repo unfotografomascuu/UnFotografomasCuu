@@ -302,7 +302,6 @@ figcaption {
     left: 0;
     z-index: 2;
 }
-
 .loader {
     position: absolute;
     top: 50%;
@@ -319,7 +318,7 @@ figcaption {
 
 .loader ul li {
     display: inline-block;
-    color: var(--text-2);
+    color: #fff;
     margin: 0 8px;
     font-size: 24px;
     text-transform: uppercase;
@@ -379,7 +378,7 @@ figcaption {
 }
 
 .loader ul li:nth-child(8) {
-    animation-delay: 1.7s;
+    animation-delay: 1.63s;
 }
 
 /*----------Loaders----------*/
@@ -481,6 +480,7 @@ figcaption {
     align-content: center;
     justify-content: flex-start;
     align-items: center;
+    z-index: 3;
 }
 
 #txt-parallax-1 {
@@ -1160,10 +1160,8 @@ figcaption {
 
 .NavBar.sticky {
     max-height: 5rem;
-}
-
-.NavBar.sticky {
     color: var(--text-2);
+    backdrop-filter: blur(4px);
 }
 
 .menu-btn__burger,
@@ -1183,6 +1181,7 @@ figcaption {
         height: 4rem;
         color: var(--text-2);
         background: var(--clear);
+        backdrop-filter: blur(4px);
         max-width: 100%;
         z-index: 12;
     }
@@ -1223,6 +1222,7 @@ figcaption {
         right: 0;
         top: 0;
         background: var(--clear-nav);
+        backdrop-filter: blur(4px);
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         display: grid;
@@ -1233,11 +1233,12 @@ figcaption {
         height: 100vh;
         max-height: 100vh;
         transition: 0.6s;
-        z-index: 10;
+        z-index: 2;
     }
 
     .NavBar .nav-active {
         transform: translateX(0%);
+        backdrop-filter: blur(4 px);
     }
 
     .nav-links .nav-links-close {
@@ -1468,7 +1469,9 @@ figcaption {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: linear-gradient(180deg, #262626, #000);
+    /*background: linear-gradient(180deg, #262626, #000);*/
+    background: #262626;
+    backdrop-filter: blur(4px);
     opacity: 0;
     mix-blend-mode: multiply;
     transition: 0.45s;
@@ -1641,7 +1644,9 @@ figcaption {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: linear-gradient(180deg, #262626, #000);
+    /*background: linear-gradient(180deg, #262626, #000);*/
+    background: #262626;
+    backdrop-filter: blur(4px);
     opacity: 0;
     mix-blend-mode: multiply;
     transition: 0.5s;
@@ -1859,7 +1864,9 @@ figcaption {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: linear-gradient(180deg, #262626, #000);
+    /*background: linear-gradient(180deg, #262626, #000);*/
+    background: #262626;
+    backdrop-filter: blur(4px);
     opacity: 0;
     mix-blend-mode: multiply;
     transition: 0.5s;
@@ -2155,6 +2162,7 @@ footer h1 {
     height: 4rem;
     z-index: 5;
     background: var(--clear);
+    backdrop-filter: blur(4px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3011,7 +3019,7 @@ footer h1 {
 
 
 
-.before-arrow{
+.before-arrow {
     position: fixed;
     cursor: pointer;
     font-size: 4rem;
@@ -3020,7 +3028,7 @@ footer h1 {
 }
 
 
-.next-arrow{
+.next-arrow {
     position: fixed;
     cursor: pointer;
     font-size: 4rem;
