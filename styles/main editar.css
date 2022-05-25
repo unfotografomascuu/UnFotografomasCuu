@@ -1093,7 +1093,7 @@ figcaption {
 .NavBar .nav-btn a {
     color: var(--text-1);
     padding: 1.25rem 2rem;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 .NavBar.sticky .nav-btn a {
