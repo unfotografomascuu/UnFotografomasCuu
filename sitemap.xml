@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -10,180 +9,64 @@
 
 <url>
   <loc>https://unfotografomascuu.com/</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://unfotografomascuu.com/Secundarias/Individuales/Prueba%20Indv.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://unfotografomascuu.com/Secundarias/Articulos/Articulo%20Zopilotes.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-<<<<<<< HEAD
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>0.80</priority>
-=======
-  <priority>0.90</priority>
->>>>>>> a0617af5ddef0f713199c2b059d8bc604d43744c
 </url>
 <url>
   <loc>https://unfotografomascuu.com/Secundarias/Articulos/Articulo%20Colibries.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-<<<<<<< HEAD
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>0.80</priority>
-=======
-  <priority>0.90</priority>
->>>>>>> a0617af5ddef0f713199c2b059d8bc604d43744c
 </url>
 <url>
   <loc>https://unfotografomascuu.com/Secundarias/Articulos/Articulo%20Cotorras.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-<<<<<<< HEAD
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://unfotografomascuu.com/Secundarias/Galerias/Zopilotes.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-=======
->>>>>>> a0617af5ddef0f713199c2b059d8bc604d43744c
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Zopilotes.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>0.50</priority>
 </url>
 <url>
   <loc>https://unfotografomascuu.com/Secundarias/Galerias/Colibries.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Pajaritos.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
+  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Pinzon%20Mexicano.html</loc>
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://unfotografomascuu.com/Secundarias/Galerias/Abejas.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://unfotografomascuu.com/Secundarias/Galerias/Cotorras.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Prueba%20Galeria.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://unfotografomascuu.com/Secundarias/Galerias/Carpinteros.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://unfotografomascuu.com/index.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
+  <lastmod>2022-07-21T06:40:01+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
 
 </urlset>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://unfotografomascuu.com/</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Individuales/Prueba%20Indv.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Articulos/Articulo%20Zopilotes.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-<<<<<<< HEAD
-  <priority>0.80</priority>
-=======
-  <priority>0.90</priority>
->>>>>>> a0617af5ddef0f713199c2b059d8bc604d43744c
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Articulos/Articulo%20Colibries.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-<<<<<<< HEAD
-  <priority>0.80</priority>
-=======
-  <priority>0.90</priority>
->>>>>>> a0617af5ddef0f713199c2b059d8bc604d43744c
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Articulos/Articulo%20Cotorras.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-<<<<<<< HEAD
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Zopilotes.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-=======
->>>>>>> a0617af5ddef0f713199c2b059d8bc604d43744c
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Zopilotes.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Colibries.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Pajaritos.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Abejas.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Cotorras.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Prueba%20Galeria.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/Secundarias/Galerias/Carpinteros.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://unfotografomascuu.com/index.html</loc>
-  <lastmod>2022-04-20T07:35:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
-</urlset>
->>>>>>> 511d32d9eedd84d286de03d06ef5a7e1befb31cf
