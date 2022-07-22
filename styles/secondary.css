@@ -86,7 +86,7 @@
 }
 
 .imagen-galeria {
-    opacity: 0;
+    opacity: 1;
 }
 
 .text-part-img {
@@ -271,7 +271,7 @@
 
 .img-btn {
     color: var(--text-1);
-    margin-top: 2.5rem;
+    padding: 1.5rem;
     transition: 0.6s;
     font-size: 1.6rem;
     transform: translateY(20rem);
@@ -279,6 +279,9 @@
     align-self: center;
     cursor: pointer;
     z-index: 1;
+    width: 100%;
+    height: auto;
+    text-align: -webkit-center;
 }
 
 .imagen-galeria:hover .info .img-btn {
