@@ -44,6 +44,21 @@
             overflow: hidden;
         }
 
+        @keyframes transitionIn{
+            from{
+                opacity: 0;
+                display: none;
+                transform: translateY(+50px);
+
+            }
+
+            to{
+                opacity: 1;
+                display: block;
+                transform: translateY(0);
+            }
+        }
+
         .error-body {
             height: 100vh;
             width: 100vw;
@@ -64,6 +79,7 @@
             justify-content: space-around;
             align-items: center;
             text-align: justify;
+            animation: transitionIn 1.5s;
         }
 
         .error-container {
@@ -180,7 +196,7 @@
 </head>
 
 <body class="error-body">
-    <div class="error-content">
+    <div class="error-content preload">
         <div class="error-container">
             <p id="error-404">404</p>
             <p id="error-404-text">Pagina no encontrada</p>
@@ -193,27 +209,4 @@
         </div>
     </div>
 </body>
-
-
-<script src="https://kit.fontawesome.com/6d7cef546d.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script src="Scripts/barba.min.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-
-
-<script src="index.js"></script>
-<script src="Scripts/barbaConfig.js" type="module"></script>
-
-<script src="Scripts/btn.min.js"></script>
-<script src="Scripts/definitivedark.min.js"></script>
-<script src="Scripts/nav.min.js"></script>
-<script src="Scripts/sticky.min.js"></script>
-<script src="Scripts/lightbox.min.js"></script>
-<script src="Scripts/lightbox-zoom.min.js"></script>
-<script src="Scripts/animaciones.min.js"></script>
-
 </html>
