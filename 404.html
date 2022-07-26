@@ -7,12 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Page not found · GitHub Pages</title>
 
-    <link rel="shortcut icon" href="Multimedia/Icon.ico" />
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/styles.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/btn.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/error.css'>
-
     <meta name="robots" content="noindex">
+    
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEEVB4MDLK"></script>
     <script>
@@ -22,9 +18,37 @@
 
         gtag('config', 'G-SEEVB4MDLK');
     </script>
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        @font-face {
+            font-family: Titulo;
+            src: url(../Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+            font-display: block;
+        }
+
+        @font-face {
+            font-family: Texto;
+            src: url(../Fonts/Lato/Lato-Light.ttf);
+            font-display: block;
+        }
+
         body {
             background-color: #262626;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
         }
 
         .error-body {
@@ -38,7 +62,7 @@
         }
 
         .error-content {
-            color: var(--text-1);
+            color: #ffffff;
             height: 60vh;
             width: 40vw;
             display: flex;
@@ -58,13 +82,18 @@
         }
 
         #error-404 {
-            src: url(../Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
-            font-display: block;
+            font-family: 'Titulo';
+            font-size: 12rem;
         }
 
         #error-404-text {
-            src: url(../Fonts/Lato/Lato-Light.ttf);
-            font-display: block;
+            font-family: 'Texto';
+            font-size: 2rem;
+        }
+
+        #error-text {
+            font-family: 'Texto';
+            font-size: 1.4rem;
         }
 
         .error-btn {
@@ -72,7 +101,10 @@
         }
 
         .error-btn a {
+            font-family: 'Texto';
             color: #ffffff;
+            font-size: 1.4rem;
+            text-decoration: none;
         }
 
         .error-btn {
@@ -95,7 +127,7 @@
         }
 
         .error-btn:hover {
-            color: var(--text-1);
+            color: #ffffff;
             transition-delay: .5s;
         }
 
@@ -105,7 +137,7 @@
         }
 
         .error-btn:hover:after {
-            background: var(--clear-btn-1);
+            background: rgba(255, 255, 255, 0.2);
             transition-delay: .35s;
         }
 
@@ -118,7 +150,7 @@
 
         .from-left:before {
             right: 0;
-            border: 1px solid var(--text-1);
+            border: 1px solid #ffffff;
             border-left: 0;
             border-right: 0;
         }
@@ -130,6 +162,18 @@
         .from-left:hover:before,
         .from-left:hover:after {
             width: 100%;
+        }
+
+        @media (max-width: 8.5in) {
+            :root {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 5.5in) {
+            :root {
+                font-size: 12px;
+            }
         }
 
         @media(max-width: 1280px) {
@@ -148,7 +192,8 @@
             <p id="error-404">404</p>
             <p id="error-404-text">Pagina no encontrada</p>
         </div>
-        <p>Lamentablemente la pagina que estas buscando no ha podido ser encontrada porque ha sido eliminada o a
+        <p id="error-text">Lamentablemente la pagina que estas buscando no ha podido ser encontrada porque ha sido
+            eliminada o a
             cambiado
             de direccio.</p>
         <div class="error-btn from-left"><a href="https://unfotografomascuu.com/">Ir a la pagina de Inicio</a>
