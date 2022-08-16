@@ -116,18 +116,32 @@
     height: 100%;
 }
 
+.art-size-4 {
+    grid-column: 2/7;
+    margin-top: 2rem;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.art-size-4 img {
+    width: auto;
+    min-width: 90%;
+    height: 100%;
+}
+
 .art-size-banner {
     grid-column: 1 / 8;
     margin-bottom: 4rem;
     height: 80vh;
     top: 0;
+    overflow: hidden;
 }
 
 .art-size-banner img {
-    object-fit: cover;
-    height: 100%;
+    max-height: auto;
     width: 100%;
 }
+
 
 .article-gallery {
     grid-column: 2/7;
@@ -144,6 +158,18 @@
     height: 60vh;
     width: 48%;
     margin-bottom: 4%;
+}
+
+.article-gallery-text {
+    height: 60vh;
+    width: 48%;
+    padding: 0% 2rem;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .article-gallery-img img {
@@ -210,8 +236,7 @@
     }
 
     .img-article img {
-        object-fit: cover;
-        width: 100%;
+        min-width: 100%;
         height: 100%;
     }
 
