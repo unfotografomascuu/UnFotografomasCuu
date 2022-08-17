@@ -665,7 +665,7 @@ figcaption {
         width: 98%;
     }
 
-    .article-gallery {
+    .article-gallery, .article-gallery-wide {
         justify-content: space-evenly;
     }
 
