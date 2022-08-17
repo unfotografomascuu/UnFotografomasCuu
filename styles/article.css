@@ -138,10 +138,10 @@
 }
 
 .art-size-banner img {
-    max-height: auto;
+    object-fit: cover;
     width: 100%;
+    height: 100%;
 }
-
 
 .article-gallery {
     grid-column: 2/7;
