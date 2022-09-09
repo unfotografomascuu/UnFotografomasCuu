@@ -156,7 +156,13 @@
 
 .article-gallery-img {
     height: 60vh;
-    width: 48%;
+    width: 49%;
+    margin-bottom: 2%;
+}
+
+.article-gallery-img-1 {
+    height: 60vh;
+    width: 32%;
     margin-bottom: 4%;
 }
 
@@ -172,7 +178,8 @@
     align-items: stretch;
 }
 
-.article-gallery-img img {
+.article-gallery-img img,
+.article-gallery-img-1 img {
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -257,12 +264,18 @@
         width: 98%;
     }
 
-    .article-gallery {
+    .article-gallery,
+    .article-gallery-wide {
         justify-content: space-evenly;
     }
 
     .article-gallery-img {
         margin-bottom: 2%;
+    }
+
+    .article-gallery-img-1{
+        margin-bottom: 2%;
+        width: 48%;
     }
 }
 

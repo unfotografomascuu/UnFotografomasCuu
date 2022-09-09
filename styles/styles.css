@@ -614,10 +614,15 @@ figcaption {
 
 .article-gallery-img {
     height: 60vh;
-    width: 48%;
-    margin-bottom: 4%;
+    width: 49%;
+    margin-bottom: 2%;
 }
 
+.article-gallery-img-1 {
+    height: 60vh;
+    width: 32%;
+    margin-bottom: 4%;
+}
 
 .article-gallery-text {
     height: 60vh;
@@ -631,7 +636,8 @@ figcaption {
     align-items: stretch;
 }
 
-.article-gallery-img img {
+.article-gallery-img img,
+.article-gallery-img-1 img {
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -723,6 +729,11 @@ figcaption {
 
     .article-gallery-img {
         margin-bottom: 2%;
+    }
+
+    .article-gallery-img-1{
+        margin-bottom: 2%;
+        width: 48%;
     }
 }
 
