@@ -1,0 +1,367 @@
+
+/*-----Barra de Navegacion-----*/
+
+.NavBar {
+    position: fixed;
+    height: 5.5rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    color: var(--text-1);
+    transition: 0.6s;
+}
+
+.NavBar .nav-btn a {
+    color: var(--text-1);
+    padding: 1.25rem 2rem;
+    font-weight: 400;
+}
+
+.NavBar.sticky .nav-btn a {
+    color: var(--text-2);
+    font-weight: normal;
+}
+
+.NavBar.sticky {
+    background: var(--clear);
+    max-height: 5rem;
+    color: var(--text-2);
+    backdrop-filter: blur(4px);
+}
+
+.NavBar #logo {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s;
+    padding-left: 1rem;
+    color: var(--text-1);
+}
+
+.NavBar.sticky #logo {
+    color: var(--text-2);
+}
+
+.NavBar .nav-links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar .nav-links-close {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-1);
+}
+
+.nav-links-close .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.NavBar .nav-links button {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5 {
+    z-index: 10;
+}
+
+.anim-nav {
+    opacity: 1;
+}
+
+.nav-blur {
+    backdrop-filter: none;
+}
+
+
+/*Barra de Navegacion Desplegable*/
+
+@media(max-width: 1280px) {
+    
+    .NavBar {
+        height: 4rem;
+        color: var(--text-2);
+        background: var(--clear);
+        max-width: 100%;
+        z-index: 10;
+    }
+    
+    .NavBar .nav-btn a {
+        color: var(--text-1);
+        padding: 1.25rem 2rem;
+        font-weight: 800;
+    }
+    
+    .NavBar.sticky .nav-btn a {
+        color: var(--text-2);
+        font-weight: normal;
+    }
+    
+    .NavBar.sticky {
+        background: var(--clear);
+        max-height: 5rem;
+        color: var(--text-2);
+        backdrop-filter: none;
+    }
+
+    .nav-blur {
+        backdrop-filter: blur(4px);
+    }
+    
+
+    .NavBar #logo,
+    .NavBar .nav-btn a {
+        color: var(--text-2);
+    }
+
+    .NavBar .logo,
+    .NavBar .menu-btn {
+        z-index: 2;
+    }
+
+    .NavBar .nav-btn a {
+        font-weight: normal;
+    }
+
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+        height: 5rem;
+    }
+
+    .NavBar .nav-links {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: var(--clear-nav);
+        backdrop-filter: blur(4px);
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        width: 100%;
+        min-height: -webkit-fill-available;
+        min-height: 100vh;
+        max-height: 100vh;
+        transition: 0.6s;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .NavBar .nav-active {
+        transform: translateX(0%);
+        backdrop-filter: blur(4px);
+        transition: 0.6s;
+    }
+
+    .nav-links .nav-links-close {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin-top: 5rem;
+        grid-row: 2/3;
+        grid-column: 1/3;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    #btn1,
+    #btn2,
+    #btn3,
+    #btn4,
+    #btn5 {
+        z-index: 2;
+        width: 100%;
+        height: 4.25rem;
+    }
+
+    .NavBar .menu-btn__burger {
+        height: 2px;
+        width: 40px;
+    }
+
+    .NavBar .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        height: 2px;
+        width: 40px;
+    }
+
+    .from-bottom:before {
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: 0;
+        border: 1px solid var(--text-2);
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .from-bottom:after {
+        bottom: 0;
+        left: 0;
+        height: 0;
+        width: 100%;
+        background: rgba(200, 200, 200, 0.1);
+    }
+
+    .from-bottom:hover:before {
+        left: 0;
+        width: 100%;
+    }
+
+    .from-bottom:hover:after {
+        top: 0;
+        height: 100%;
+    }
+}
+
+/*Falta agregar y corregir los colores (sticky) de la barra de navegacion cuando esta en tamano movil*/
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/*-----Redes Sociales*-----*/
+
+.Social-Bar {
+    position: sticky;
+    left: 0;
+    top: 22.5%;
+    bottom: 22.5%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    margin-bottom: 7.4rem;
+}
+
+.icon {
+    color: var(--text-1);
+    padding: 1rem 1rem;
+    width: 3.1rem;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.icon a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icon:hover {
+    padding-right: 6rem;
+}
+
+.Facebook {
+    background: #3b5998;
+}
+
+.Instagram {
+    background: #DD2A7B;
+}
+
+.Telegram {
+    background: #4995Be;
+}
+
+.GitHub {
+    background: #171515;
+}
+
+.Correo {
+    background: #1490D4;
+}
+
+.Twitter {
+    background: #4099FF;
+}
+
+@media(max-width: 1280px) {
+    .Social-Bar {
+        display: none;
+    }
+}
+
+/*Redes Sociales en telefono*/
+
+.Social-Mobile {
+    display: none;
+    color: var(--text-1);
+}
+
+@media(max-width: 1280px) {
+    .Social-Mobile {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        box-sizing: border-box;
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    .iconMobile {
+        color: var(--text-1);
+    }
+
+    .Social-Mobile .social-mobile-links {
+        width: auto;
+        text-align: center;
+        flex-grow: 1;
+        transition: .5s;
+        font-size: 1.2rem;
+        font-family: 'Playfair Display', serif;
+        font-weight: 300;
+        color: var(--text-1);
+        text-decoration: none;
+    }
+
+    .social-mobile-links:hover {
+        flex-grow: 4;
+        max-width: 100%;
+    }
+
+    .social-mobile-links i {
+        padding: 2rem 0;
+        width: 100%;
+    }
+}
