@@ -92,7 +92,7 @@
 /*Barra de Navegacion Desplegable*/
 
 @media(max-width: 1280px) {
-    
+
     .NavBar {
         height: 4rem;
         color: var(--text-2);
@@ -100,18 +100,18 @@
         max-width: 100%;
         z-index: 10;
     }
-    
+
     .NavBar .nav-btn a {
         color: var(--text-1);
         padding: 1.25rem 2rem;
         font-weight: 800;
     }
-    
+
     .NavBar.sticky .nav-btn a {
         color: var(--text-2);
         font-weight: normal;
     }
-    
+
     .NavBar.sticky {
         background: var(--clear);
         max-height: 5rem;
@@ -122,7 +122,7 @@
     .nav-blur {
         backdrop-filter: blur(4px);
     }
-    
+
 
     .NavBar #logo,
     .NavBar .nav-btn a {
@@ -160,7 +160,7 @@
         right: 0;
         top: 0;
         background: var(--clear-nav);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2x);
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         width: 100%;
@@ -179,7 +179,7 @@
 
     .NavBar .nav-active {
         transform: translateX(0%);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
         transition: 0.6s;
     }
 
@@ -365,3 +365,4 @@
         width: 100%;
     }
 }
+

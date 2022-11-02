@@ -2,51 +2,15 @@
 <html lang="es">
 
 <head>
-    <title>Zopilotes en Chihuahua</title>
+    <title>Unificacion de Codigo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Articulo hacerca de los Zopilotes en la ciudad de Chihuahua.">
-    <meta name="keywords"
-        content="Fotografias, Chihuahua, Galeria, Fotos, Zopilotes, Chihuahua Mexico, Huitres, Condores, Zopilote Aura, Zopilote">
+    <meta name="description" content="Pruebas.">
     <meta name="author" content="Andrés Roberto Gardea Jiménez">
 
 
-    <link rel='stylesheet' type='text/css' media='screen' href='../../styles/styles.min.css'>
-    <link rel="shortcut icon" href="../../Multimedia/Icons/Favicon.svg">
-
-    <meta property="og:url" content="https://unfotografomascuu.com/Secundarias/Articulos/Articulo%20Zopilotes.html" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Zopilotes en Chihuahua" />
-    <meta property="og:description"
-        content="Articulo hacerca de los Zopilotes en la ciudad de Chihuahua, informacion y fotos hacerca de ellos y de que hacen en el centro de la ciudad." />
-    <meta property="og:image" content="https://unfotografomascuu.com/Multimedia/Image/Zopilote.jpg" />
-
-
-    <!--Twitter tags-->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name=”twitter:title” content="UnFotografoMasCUU">
-    <meta name=”twitter:description”
-        content="Articulo hacerca de los Zopilotes en la ciudad de Chihuahua, informacion y fotos hacerca de ellos y de que hacen en el centro de la ciudad.">
-    <meta name=”twitter:image” content="https://unfotografomascuu.com/Multimedia/Image/Zopilote.jpg">
-    <meta name=”twitter:site” content=”@unfotografocuu”>
-    <meta name=”twitter:creator” content=”@unfotografocuu>
-
-    <link rel="canonical" href="https://unfotografomascuu.com/Secundarias/Articulos/Articulo%20Zopilotes.html" />
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEEVB4MDLK"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-SEEVB4MDLK');
-    </script>
-
-    <!-- locomotive-scroll -->
-    <link rel='stylesheet' type='text/css' media='screen' href='../../styles/locomotive-scroll.min.css'>
-    <script src="../../Scripts/locomotive-scroll.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../styles/styles.css'>
+    <link rel="shortcut icon" href="../../Multimedia/Icon.ico">
 </head>
 
 <body data-barba="wrapper" id="wrapper">
@@ -103,8 +67,31 @@
                 </div>
             </section>
 
-            <section class="imagen-completa">
+            <section class="imagen-completa" id="image" data-scroll-section data-scroll-section-id="i-section2">
+                
                 <div class="img-container size-0">
+                    <div class="img-contain">
+                        <img class="img-g" id="img3" loading="lazy"
+                            src="../../Multimedia/Pictures/013.webp" />
+                    </div>
+                    <div class="info">
+                        <div class="text-img">
+                            <h3>Canon T7</h3>
+                            <p>Velocidad de Obturacion: 1/200<br>
+                                F: f/8<br>
+                                Iso: 200<br>
+                                Distancia Focal: 240mm<br>
+                                Dimensiones: 6000x4000<br>
+                            </p>
+                            <div class="img-btn" src="../../Multimedia/Pictures/013.webp"
+                                alt="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum culpa dignissimos expedita distinctio fuga consectetur ad sequi, officiis fugiat adipisci!" onclick="ZoomBtn();">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img-container size-2"  onclick="ZoomBtn();">
                     <div class="img-contain">
                         <img class="img-g" loading="lazy" src="../../Multimedia/Pictures/001.webp" />
                     </div>
@@ -117,13 +104,39 @@
                                 Distancia Focal: 240mm<br>
                                 Dimensiones: 6000x4000<br>
                             </p>
-                            <div class="img-btn" src="../../Multimedia/Pictures/001.webp" onclick="ZoomBtn();"
+                            <div class="img-btn" src="../../Multimedia/Pictures/001.webp"
                                 alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, animi.">
                                 <i class="fas fa-search-plus"></i>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="img-container size-g">
+                    <div class="img-contain">
+                        <img loading="lazy" src="../../Multimedia/Pictures/125.webp" alt="Pajarito comiendo semillas">
+                        <div class="MoreBtn">
+                            <a href="Secundarias/Individuales/Prueba Indv.html">
+                                <h5>+</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <figure class="img-container size-g anim-gallery">
+                    <div class="img-contain">
+                        <img loading="lazy" src="../../Multimedia/Colibries/028.webp" alt="Colibri en un arbol.">
+                    </div>
+                    <div class="info">
+                        <div class="text-img">
+                            <div class="img-btn" src="../../Multimedia/Pictures/013.webp"
+                                alt="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum culpa dignissimos expedita distinctio fuga consectetur ad sequi, officiis fugiat adipisci!" onclick="ZoomBtn();">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
             </section>
 
             <section class="lightbox" id="ligthbox" data-scroll-sticky data-scroll-target="">

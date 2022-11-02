@@ -1,4 +1,3 @@
-
 /*-----Estructura Basica-----*/
 
 .parallax-area,
@@ -232,76 +231,6 @@
     margin-top: 16px;
 }
 
-#Fotos .img-individual {
-    min-height: 75vh;
-    max-height: 75vh;
-    align-self: stretch;
-    overflow: hidden;
-}
-
-#Fotos .img-individual img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: 0.35s ease-in-out all;
-}
-
-#Fotos .img-individual:hover img {
-    transform: scale(1.15);
-}
-
-#Fotos .img-individual:hover .img-solo:before {
-    opacity: 1;
-}
-
-#Fotos .img-individual .img-solo {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-#Fotos .img-individual .img-solo:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    /*background: linear-gradient(180deg, #262626, #000);*/
-    background: #262626;
-    backdrop-filter: blur(4px);
-    opacity: 0;
-    mix-blend-mode: multiply;
-    transition: 0.45s;
-}
-
-#Fotos .img-individual .MoreBtn {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-
-#Fotos .img-individual h5 {
-    opacity: 0;
-    transform: rotate(45deg);
-    transition: .8s;
-    font-size: 5rem;
-    color: var(--text-1);
-    padding: 10rem;
-}
-
-#Fotos .img-individual:hover h5 {
-    opacity: 1;
-    transform: rotate(0deg);
-}
-
 @media(max-width: 1280px) {
     .port-area {
         display: flex;
@@ -324,22 +253,11 @@
         margin-bottom: 4rem;
     }
 
-    #Fotos .img-individual {
-        height: 40vh;
-        align-self: stretch;
-        overflow: hidden;
-    }
-
     .port-area blockquote {
         padding: 0rem 3rem 0.5rem 3rem;
         font-size: 1.8rem;
     }
 
-    #Fotos .img-individual img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
 }
 
 /*-----Seccion de los Articulos Individuales-----*/
