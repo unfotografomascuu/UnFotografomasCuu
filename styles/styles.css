@@ -113,16 +113,20 @@ body {
     background: var(--background-1);
     overflow-x: hidden;
     transition: all 400ms;
-
+    max-width: 100vw;
 }
 
 .contenido {
     opacity: 0;
     background: #1b1b1b;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .content {
     width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 #logo,
@@ -2630,6 +2634,15 @@ footer h1 {
     .article-gallery-img-1 {
         margin-bottom: 2%;
         width: 48%;
+    }
+
+    .article-gallery-text {
+        height: 60vh;
+        width: 98%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
     }
 }
 

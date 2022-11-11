@@ -200,6 +200,15 @@
         margin-bottom: 2%;
         width: 48%;
     }
+
+    .article-gallery-text {
+        height: 60vh;
+        width: 98%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /*-----Footer Secundario-----*/

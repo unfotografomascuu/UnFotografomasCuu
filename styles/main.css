@@ -113,17 +113,22 @@ body {
     background: var(--background-1);
     overflow-x: hidden;
     transition: all 400ms;
-
+    max-width: 100vw;
 }
 
 .contenido {
     opacity: 0;
     background: #1b1b1b;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .content {
     width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
+
 
 #logo,
 #logo2 {
