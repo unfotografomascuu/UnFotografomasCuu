@@ -4,7 +4,7 @@ const ZoomBtn = () => {
     const containerImage = document.querySelector('.img-show');
     const copy = document.querySelector('.copy');
     const imgLightbox = document.querySelector('.img-lightbox');
-    const back = document.querySelector('.back');
+    const back = document.querySelector('.back-btn');
 
 
     zoombtn.forEach(image => {
@@ -27,7 +27,7 @@ const ZoomBtn = () => {
 function CloseBtn() {
     const containerLightbox = document.querySelector(".lightbox");
     const containerImage = document.querySelector(".img-show");
-    const back = document.querySelector(".back");
+    const back = document.querySelector(".back-btn");
 
     containerLightbox.classList.toggle("lightbox-move"), 
     containerImage.classList.toggle("lightbox-show"), 
