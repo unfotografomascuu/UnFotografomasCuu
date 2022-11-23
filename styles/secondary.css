@@ -45,7 +45,7 @@
     padding-left: 1rem;
 }
 
-.back {
+.back-btn {
     color: var(--text-2);
     display: block;
     font-size: 1.4rem;
@@ -98,7 +98,7 @@
     margin-bottom: 4rem;
 }
 
-.imagen-galeria {
+.img-container {
     opacity: 1;
 }
 

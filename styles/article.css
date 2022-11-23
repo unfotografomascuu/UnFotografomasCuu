@@ -32,7 +32,7 @@
     padding-left: 1rem;
 }
 
-.back {
+.back-btn {
     color: var(--text-2);
     display: block;
     font-size: 1.4rem;

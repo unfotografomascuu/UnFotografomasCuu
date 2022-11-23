@@ -2157,14 +2157,6 @@ footer h1 {
     padding-left: 1rem;
 }
 
-.back {
-    color: var(--text-2);
-    display: block;
-    font-size: 1.4rem;
-    padding-right: 1rem;
-    transform: translateX(0);
-}
-
 .pagina-imagen {
     width: 100%;
     display: grid;
@@ -2210,7 +2202,7 @@ footer h1 {
     margin-bottom: 4rem;
 }
 
-.imagen-galeria {
+.img-container {
     opacity: 1;
 }
 
@@ -2467,7 +2459,7 @@ footer h1 {
     padding-left: 1rem;
 }
 
-.back {
+.back-btn {
     color: var(--text-2);
     display: block;
     font-size: 1.4rem;
