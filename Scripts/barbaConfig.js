@@ -47,6 +47,7 @@ barba.hooks.beforeLeave(() => {
 
 barba.hooks.after(() => {
     scroll.init();
+    scroll.scrollTo('top') 
 });
 
 
