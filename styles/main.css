@@ -201,9 +201,14 @@ a {
 
 ul {
     list-style: none;
-    display: flex;
     padding: 0;
-    margin-right: auto;
+}
+
+li{
+    font-family: 'Links';
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 p {

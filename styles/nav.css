@@ -30,7 +30,7 @@
     background: var(--clear);
     max-height: 5rem;
     color: var(--text-2);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
 }
 
 .NavBar #logo {
@@ -120,7 +120,7 @@
     }
 
     .nav-blur {
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(3px);
     }
 
 

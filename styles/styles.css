@@ -205,6 +205,13 @@ ul {
     margin-right: auto;
 }
 
+li{
+    font-family: 'Texto';
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
 p {
     font-family: 'Texto';
     font-size: 1.2rem;
@@ -1171,7 +1178,7 @@ figcaption {
     background: var(--clear);
     max-height: 5rem;
     color: var(--text-2);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
 }
 
 .NavBar #logo {
@@ -1261,7 +1268,7 @@ figcaption {
     }
 
     .nav-blur {
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(3px);
     }
 
 
@@ -2561,6 +2568,14 @@ footer h1 {
     text-align: justify;
 }
 
+.article-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.article-point{
+    padding: .6rem .0rem 0.2rem .8rem;
+}
 
 @media(max-width: 1280px) {
     .content-article {
@@ -3133,7 +3148,7 @@ footer h1 {
     top: 0;
     left: 0;
     background: var(--clear);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
     z-index: 10;
     transform: translateX(105%);
     transition: transform .4s ease-in;
@@ -3160,7 +3175,7 @@ footer h1 {
     background-position: center;
     background-size: cover;
     transform: scale(0);
-    transition: transform .4s .2s;
+    transition: transform .3s .3s;
 }
 
 .img-show img {

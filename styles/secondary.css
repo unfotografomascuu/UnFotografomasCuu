@@ -27,7 +27,7 @@
     height: 4rem;
     z-index: 5;
     background: var(--clear);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
     display: flex;
     justify-content: space-between;
     align-items: center;

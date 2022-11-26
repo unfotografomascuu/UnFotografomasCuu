@@ -42,7 +42,7 @@
     height: 100%;
     z-index: 1;
     background: #262626;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
     opacity: 0;
     mix-blend-mode: multiply;
     transition: 0.5s;

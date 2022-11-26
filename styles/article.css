@@ -14,7 +14,7 @@
     height: 4rem;
     z-index: 5;
     background: var(--clear);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,6 +132,15 @@
     justify-content: center;
     padding: 0 .5rem;
     text-align: justify;
+}
+
+.article-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.article-point{
+    padding: 1rem .4rem;
 }
 
 

@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     background: var(--clear);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
     z-index: 10;
     transform: translateX(105%);
     transition: transform .4s ease-in;
