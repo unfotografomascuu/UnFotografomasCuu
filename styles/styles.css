@@ -2600,6 +2600,12 @@ footer h1 {
         width: 90%;
     }
 
+    .article-list{
+        width: 90%;
+        margin-right: 0;
+        list-style-type: none;
+    }
+
     .pagina-articulo .Nav-Space {
         width: 100%;
     }
