@@ -9,6 +9,7 @@ function pageTransition() {
         t.to(".contenido", { duration: 0.5, opacity: 1, delay: -0.5 }),
         t.set(".second-block", { left: "-100%" });
 }
+
 function principalAnimation() {
     var t = gsap.timeline();
     t.to(".first-block", { duration: 1.8, width: "100%", left: "0%", ease: "Expo.easeInOut" }),
@@ -25,6 +26,21 @@ function principalAnimation() {
         t.to("#txt-parallax-2", { duration: 0.9, translateY: -60, opacity: 1, delay: -0.5 }),
         t.to("#txt-parallax-3", { duration: 0.9, translateY: -60, opacity: 1, delay: -0.4 });
 }
+
+function loader() {
+    let tl = gsap.timeline();
+    tl.to('ul.transition-l li', { duration: .6, translateX: -100, opacity: 0, transformOrigin: "left", stagger: .2 });
+    tl.to('ul.transition-l li', { duration: .8, translateX: 0, opacity: 1, transformOrigin: "left", stagger: .1, delay: .1, });
+    tl.to('ul.transition-l li', { duration: .6, translateX: 100, opacity: 0, transformOrigin:"right", stagger: .1, delay: .1, });
+}
+
+function loadBar() {
+    let tl = gsap.timeline();
+    tl.to(".load-bar", { duration: 0, scaleX: 0, opacity: 0, transformOrigin:"left", });
+    tl.to(".load-bar", { duration: 1, scaleX: 1, opacity: 1, transformOrigin: "left", delay: 2 });
+    tl.to(".load-bar", { duration: .8, scaleX: 0, opacity: 0, transformOrigin:"right", delay: .8 });
+}
+
 function secondaryAnimation() {
     var t = gsap.timeline();
     t.to(".first-block", { duration: 1.8, width: "100%", left: "0%", ease: "Expo.easeInOut" }),

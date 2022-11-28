@@ -21,7 +21,10 @@ barba.init({
                 pageout();
 
                 secondarypageout();
+                
+                loader();
 
+                loadBar();
 
                 setTimeout(function () {
                     pageTransition();
@@ -34,6 +37,8 @@ barba.init({
 
             async once() {
                 principalAnimation();
+                loader();
+                loadBar();
                 secondaryAnimation();
             },
         }
