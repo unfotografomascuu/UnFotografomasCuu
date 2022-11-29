@@ -20,14 +20,10 @@ barba.init({
 
                 pageout();
 
-                secondarypageout();
-                
-                loader();
-
-                loadBar();
-
                 setTimeout(function () {
                     pageTransition();
+                    loaderText();
+                    loadBar();
                 }, 200);
 
                 await delay(1700);
@@ -36,11 +32,15 @@ barba.init({
             },
 
             async once() {
-                principalAnimation();
-                loader();
+                pageTransition();
+                loaderText();
                 loadBar();
-                secondaryAnimation();
+                contantAnimation();
             },
+
+            async enter() {
+                contantAnimation();
+            }
         }
     ],
 

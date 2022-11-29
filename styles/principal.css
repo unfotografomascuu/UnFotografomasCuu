@@ -165,12 +165,6 @@
     height: 4rem;
 }
 
-#txt-parallax-1,
-#txt-parallax-2,
-#txt-parallax-3 {
-    opacity: 0
-}
-
 @media(max-width: 1280px) {
     .parallax-text h1 {
         font-size: 2rem;
