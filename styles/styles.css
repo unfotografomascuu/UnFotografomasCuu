@@ -2493,6 +2493,12 @@ footer h1 {
     padding: .6rem .0rem 0.2rem .8rem;
 }
 
+.article-font{
+    text-decoration: none;
+    color: var(--text-2);
+    margin-top: .5rem;
+}
+
 @media(max-width: 1280px) {
     .content-article {
         width: 100%;
