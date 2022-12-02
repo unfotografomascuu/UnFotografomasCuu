@@ -27,6 +27,7 @@ function loadBar() {
 function contantAnimation() {
     var t = gsap.timeline();
     t.from(".anim-nav", { duration: 0.8, translateY: -50, opacity: 0, stagger: .1, delay: 4 });
+    t.from('.anim-nav-element', { duration: 0.8, translateY: -50, opacity: 0, stagger: .1, delay: .2 });
 }
 
 function pageout() {
