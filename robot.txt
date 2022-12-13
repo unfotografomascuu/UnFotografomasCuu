@@ -1,0 +1,7 @@
+User-agent: Googlebot-Image
+
+Disallow: Multimedia/Pictures/Namurachi-1.webp
+Disallow: Multimedia/Maps/Presas.webp
+Disallow: Multimedia/Pictures/Region(Movile).webp
+Disallow: Multimedia/Pictures/San Felipe copia.webp
+Disallow: Multimedia/Pictures/San Felipe ND.webp
