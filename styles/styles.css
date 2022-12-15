@@ -2585,6 +2585,10 @@ footer h1 {
         align-items: center;
         justify-content: center;
     }
+
+    .article-font {
+        width: 90%;
+    }
 }
 
 /*-----Footer Secundario-----*/
