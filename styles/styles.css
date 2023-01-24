@@ -2578,12 +2578,13 @@ footer h1 {
     }
 
     .article-gallery-text {
-        height: 60vh;
+        height: 15vh;
         width: 98%;
         display: flex;
         align-content: center;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     .article-font {
@@ -2820,6 +2821,7 @@ footer h1 {
     flex-wrap: wrap;
     flex-direction: column;
     overflow: hidden;
+    text-align: center;
 }
 
 .info h3 {
