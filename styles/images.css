@@ -327,9 +327,10 @@
 }
 
 .art-size-banner {
-    grid-column: 1 / 10;
+    grid-column: 1/10;
     margin-bottom: 4rem;
     height: 80vh;
+    width: 100%;
     top: 0;
     overflow: hidden;
 }

@@ -586,6 +586,11 @@ figcaption {
     height: 4rem;
 }
 
+.esp-gallery{
+    width: 100%;
+    height: 2rem;
+}
+
 @media(max-width: 1280px) {
     .parallax-text h1 {
         font-size: 2rem;
@@ -677,7 +682,7 @@ figcaption {
 
 /*-----Seccion de los Articulos Individuales-----*/
 
-.Article-Section {
+.Article-Section{
     grid-column: 2/20;
     width: 100%;
     display: grid;
@@ -814,13 +819,12 @@ figcaption {
         height: 60vh;
         padding: 1rem 1.5rem 0rem 1.5rem;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-evenly;
         flex-direction: column;
         align-items: flex-start;
         align-content: center;
         flex-wrap: nowrap;
     }
-
 
 }
 
@@ -2156,6 +2160,11 @@ footer h1 {
     text-align: justify;
 }
 
+.pinText{
+    width: 100%;
+    grid-column: auto;
+}
+
 /*Contenido de la Pagina de las Imagenes Responsive*/
 
 @media(max-width: 1280px) {
@@ -2505,6 +2514,118 @@ footer h1 {
     margin-top: .5rem;
 }
 
+
+.gallery-viewer{
+    grid-column: 2/9;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: 50vh;
+    margin-top: 2.5rem;
+    overflow: hidden;
+    background: var(--clear);
+    color: var(--text-2);
+    transition: 0.3s ease-in-out all;
+}
+
+.gallery-viewer-Img {
+    width: 100%;
+    overflow: hidden;
+    grid-column: 1/2;
+    transition: 0.3s ease-in-out all;
+}
+
+.gallery-viewer-Txt {
+    grid-column: 2/3;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 2rem 3rem;
+}
+
+.gallery-viewer-Txt h2 {
+    padding: 1rem 0 .5rem 0;
+}
+
+.gallery-viewer-Img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out all;
+}
+
+.gallery-viewer-Img {
+    z-index: 2;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    transition: 0.35s ease-in-out all;
+}
+
+.gallery-viewer-Img:hover img {
+    z-index: 2;
+    transform: scale(1.10);
+}
+
+.gallery-viewer .img-middle {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-viewer .MoreBtn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.gallery-viewer-Img .MoreBtn h5 {
+    opacity: 0;
+    transform: rotate(45deg);
+    transition: .8s;
+    font-size: 5rem;
+    color: var(--text-1);
+    padding: 10rem;
+}
+
+.gallery-viewer-Img .img-middle:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #262626;
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    mix-blend-mode: multiply;
+    transition: 0.5s;
+}
+
+.gallery-viewer-Img:hover .img-middle:before {
+    opacity: 1;
+}
+
+.gallery-viewer-Img:hover h5 {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
 @media(max-width: 1280px) {
     .content-article {
         width: 100%;
@@ -2546,11 +2667,6 @@ footer h1 {
         width: 90%;
     }
 
-    .art-size-banner {
-        margin-bottom: 2rem;
-        height: 80vh;
-    }
-
     .art-size-1 {
         width: 90%;
     }
@@ -2589,6 +2705,37 @@ footer h1 {
 
     .article-font {
         width: 90%;
+    }
+
+    .gallery-viewer {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        overflow: hidden;
+    }
+
+    .gallery-viewer-Img {
+        height: 60vh;
+    }
+
+    .gallery-viewer-Img img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .gallery-viewer-Txt {
+        height: 35vh;
+        padding: 1rem 1.5rem 0rem 1.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .gallery-viewer-Txt h2{
+        width: 100%;
     }
 }
 
@@ -3054,9 +3201,10 @@ footer h1 {
 }
 
 .art-size-banner {
-    grid-column: 1 / 10;
-    margin-bottom: 4rem;
+    grid-column: 1/10;
+    margin-bottom: 3.5rem;
     height: 80vh;
+    width: 100%;
     top: 0;
     overflow: hidden;
 }
