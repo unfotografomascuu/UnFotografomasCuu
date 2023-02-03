@@ -1837,7 +1837,8 @@ figcaption {
     align-self: center;
 }
 
-.gallery-btn h4 {
+.gallery-btn .anim-a,
+.article-btn .anim-a {
     grid-column: 3/4;
 }
 
