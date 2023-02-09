@@ -2073,18 +2073,6 @@ footer h1 {
     align-items: center;
 }
 
-#logo-2 {
-    color: var(--text-2);
-    position: relative;
-    float: left;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    letter-spacing: 5px;
-    font-weight: 300;
-    padding-left: 1rem;
-}
-
 .pagina-imagen {
     width: 100%;
     display: grid;
@@ -2390,6 +2378,7 @@ footer h1 {
     letter-spacing: 5px;
     font-weight: 300;
     padding-left: 1rem;
+    font-family: 'Titulo';
 }
 
 .back-btn {
