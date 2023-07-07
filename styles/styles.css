@@ -481,7 +481,7 @@ img {
 
     .nav-logo {
         font-family: Titulo;
-        font-size: 120px;
+        font-size: 80px;
         color: var(--text-2);
     }
 
@@ -493,7 +493,6 @@ img {
     .nav-socials a {
         text-decoration: none;
         color: var(--text-2);
-        font-size: 18px;
         font-family: Texto;
         padding: .3em .4em;
     }
@@ -1559,6 +1558,10 @@ img {
     
     .pinText {
         width: 100%;
+    }
+
+    .pinText h2{
+        margin-top: 8vh;
     }
 }
 
