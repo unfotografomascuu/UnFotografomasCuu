@@ -48,7 +48,7 @@
     <script src="../../Scripts/locomotive-scroll.min.js"></script>
 </head>
 
-<body data-barba="wrapper" id="wrapper">
+<body data-barba="wrapper" onmouseover="Sticky();">
 
     <div class="transition-container">
         <div class="transition">
@@ -99,13 +99,53 @@
         </div>
     </div>
 
-    <div class="contenido" data-scroll-container onwheel="Sticky();">
-        <main data-barba="container" data-barba-namespace="Prueba" class="container pagina-articulo">
+    <div class="contenido" data-scroll-container>
+        <main data-barba="container" data-barba-namespace="ArticuloNamurachi" class="container pagina-articulo">
 
-            <header class="NavBar-2 nav-container anim-nav">
-                <a id="logo-2" class="anim-nav-element" href="../../index.html">UnFotografomasCuu</a>
-                <a href="../../index.html" class="back-btn anim-nav-element" id="back-to-home"><i
-                        class="fas fa-long-arrow-alt-left"></i></a>
+            <header class="NavBar-2" id="Nav-Section" data-scroll-section-id="section0">
+                <nav class="nav-bar">
+                    <h6 class="logo-text">UnFotografomasCUU</h6>
+                    <div class="menu-toggle">
+                        <div id="menu-toggle-btn" onclick="animNav();">
+                            <span class="menu-btn nav-activator"></span>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="nav-container">
+                    <div class="nav">
+                        <div class="social-links">
+                            <div class="nav-logo">Logo</div>
+                            <div class="nav-socials">
+                                <a href="">Facebook</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://www.instagram.com/andres.gardea/" target="_blank">Instagram</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://twitter.com/gardea_andres" target="_blank">Twitter</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://unfotografomascuu.com/" target="_blank">unfotografomascuu</a>
+                            </div>
+                        </div>
+                        <div class="nav-section-container">
+                            <div class="nav-section-link">
+                                <a id="nav-Activator-1" href="../../index.html" data-scroll-to>Home</a>
+                            </div>
+                            <div id="nav-Activator-2" class="nav-section-link">
+                                <a href="#Titulo" data-scroll-to>Informacion</a>
+                            </div>
+                            <div id="nav-Activator-3" class="nav-section-link">
+                                <a href="#Fotos" data-scroll-to>Mas Fotos</a>
+                            </div>
+                        </div>
+                        <div class="nav-footer">
+                            <p>Pagina hecha por <a href="https://www.instagram.com/andres.gardea"
+                                    target="_blank"><b>@Andres Gardea</b></a></p>
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <section class="content-article" id="text" data-scroll-section data-scroll-section-id="g-section0">
@@ -120,19 +160,19 @@
                 </picture>
 
 
-
-                <h2 class="anim-gallery article-title">El Cañón de Namúrachi</h2>
-                <p class="anim-gallery">Es un <b>parque natural/ecologico</b> ubicado a alrededor de unos <b>130 km</b>
+                <div class="article-space" id="Titulo"></div>
+                <h2 class="article-title">El Cañón de Namúrachi</h2>
+                <p>Es un <b>parque natural/ecologico</b> ubicado a alrededor de unos <b>130 km</b>
                     de la ciudad de Chihuahua en el municipio de San Francisco de Borja a unos <b>10 km</b> de la
                     capital
                     municipal.</p><br>
-                <p class="anim-gallery">El viaje se puede realizar en un poco más de <b>una hora y media</b> y
+                <p>El viaje se puede realizar en un poco más de <b>una hora y media</b> y
                     únicamente los últimos <b>10 km</b> que conectan San Francisco de Borja con el canon son en
                     terracería.</p>
 
                 <div class="article-gallery">
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
                             <img src="../../Multimedia/Namurachi/046.webp" alt="Cuevas dentro del Cañón de Namúrachi.">
                         </div>
                         <div class="info">
@@ -145,18 +185,18 @@
                                 </p>
                             </div>
                     </figure>
-                    <figure class="article-gallery-text anim-gallery">
+                    <figure class="article-gallery-text">
                         <h2>Namurachi </h2>
                         <p>Namúrachi palabara que en rarámuri significa “lugar de cuevas”.</p>
                     </figure>
                 </div>
 
-                <h2 class="anim-gallery article-subtitle">Namurachi</h2>
-                <p class="anim-gallery">Es una formación rocosa formada a través de la erosión que el paso del agua ha
+                <h2 class="article-subtitle">Namurachi</h2>
+                <p>Es una formación rocosa formada a través de la erosión que el paso del agua ha
                     ido causando, sus paredes llegan a tener <b>25m</b> de altura y el canon en su extensión llega a los
                     <b>700 m</b> terminando en una gran cueva formada dentro de las montañas.
                 </p><br>
-                <p class="anim-gallery">Ha sido formado a lo largo de <b>millones años</b> por el paso serpenteante del
+                <p>Ha sido formado a lo largo de <b>millones años</b> por el paso serpenteante del
                     agua en
                     su camino abajo desde las montañas. Formando al mismo tiempo múltiples cavernas que en la actualidad
                     le dan su nombre a este cañón. Ademas durante el desgaste que dejo y conforme iba removiendo rocas
@@ -165,8 +205,8 @@
                 </p>
 
                 <div class="article-gallery">
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
                             <img loading="lazy" src="../../Multimedia/Namurachi/040.webp"
                                 alt="Pequeño riachuelo en el cañon de namuracio.">
                         </div>
@@ -174,28 +214,28 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/040.webp"
                                     alt="Incluso sin lluvias recientes el cañon de namuracio conserva su capacidad de captacion de agua."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
                             <img loading="lazy" src="../../Multimedia/Namurachi/041.webp"
                                 alt="Zopilotes en el Cañón de Namurachi.">
                         </div>
                         <div class="info">
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/041.webp"
-                                    alt="Zopilotes volando sobre el cañon de Namurachi." onclick="ZoomBtn();">
+                                    alt="Zopilotes volando sobre el cañon de Namurachi.">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
                             <img loading="lazy" src="../../Multimedia/Namurachi/042.webp"
                                 alt="Pequeño pajaro rojo en el cañón de Namurachi.">
                         </div>
@@ -203,14 +243,14 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/042.webp"
                                     alt="Pajaro de un color rojo intenso en el cañon de Namurachi."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
                             <img loading="lazy" src="../../Multimedia/Namurachi/044.webp"
                                 alt="Foto de un Ejemplar de Tyrannus Vociferans (Tirano Gritón).">
                         </div>
@@ -218,7 +258,7 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/044.webp"
                                     alt="Un Tirano Gritón descansando en un Pequeño o arbusto en el cañon de Namurachi."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
@@ -226,8 +266,8 @@
                     </figure>
                 </div>
 
-                <h2 class="anim-gallery article-subtitle">La Flora del Cañon de Namurachi</h2>
-                <p class="anim-gallery">Gracias su ubicacion en un punto medio entre la sierra madre occidental (al
+                <h2 class="article-subtitle">La Flora del Cañon de Namurachi</h2>
+                <p>Gracias su ubicacion en un punto medio entre la sierra madre occidental (al
                     suroeste) y las planicies del centro del estado de chihuahua (donde se ubica la capital al noreste)
                     junto con las relativamente altas presipitaciones y humedad en comparacion con el resto del estado
                     hacen que tenga un gran contraste con las areas circundantes. Presentando no solo flora adaptada al
@@ -235,8 +275,8 @@
                     sierra. </p><br>
 
                 <div class="article-gallery">
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
                             <img src="../../Multimedia/Namurachi/030.webp"
                                 alt="Flor en forma de estrellas en el cañón de Namurachi.">
                         </div>
@@ -244,35 +284,36 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/030.webp"
                                     alt="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum culpa dignissimos expedita distinctio fuga consectetur ad sequi, officiis fugiat adipisci!"
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
                             <img src="../../Multimedia/Namurachi/032.webp" alt="Flora del Cañón de Namurachi.">
                         </div>
                         <div class="info">
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/032.webp"
                                     alt="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum culpa dignissimos expedita distinctio fuga consectetur ad sequi, officiis fugiat adipisci!"
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
+
                             <img src="../../Multimedia/Pictures/233.webp" alt="Flores amarillas en el Cañón.">
                         </div>
                         <div class="info">
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Pictures/233.webp"
                                     alt="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum culpa dignissimos expedita distinctio fuga consectetur ad sequi, officiis fugiat adipisci!"
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
@@ -280,13 +321,13 @@
                     </figure>
                 </div>
 
-                <h2 class="anim-gallery article-subtitle">La Fauna del Cañon de Namurachi</h2>
-                <p class="anim-gallery">Gracias a lo alejado que esta de los grandes centros urbanos y a lo
+                <h2 class="article-subtitle">La Fauna del Cañon de Namurachi</h2>
+                <p>Gracias a lo alejado que esta de los grandes centros urbanos y a lo
                     relativamente dificil que es llegar a el, el cañón de Namurachi a logrado conservarse en un gran
                     estado pudiendose ver aun gran parte de ss fauna tipica.</p><br>
-                <p class="anim-gallery">Gracias tambien a su buena ubicacion geografia suele ser un punto de paso para
+                <p>Gracias tambien a su buena ubicacion geografia suele ser un punto de paso para
                     especies migratorias.</p><br>
-                <p class="anim-gallery">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione aspernatur
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione aspernatur
                     corporis saepe debitis atque dignissimos temporibus eos beatae numquam amet suscipit ab molestias
                     eveniet nemo quae quibusdam eaque iste distinctio quis praesentium, placeat nulla sapiente! Saepe
                     consequuntur culpa fuga itaque odio porro alias, facere numquam, quam eligendi iure dicta unde
@@ -294,13 +335,13 @@
                     facere officia corporis ipsum similique exercitationem dolorum deserunt aliquam enim id ipsa
                     aspernatur labore qui rerum, ea voluptate. Minima ipsa magnam, placeat perspiciatis ipsam autem ea
                     illum nemo distinctio. Officiis dolorum reiciendis quidem voluptas quod.</p><br>
-                <p class="anim-gallery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius quaerat
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius quaerat
                     sunt nesciunt! Quaerat debitis nostrum cumque ipsam odit deserunt voluptate molestias, architecto
                     velit, assumenda, corporis eos repellat aliquid pariatur?</p><br>
 
                 <div class="article-gallery-wide">
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
                             <img loading="lazy" src="../../Multimedia/Namurachi/027.webp"
                                 alt="Pajaro Carpintero Bellotero en el Cañón de Namurachi.">
                         </div>
@@ -308,28 +349,29 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/027.webp"
                                     alt="Parte de la fauna que podemos ver en el cañón de Namurachi son pajaros carpinteros (Melanerpes Formicivorus)."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
                             <img loading="lazy" src="../../Multimedia/Namurachi/048.webp"
                                 alt="Zopilotes en el Cañón de Namurachi.">
                         </div>
                         <div class="info">
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/048.webp"
-                                    alt="Zopilotes volando sobre el cañon de Namurachi." onclick="ZoomBtn();">
+                                    alt="Zopilotes volando sobre el cañon de Namurachi.">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
+
                             <img loading="lazy" src="../../Multimedia/Namurachi/039.webp"
                                 alt="Pequeño pajaro rojo en el cañón de Namurachi.">
                         </div>
@@ -337,14 +379,15 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/039.webp"
                                     alt="Pajaro de un color rojo intenso en el cañon de Namurachi."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
+
                             <img loading="lazy" src="../../Multimedia/Namurachi/049.webp"
                                 alt="Foto de un Ejemplar de Tyrannus Vociferans (Tirano Gritón).">
                         </div>
@@ -352,14 +395,15 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/049.webp"
                                     alt="Un Tirano Gritón descansando en un Pequeño o arbusto en el cañon de Namurachi."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
+
                             <img loading="lazy" src="../../Multimedia/Namurachi/018.webp"
                                 alt="Un Pajaro Carpintero Bellotero en el Cañón de Namurachi en Chihuahua.">
                         </div>
@@ -367,28 +411,30 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/018.webp"
                                     alt="Un ejemplar de un pajaro carpintero Bellotero (Melanerpes Formicivorus)."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
+
                             <img loading="lazy" src="../../Multimedia/Namurachi/037.webp"
                                 alt="Zopilotes en el Cañón de Namurachi.">
                         </div>
                         <div class="info">
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/037.webp"
-                                    alt="Zopilotes volando sobre el cañon de Namurachi." onclick="ZoomBtn();">
+                                    alt="Zopilotes volando sobre el cañon de Namurachi.">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
+
                             <img loading="lazy" src="../../Multimedia/Namurachi/036.webp"
                                 alt="Foto de un Ejemplar de Tyrannus Vociferans (Tirano Gritón).">
                         </div>
@@ -396,14 +442,16 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/036.webp"
                                     alt="Un Tirano Gritón descansando en un Pequeño o arbusto en el cañon de Namurachi."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g 
+">
+                        <div class="img-gallery-contain">
+
                             <img loading="lazy" src="../../Multimedia/Namurachi/038.webp"
                                 alt="Pequeño pajaro rojo en el cañón de Namurachi.">
                         </div>
@@ -411,7 +459,7 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/038.webp"
                                     alt="Pajaro de un color rojo intenso en el cañon de Namurachi."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
@@ -419,8 +467,10 @@
                     </figure>
 
 
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g 
+">
+                        <div class="img-gallery-contain">
+
                             <img loading="lazy" src="../../Multimedia/Namurachi/002.webp"
                                 alt="Pajaro Carpintero Bellotero en el Cañón de Namurachi.">
                         </div>
@@ -428,28 +478,32 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/002.webp"
                                     alt="Parte de la fauna que podemos ver en el cañón de Namurachi son pajaros carpinteros (Melanerpes Formicivorus)."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g 
+">
+                        <div class="img-gallery-contain">
+
                             <img loading="lazy" src="../../Multimedia/Namurachi/001(Recortada).webp"
                                 alt="Zopilotes en el Cañón de Namurachi.">
                         </div>
                         <div class="info">
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/001.webp"
-                                    alt="Zopilotes volando sobre el cañon de Namurachi." onclick="ZoomBtn();">
+                                    alt="Zopilotes volando sobre el cañon de Namurachi.">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g 
+">
+                        <div class="img-gallery-contain">
+
                             <img loading="lazy" src="../../Multimedia/Namurachi/013.webp"
                                 alt="Pequeño pajaro rojo en el cañón de Namurachi.">
                         </div>
@@ -457,14 +511,16 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/013.webp"
                                     alt="Pajaro de un color rojo intenso en el cañon de Namurachi."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g 
+">
+                        <div class="img-gallery-contain">
+
                             <img loading="lazy" src="../../Multimedia/Namurachi/014.webp"
                                 alt="Foto de un Ejemplar de Tyrannus Vociferans (Tirano Gritón).">
                         </div>
@@ -472,7 +528,7 @@
                             <div class="text-img">
                                 <div class="img-btn" src="../../Multimedia/Namurachi/014.webp"
                                     alt="Un Tirano Gritón descansando en un Pequeño o arbusto en el cañon de Namurachi."
-                                    onclick="ZoomBtn();">
+                                   >
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
@@ -480,7 +536,7 @@
                     </figure>
                 </div>
 
-                <p class="anim-gallery">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quia
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quia
                     cupiditate corrupti itaque temporibus cumque expedita, dolor, eius iure facere eligendi mollitia
                     suscipit dolore. Similique voluptatum aliquid possimus quas pariatur neque ratione dolore magnam
                     molestiae doloremque. Magni quod quam perferendis rem quisquam? Illum quia eaque veniam quis
@@ -505,7 +561,7 @@
                     omnis voluptatum ducimus maxime rem. Corporis veniam aliquid, qui cupiditate cumque suscipit
                     repellendus eligendi at, quidem, totam obcaecati numquam!</p><br>
 
-                <p class="anim-gallery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius quaerat
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius quaerat
                     sunt nesciunt! Quaerat debitis nostrum cumque ipsam odit deserunt voluptate molestias, architecto
                     velit, assumenda, corporis eos repellat aliquid pariatur?</p><br><br>
 
@@ -536,20 +592,9 @@
             </section>
 
 
-            <footer class="footer-sec" data-scroll-section data-scroll-section-id="g-section3">
+            <footer class="footer-area" data-scroll-section data-scroll-section-id="g-section3">
 
-                <div class="controler-section-sec">
-                    <div class="select_sec">
-                        <h4 id="theme_selector">Tema</h4>
-                        <select class="select__input" id="selTheme">
-                            <option value="auto">Auto</option>
-                            <option value="light">Light</option>
-                            <option value="dark">Dark</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="Social-Footer-Sec">
+                <div class="footer-social">
                     <div class="footer-btn from-left-footer" id="Twitter-Sec"><a class="iconMobile"
                             href="https://twitter.com/unfotografocuu" target="_blank"><i class="fab fa-twitter"></i></a>
                         <h4>@unfotografocuu</h4>
@@ -562,23 +607,11 @@
                 </div>
 
 
-                <div class="TextoPequeño-Sec">
+                <div class="footer-text">
                     <p>Fotografias tomadas por <a href="https://www.instagram.com/unfotografomascuu/"
                             target="_blank">@Andres Gardea</a></p>
                 </div>
             </footer>
-
-            <section class="lightbox" id="ligthbox" data-scroll-sticky data-scroll-target="">
-                <div class="lightbox-content" id="lg">
-                    <div class="img-show">
-                        <img class="img-lightbox" src="" alt="">
-                    </div>
-                    <p class="copy"></p>
-                    <div class="close-btn" onclick="CloseBtn();">
-                        <h1 class="close">+</h1>
-                    </div>
-                </div>
-            </section>
         </main>
     </div>
 
@@ -593,12 +626,12 @@
 
     <script src="../../index.js"></script>
     <script src="../../Scripts/barbaConfig.js" type="module"></script>
-    <script src="../../Scripts/btn.min.js"></script>
     <script src="../../Scripts/definitivedark.min.js"></script>
-    <script src="../../Scripts/lightbox.min.js"></script>
     <script src="../../Scripts/animaciones.min.js"></script>
     <script src="../../Scripts/nav.min.js"></script>
     <script src="../../Scripts/sticky.min.js"></script>
+    <script src="../../Scripts/section.min.js"></script>
+
 </body>
 
 

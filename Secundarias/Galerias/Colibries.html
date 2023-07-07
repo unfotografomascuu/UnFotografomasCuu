@@ -30,7 +30,7 @@
     <script src="../../Scripts/locomotive-scroll.min.js"></script>
 </head>
 
-<body data-barba="wrapper" id="wrapper">
+<body data-barba="wrapper" onmouseover="Sticky();">
 
     <div class="transition-container">
         <div class="transition">
@@ -81,467 +81,176 @@
     </div>
     </div>
 
-    <div class="contenido" data-scroll-container onwheel="Sticky();">
-        <main data-barba="container" data-barba-namespace="Prueba" class="container pagina-imagen">
+    <div class="contenido" data-scroll-container>
+        <main data-barba="container" data-barba-namespace="GaleriaColibries" class="container pagina-imagen">
 
-            <div class="Nav-Space"></div>
+            <header class="NavBar-2" id="Nav-Section" data-scroll-section-id="section0">
+                <nav class="nav-bar">
+                    <h6 class="logo-text">UnFotografomasCUU</h6>
+                    <div class="menu-toggle">
+                        <div id="menu-toggle-btn" onclick="animNav();">
+                            <span class="menu-btn nav-activator"></span>
+                        </div>
+                    </div>
+                </nav>
 
-            <header class="NavBar-2 nav-container anim-nav">
-                <a id="logo-2" class="anim-nav-element" href="../../index.html">UnFotografomasCuu</a>
-                <a href="../Articulos/ColibriesChihuahua.html" class="back-btn anim-nav-element" id="back-to-home"><i
-                        class="fas fa-long-arrow-alt-left"></i></a>
+                <div class="nav-container">
+                    <div class="nav">
+                        <div class="social-links">
+                            <div class="nav-logo">Logo</div>
+                            <div class="nav-socials">
+                                <a href="">Facebook</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://www.instagram.com/andres.gardea/" target="_blank">Instagram</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://twitter.com/gardea_andres" target="_blank">Twitter</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://unfotografomascuu.com/" target="_blank">unfotografomascuu</a>
+                            </div>
+                        </div>
+                        <div class="nav-section-container">
+                            <div class="nav-section-link">
+                                <a id="nav-Activator-1" href="../../index.html" data-scroll-to>Home</a>
+                            </div>
+                            <div id="nav-Activator-2" class="nav-section-link">
+                                <a href="../Articulos/ColibriesChihuahua.html" data-scroll-to>Mas Informacion</a>
+                            </div>
+                        </div>
+                        <div class="nav-footer">
+                            <p>Pagina hecha por <a href="https://www.instagram.com/andres.gardea"
+                                    target="_blank"><b>@Andres Gardea</b></a></p>
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <section class="texto-pagina-imagen" id="text" data-scroll-section data-scroll-section-id="g-section0">
                 <div id="pinSection" class="text-part-img">
                     <blockquote data-scroll data-scroll-sticky data-scroll-target="#pinSection" class="pinText">
                         <div class="esp-gallery"></div>
-                        <h2 class="anim-gallery">Los Colibríes.</h2>
-                        <p class="anim-gallery">Son de las aves más pequeñas del mundo, tienen un metabolismo
+                        <h2>Los Colibríes.</h2>
+                        <p>Son de las aves más pequeñas del mundo, tienen un metabolismo
                             impresionante que los obliga a tener que buscar alimento constantemente debido a esto han
                             desarrollado una gran capacidad de volar pudiendo incluso volar de cabeza o hacia atrás.
                         </p>
-                        <p class="anim-gallery">Son originarios del continente americano y únicamente se encuentran en
+                        <p>Son originarios del continente americano y únicamente se encuentran en
                             este, se han identificado más de 300 especies que aunque presentan diferencias entre sí
                             suelen compartir ciertas conductas. Son unos polinizadores muy importantes en sus
                             ecosistemas y gracias a la gran cantidad de flores que visitan diariamente cumplen un papael
                             fundamental en el mantenimiento del ecosistema.</p>
-                        <p class="anim-gallery">Los podemos encontrar en una gran variedad de colores muy llamativos
+                        <p>Los podemos encontrar en una gran variedad de colores muy llamativos
                             gracias a la forma en que se estructuran sus plumas viendo algunos ejemplares con colores
                             más "aburridos" hasta otros con colores que pocas veces se ven en la naturaleza.</p><br>
 
-                        <div class="gallery-btn from-left-footer"><a class="fas fa-long-arrow-alt-left"
+                        <div class="article-btn from-left"><a class="fas fa-long-arrow-alt-left"
                                 href="../Articulos/ColibriesChihuahua.html"></a>
-                            <a class="anim-btn anim-a" href="../Articulos/ColibriesChihuahua.html">Articulo completo
-                                hacerca de los Colibríes</a>
+                            <a class="anim-btn" href="../Articulos/ColibriesChihuahua.html">
+                                Articulo completo hacerca de los Colibríes</a>
                         </div>
-                        <div class="esp"></div>
                     </blockquote>
                 </div>
             </section>
 
-            <section class="imagen-completa" id="gallery" data-scroll-section data-scroll-section-id="g-section2">
+            <section class="gallary-page-container" id="gallery" data-scroll-section
+                data-scroll-section-id="g-section2">
 
-                <div class="img-container size-6" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/portada-secundaria.webp"
-                            alt="Colibri con la cabeza de un color rosado rojiso." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/097.webp" alt="Gracias a la forma en que estan dispuestas sus plumas pueden llegar a tener colores 
-                                tan llamativos conocidos como colores estructurales."><i
-                                    class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-6">
+                    <img loading="lazy" src="../../Multimedia/Colibries/portada-secundaria.webp"
+                        alt="Colibri con la cabeza de un color rosado rojiso." />
                 </div>
-                <div class="lateral-text text-1 anim-gallery">
+                <div class="lateral-text text-1">
                     <h2>Huitzilin</h2>
                     <p>Nombre que se les da en náhuatl a los colibríes.</p>
                 </div>
 
-                <div class="img-container size-1" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/103.webp"
-                            alt="Uns colibri hembra." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/103.webp"
-                                alt="Los colibríes presentan dimorfismosexual donde por ejemplo 
-                                los machos son los unicos que presentancolores mas llamativos en sus pechos 
-                                mientras que las hembras unicamente los tienen en la espalda.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-1">
+                    <img loading="lazy" src="../../Multimedia/Colibries/103.webp" alt="Uns colibri hembra." />
                 </div>
 
-                <div class="lateral-text text-1 anim-gallery">
+                <div class="lateral-text text-1">
                     <h2>Colibrí</h2>
                     <p>Son las aves mas pequeñas del mundo con un metabolismo y velocidad sorprendentes.</p>
                 </div>
-                <div class="img-container size-6" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/092.webp"
-                            alt="La entrada al Cañón de Namúrachi" />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/092.webp"
-                                alt="a pesar de estar cubierta por arboles la entrada al cañon tiene un camino fali de transitar.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-6">
+                    <img loading="lazy" src="../../Multimedia/Colibries/092.webp"
+                        alt="La entrada al Cañón de Namúrachi" />
                 </div>
 
-                <div class="img-container size-3" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/106.webp"
-                            alt="Una pequeña colibri descansando." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/106.webp"
-                                alt="Tienen que buscar alimento constantemente aunque entre comida 
-                                y comida pueden parar a descansar."><i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-3">
+                    <img loading="lazy" src="../../Multimedia/Colibries/106.webp"
+                        alt="Una pequeña colibri descansando." />
                 </div>
-                <div class="img-container size-6" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/077.webp"
-                            alt="Colibri descansando en el centro de Chihuahua." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/077.webp"
-                                alt="Aunque no es alcanzado directamente por los rayos del sol aun asi se pueden 
-                                ver sus llamativos colores."><i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-6">
+                    <img loading="lazy" src="../../Multimedia/Colibries/077.webp"
+                        alt="Colibri descansando en el centro de Chihuahua." />
                 </div>
 
-                <div class="img-container size-6" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/076.webp"
-                            alt="Foto de un colibri descansado en el interior de un arbol." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/076.webp"
-                                alt="Buscan lugares tranquilos como el interior de un arbol para poder descansar
-                                 antes de continuar buscando comida."><i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-6">
+                    <img loading="lazy" src="../../Multimedia/Colibries/076.webp"
+                        alt="Foto de un colibri descansado en el interior de un arbol." />
                 </div>
-                <div class="img-container size-3" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/107.webp"
-                            alt="Colibri descansando alcanzado por un rallo de sol." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/107.webp"
-                                alt="Un colibri descansando alcanzado por un rayo de sol.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-3">
+                    <img loading="lazy" src="../../Multimedia/Colibries/107.webp"
+                        alt="Colibri descansando alcanzado por un rallo de sol." />
                 </div>
 
-                <div class="img-container size-1" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/070.webp"
-                            alt="Colibri esperando descansado en una pequeña rama despues de comer." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/070.webp"
-                                alt="Aunque estaba nublando sus plumas reflejan tanto la luz del sol que aun 
-                                podemos ver colores muuy estridentes."><i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-1">
+                    <img loading="lazy" src="../../Multimedia/Colibries/070.webp"
+                        alt="Colibri esperando descansado en una pequeña rama despues de comer." />
                 </div>
 
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/045(Recortada).webp"
-                            alt="Colibri acercandose a su comida." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/045.webp"
-                                alt="un colibri acercandose a un bebedero.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                    <img loading="lazy" src="../../Multimedia/Colibries/045(Recortada).webp"
+                        alt="Colibri acercandose a su comida." />
                 </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/016.webp"
-                            alt="Los colibries son tan ligeros que pueden descansar incluso en una hoja de arbol." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/016.webp"
-                                alt="No suelen pesar mucho mas de 20g por lo que ppueden descansar incluso en fragiles hojas.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                    <img loading="lazy" src="../../Multimedia/Colibries/016.webp"
+                        alt="Los colibries son tan ligeros que pueden descansar incluso en una hoja de arbol." />
                 </div>
-
-                <div class="img-container size-6" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/074.webp"
-                            alt="Colibri volando para acercarse a un bebedero rojo." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/074.webp"
-                                alt="Son unos expertos voladores pueden volar incluso boca abajo.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-6">
+                    <img loading="lazy" src="../../Multimedia/Colibries/074.webp"
+                        alt="Colibri volando para acercarse a un bebedero rojo." />
                 </div>
-                <div class="lateral-text text-1 anim-gallery">
+                <div class="lateral-text text-1">
                     <h2>Su vuelo</h2>
-                    <p>Gracias a que pueden llegar a aletear hasta 200 veces por segundo pueden volar incluso boca abajo.</p>
+                    <p>Gracias a que pueden llegar a aletear hasta 200 veces por segundo pueden volar incluso boca
+                        abajo.</p>
+                </div>
+                <div class="img-container size-3">
+                    <img loading="lazy" src="../../Multimedia/Colibries/027.webp" alt="Colibri descansado." />
+                </div>
+                <div class="img-container size-3">
+                    <img loading="lazy" src="../../Multimedia/Colibries/043(Recortada).webp" alt="Colibri aleteando." />
+                </div>
+                <div class="img-container size-3">
+                    <img loading="lazy" src="../../Multimedia/Colibries/022.webp"
+                        alt="Colibri descansando en un lugar alto." />
+                </div>
+                <div class="img-container size-1">
+                    <img loading="lazy" src="../../Multimedia/Colibries/057.webp"
+                        alt="Colibri comiendo de un pequeño bebedero rojo." />
                 </div>
 
-                <div class="img-container size-3" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/027.webp"
-                            alt="Colibri descansado." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/027.webp"
-                                alt="A pesar de estar descansando siempre se mantienen alertas.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                    <img loading="lazy" src="../../Multimedia/Colibries/058.webp"
+                        alt="Colibri de cabeza roja y espalda verde." />
                 </div>
-                <div class="img-container size-3" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/043(Recortada).webp"
-                            alt="Colibri aleteando." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/043.webp"
-                                alt="Algunas especies pueden llegar a hasta 200 veces por segundo.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                    <img loading="lazy" src="../../Multimedia/Colibries/095.webp"
+                        alt="Colibri descansando dentro un bambu." />
                 </div>
-                <div class="img-container size-3" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/022.webp"
-                            alt="Colibri descansando en un lugar alto." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/022.webp"
-                                alt="Buscan lugares altos y tranquilos para poder descansar.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-1">
+                    <img loading="lazy" src="../../Multimedia/Colibries/075.webp"
+                        alt="Colibri macho descansando en una rama de una higuera." />
                 </div>
-
-                <div class="img-container size-1" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/057.webp"
-                            alt="Colibri comiendo de un pequeño bebedero rojo." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/057.webp"
-                                alt="Se alimentan naturalmente de nectar por lo que lo mas parecido que les podemos dar 
-                                es agua con azucar estandar, no refinada ni mascabado."><i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/058.webp"
-                            alt="Colibri de cabeza roja y espalda verde." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/058.webp"
-                                alt="Tienen esos colores gracias a la forma en que la luz rebota en sus plumas.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/095.webp"
-                            alt="Colibri descansando dentro un bambu." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/095.webp"
-                                alt="Buscan lugares seguros para descansar despues de comer.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="img-container size-1" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Colibries/075.webp"
-                            alt="Colibri macho descansando en una rama de una higuera." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Colibries/075.webp"
-                                alt="Por el dimorfismo sexual los machos presentan colores mucho mas llamativos.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </section>
 
-            <footer class="footer-sec" data-scroll-section data-scroll-section-id="g-section3">
+            <footer class="footer-area" data-scroll-section data-scroll-section-id="g-section3">
 
-                <div class="controler-section-sec">
-                    <div class="select_sec">
-                        <h4 id="theme_selector">Tema</h4>
-                        <select class="select__input" id="selTheme">
-                            <option value="auto">Auto</option>
-                            <option value="light">Light</option>
-                            <option value="dark">Dark</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="Social-Footer-Sec">
+                <div class="footer-social">
                     <div class="footer-btn from-left-footer" id="Twitter-Sec"><a class="iconMobile"
                             href="https://twitter.com/unfotografocuu" target="_blank"><i class="fab fa-twitter"></i></a>
                         <h4>@unfotografocuu</h4>
@@ -553,25 +262,15 @@
                     </div>
                 </div>
 
-
-                <div class="TextoPequeño-Sec">
+                <div class="footer-text">
                     <p>Fotografias tomadas por <a href="https://www.instagram.com/unfotografomascuu/"
-                            target="_blank">@Andres Gardea</a></p>
+                            target="_blank">@Andres
+                            Gardea</a></p>
                 </div>
             </footer>
 
 
-            <section class="lightbox" id="ligthbox" data-scroll-sticky data-scroll-target="">
-                <div class="lightbox-content" id="lg">
-                    <div class="img-show">
-                        <img class="img-lightbox" src="" alt="">
-                    </div>
-                    <p class="copy"></p>
-                    <div class="close-btn" onclick="CloseBtn();">
-                        <h1 class="close">+</h1>
-                    </div>
-                </div>
-            </section>
+
 
         </main>
     </div>
@@ -586,12 +285,11 @@
 
     <script src="../../index.js"></script>
     <script src="../../Scripts/barbaConfig.js" type="module"></script>
-    <script src="../../Scripts/btn.min.js"></script>
     <script src="../../Scripts/definitivedark.min.js"></script>
-    <script src="../../Scripts/lightbox.min.js"></script>
     <script src="../../Scripts/animaciones.min.js"></script>
     <script src="../../Scripts/nav.min.js"></script>
     <script src="../../Scripts/sticky.min.js"></script>
+    <script src="../../Scripts/section.min.js"></script>
 
 </body>
 

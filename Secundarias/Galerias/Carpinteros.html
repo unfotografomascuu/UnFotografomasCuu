@@ -30,7 +30,7 @@
     <script src="../../Scripts/locomotive-scroll.min.js"></script>
 </head>
 
-<body data-barba="wrapper" id="wrapper">
+<body data-barba="wrapper" onmouseover="Sticky();">
 
     <div class="transition-container">
         <div class="transition">
@@ -80,37 +80,72 @@
         </div>
     </div>
 
-    <div class="contenido" data-scroll-container onwheel="Sticky();">
-        <main data-barba="container" data-barba-namespace="Carpinteros" class="container pagina-imagen">
+    <div class="contenido" data-scroll-container>
+        <main data-barba="container" data-barba-namespace="GaleriaCarpinteros" class="container pagina-imagen">
 
             <div class="Nav-Space"></div>
 
-            <header class="NavBar-2 nav-container anim-nav">
-                <a id="logo-2" class="anim-nav-element" href="../../index.html">UnFotografomasCuu</a>
-                <a href="../../index.html" class="back-btn anim-nav-element" id="back-to-home"><i
-                        class="fas fa-long-arrow-alt-left"></i></a>
+            <header class="NavBar-2" id="Nav-Section" data-scroll-section-id="section0">
+                <nav class="nav-bar">
+                    <h6 class="logo-text">UnFotografomasCUU</h6>
+                    <div class="menu-toggle">
+                        <div id="menu-toggle-btn" onclick="animNav();">
+                            <span class="menu-btn nav-activator"></span>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="nav-container">
+                    <div class="nav">
+                        <div class="social-links">
+                            <div class="nav-logo">Logo</div>
+                            <div class="nav-socials">
+                                <a href="">Facebook</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://www.instagram.com/andres.gardea/" target="_blank">Instagram</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://twitter.com/gardea_andres" target="_blank">Twitter</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://unfotografomascuu.com/" target="_blank">unfotografomascuu</a>
+                            </div>
+                        </div>
+                        <div class="nav-section-container">
+                            <div class="nav-section-link">
+                                <a id="nav-Activator-1" href="../../index.html" data-scroll-to>Home</a>
+                            </div>
+                        </div>
+                        <div class="nav-footer">
+                            <p>Pagina hecha por <a href="https://www.instagram.com/andres.gardea"
+                                    target="_blank"><b>@Andres Gardea</b></a></p>
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <section class="texto-pagina-imagen" id="text" data-scroll-section data-scroll-section-id="g-section0">
                 <div class="text-part-img">
-                    <h2 class="anim-gallery">Pájaro Carpintero Mexicano (Dryobates Scalaris)</h2><br>
-                    <p class="anim-gallery">Fotos de pajaros carpinteros que llegaron y probablemente vivan en el centro
+                    <h2 class="">Pájaro Carpintero Mexicano (Dryobates Scalaris)</h2><br>
+                    <p>Fotos de pajaros carpinteros que llegaron y probablemente vivan en el centro
                         de la
                         ciudad de Chihuahua.</p>
-                    <p class="anim-gallery">Perteneciente a la especie Dryobates Scalaris también conocido como
+                    <p>Perteneciente a la especie Dryobates Scalaris también conocido como
                         Carpintero Mexicano es una especie nativa de Centro y Norte América siendo principalmente vista
                         en México a lo largo de todos sus estados, de ahí que se le suele conocer como Pajaro Carpintero
                         Mexicano.</p><br>
-                    <p class="anim-gallery">Se caracteriza por tener un dimorfismo sexual marcado donde los machos
+                    <p>Se caracteriza por tener un dimorfismo sexual marcado donde los machos
                         tienen la cabez o gorra de un color rojo bastante llamativo mientras que las hembras presentan
                         unicamente un color noegro en su cabeza, ambos tienen un plumaje algo "atrigado" de color blanco
                         y nrgro a veces teniendo colores ligeramente beiges en su pecho. </p>
 
-                    <div class="img-text anim-gallery">
+                    <div class="img-text 
+">
                         <div class="image-mask"></div>
                     </div>
 
-                    <p class="anim-gallery">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nobis
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nobis
                         molestias!
                         Reprehenderit porro labore veniam eligendi nesciunt, aut mollitia error ab qui cupiditate
                         ullam perspiciatis iste, dicta earum impedit repellat dignissimos? Voluptas illo maxime esse
@@ -124,261 +159,60 @@
                         repudiandae ut saepe cum, nulla, nihil animi reiciendis doloremque nemo architecto. Debitis
                         architecto laborum obcaecati commodi quaerat eius non similique doloribus nesciunt, dolorum
                         quas, tempore delectus, expedita placeat!</p>
-                    <p class="anim-gallery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
                         ducimus possimus dolor
                         cumque? Distinctio sunt perferendis non. Rerum tempora similique facere enim sit dolorum
                         temporibus, molestiae eligendi obcaecati cumque dolores nobis tenetur, vel labore quia
                         aliquam ad quasi ullam fugit sunt magnam! Et itaque sed magni, recusandae magnam inventore
-                        soluta.</p><br>
-                    <div class="gallery-btn from-left-footer"><a class="fab fa-google-drive anim-btn"
-                            href="https://drive.google.com/drive/folders/17Upno49Bbr61Yz7B_ZA55s1FS7aL5PTa?usp=sharing"
-                            target="_blank"></a>
-                        <h4 class="anim-btn">Todas las fotos en resolucion completa</h4>
-                    </div>
                 </div>
             </section>
 
-            <section class="imagen-completa" id="gallery" data-scroll-section data-scroll-section-id="g-section2">
-                <div class="img-container size-1" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Carpintero/006.webp"
+            <section class="gallary-page-container" id="gallery" data-scroll-section
+                data-scroll-section-id="g-section2">
+                <div class="img-container size-1">
+                        <img loading="lazy" src="../../Multimedia/Carpintero/006.webp"
                             alt="Pajaro Carpintero volando desde un Bambu" />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Carpintero/006.webp"
-                                alt="Pajaro Carpintero volando desde un Bambu">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Carpintero/032.webp" />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Carpintero/032.webp"
-                                alt="Podemos ver que este es un ejemplar macho por su cabeza de color rojo.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                        <img loading="lazy" src="../../Multimedia/Carpintero/032.webp" />
                 </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Carpintero/031.webp" />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Carpintero/031.webp"
-                                alt="Podemos saber que esta es una hembra por su cabeza/gorra negra, ya que esta especie presenta dimorfismo sexual.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                        <img loading="lazy" src="../../Multimedia/Carpintero/031.webp" />
                 </div>
-                <div class="img-container size-1" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Carpintero/016.webp" />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Carpintero/016.webp"
-                                alt="Pajaro Carpintero en el Parque Natural del Cañón de Namurachi.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-1">
+                        <img loading="lazy" src="../../Multimedia/Carpintero/016.webp" />
                 </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Carpintero/045.webp" />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Carpintero/045.webp"
-                                alt="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, omnis sit?">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                        <img loading="lazy" src="../../Multimedia/Carpintero/045.webp" />
                 </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Carpintero/046.webp" />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Carpintero/046.webp"
-                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis ipsum expedita natus ratione autem, exercitationem adipisci iste consequatur earum corrupti libero.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                        <img loading="lazy" src="../../Multimedia/Carpintero/046.webp" />
+
                 </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Carpintero/013.webp" />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Carpintero/013.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                        <img loading="lazy" src="../../Multimedia/Carpintero/013.webp" />
                 </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Carpintero/001.webp"
+                <div class="img-container size-2">
+                        <img loading="lazy" src="../../Multimedia/Carpintero/001.webp"
                             alt="Los machos de esta especie (Dryobates Scalaris) se distinquen por tener la cabeza de un muy llamativo color rojo." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Carpintero/001.webp"
-                                alt="Los machos de esta especie (Dryobates Scalaris) se distinquen por tener la cabeza de un muy llamativo color rojo.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Carpintero/004.webp"
+                <div class="img-container size-2">
+                        <img loading="lazy" src="../../Multimedia/Carpintero/004.webp"
                             alt="Un pajaro carpintero en el centro de Chihuahua." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Carpintero/004.webp"
-                                alt="Un pajaro carpintero en el centro de la ciudad de Chihuahua.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Carpintero/015.webp" />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Carpintero/015.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                    <img loading="lazy" src="../../Multimedia/Carpintero/015.webp" />
+
                 </div>
-                <div class="img-container size-1" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Carpintero/035.webp"
-                            alt="Pajaro Carpintero picoteando un Bambu" />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Canon T7</h3>
-                            <p>Velocidad de Obturacion: 1/200<br>
-                                F: f/8<br>
-                                Iso: 200<br>
-                                Distancia Focal: 240mm<br>
-                                Dimensiones: 6000x4000<br>
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Carpintero/035.webp"
-                                alt="Pajaro Carpintero en un Bambu">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="img-container size-1">
+                    <img loading="lazy" src="../../Multimedia/Carpintero/035.webp"
+                        alt="Pajaro Carpintero picoteando un Bambu" />
             </section>
 
-            <footer class="footer-sec" data-scroll-section data-scroll-section-id="g-section3">
+            <footer class="footer-area" data-scroll-section data-scroll-section-id="g-section3">
 
-                <div class="controler-section-sec">
-                    <div class="select_sec">
-                        <h4 id="theme_selector">Tema</h4>
-                        <select class="select__input" id="selTheme">
-                            <option value="auto">Auto</option>
-                            <option value="light">Light</option>
-                            <option value="dark">Dark</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="Social-Footer-Sec">
+                <div class="footer-social">
                     <div class="footer-btn from-left-footer" id="Twitter-Sec"><a class="iconMobile"
                             href="https://twitter.com/unfotografocuu" target="_blank"><i class="fab fa-twitter"></i></a>
                         <h4>@unfotografocuu</h4>
@@ -390,23 +224,14 @@
                     </div>
                 </div>
 
-                <div class="TextoPequeño-Sec">
-                    <p>Fotografias tomadas por <a href="https://www.instagram.com/unfotografomascuu/" target="_blank">@Andres Gardea</a></p>
+                <div class="footer-text">
+                    <p>Fotografias tomadas por <a href="https://www.instagram.com/unfotografomascuu/"
+                            target="_blank">@Andres Gardea</a></p>
                 </div>
             </footer>
 
 
-            <section class="lightbox" id="ligthbox" data-scroll-sticky data-scroll-target="">
-                <div class="lightbox-content" id="lg">
-                    <div class="img-show">
-                        <img class="img-lightbox" src="" alt="">
-                    </div>
-                    <p class="copy"></p>
-                    <div class="close-btn" onclick="CloseBtn();">
-                        <h1 class="close">+</h1>
-                    </div>
-                </div>
-            </section>
+
 
         </main>
     </div>
@@ -422,12 +247,12 @@
 
     <script src="../../index.js"></script>
     <script src="../../Scripts/barbaConfig.js" type="module"></script>
-    <script src="../../Scripts/btn.min.js"></script>
     <script src="../../Scripts/definitivedark.min.js"></script>
-    <script src="../../Scripts/lightbox.min.js"></script>
     <script src="../../Scripts/animaciones.min.js"></script>
     <script src="../../Scripts/nav.min.js"></script>
     <script src="../../Scripts/sticky.min.js"></script>
+    <script src="../../Scripts/section.min.js"></script>
+
 </body>
 
 

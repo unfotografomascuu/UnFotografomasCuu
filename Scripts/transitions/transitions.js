@@ -27,8 +27,9 @@ function principalAnimation() {
 function secondaryAnimation() {
     gsap.from('#logo-2, #back', { duration: .9, translateY: -50, opacity: 0, delay: 2.9});
     gsap.from('.NavBar-2', { duration: .9, translateY: -50, opacity: 0, delay: -.9 });
-    gsap.from('.anim-gallery', { duration: 1.1, translateY: 50, opacity: 0, stagger: 0.2 });
-    gsap.from('.imagen-completa', { duration: 1, opacity: 0, delay: -.7});
+    gsap.from('.
+', { duration: 1.1, translateY: 50, opacity: 0, stagger: 0.2 });
+    gsap.from('.gallary-page-container', { duration: 1, opacity: 0, delay: -.7});
 }
 
 function pageout() {
@@ -42,6 +43,7 @@ function pageout() {
 function secondarypageout() {
     gsap.to('#logo-2, #back', { duration: .9, translateY: -50, opacity: 0});
     gsap.to('.NavBar-2', { duration: .9, translateY: -50, opacity: 0, delay: -.85 });
-    gsap.to('.anim-gallery', { duration: 1, translateY: 50, opacity: 0, stagger: 0.2, delay: -.8 });
-    gsap.to('.imagen-completa', { duration: .9, opacity: 0, delay: -1.4 });
+    gsap.to('.
+', { duration: 1, translateY: 50, opacity: 0, stagger: 0.2, delay: -.8 });
+    gsap.to('.gallary-page-container', { duration: .9, opacity: 0, delay: -1.4 });
 }

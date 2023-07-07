@@ -12,9 +12,5 @@ document.addEventListener("DOMContentLoaded", () => {
     optionElement.selected = savedTheme === optionElement.value;
   }
 
-  document.querySelector("#selTheme").addEventListener("change", function () {
-    localStorage.setItem("theme", this.value);
-    applyTheme(this.value);
-  });
 });
 

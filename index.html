@@ -103,685 +103,303 @@
         </div>
     </div>
 
-    <div class="contenido" data-scroll-container onwheel="Sticky();">
-        <main data-barba="container" data-barba-namespace="index">
+    <div class="contenido" data-scroll-container>
 
-            <section class="Nav" id="Nav-Section" data-scroll-section-id="section0">
-                <header class="NavBar nav-blur nav-container anim-nav" data-scroll-sticky data-scroll-target="">
-                    <div class="logo anim-nav-element">
-                        <h1 id="logo">UnFotografomasCuu</h1>
+        <main data-barba="container" data-barba-namespace="index" class="Contenido">
+
+            <header class="Nav" id="Nav-Section" data-scroll-section-id="section0">
+                <nav class="nav-bar">
+                    <h6 class="logo-text">UnFotografomasCUU</h6>
+                    <div class="menu-toggle">
+                        <div id="menu-toggle-btn" onclick="animNav();">
+                            <span class="menu-btn nav-activator"></span>
+                        </div>
                     </div>
-                    <nav class="mnvl">
-                        <div class="nav-links">
-                            <div class="nav-links-close" onclick="NavSection();">
-                                <div class="nav-btn from-bottom anim-nav-element" onclick="Sticky();"><a id="btn1"
-                                        href="#home" data-scroll-to>
-                                        Inicio</a></div>
-                                <div class="nav-btn from-bottom anim-nav-element" onclick="Sticky();"><a id="btn2"
-                                        href="#about" data-scroll-to>Hacerca
-                                        de Mi</a>
-                                </div>
-                                <div class="nav-btn from-bottom anim-nav-element" onclick="Sticky();"><a id="btn3"
-                                        href="#articles" data-scroll-to>Artículos</a>
-                                </div>
-                                <div class="nav-btn from-bottom anim-nav-element" onclick="Sticky();"><a id="btn4"
-                                        href="#services" data-scroll-to>Favoritas</a>
-                                </div>
-                                <div class="nav-btn from-bottom anim-nav-element" onclick="Sticky();"><a id="btn5"
-                                        href="#design" data-scroll-to>Diseño</a>
-                                </div>
-                            </div>
+                </nav>
 
-                            <div class="Social-Mobile">
-                                <div class="social-mobile-links Facebook"><a class="iconMobile"
-                                        onclick="NavSocial();"><i class="fab fa-facebook-square"></i></a>
-                                </div>
-                                <div class="social-mobile-links Instagram"><a class="iconMobile"
-                                        href="https://t.co/XdIwIDNkr3?amp=1" target="_blank" onclick="NavSocial();"><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                                <div class="social-mobile-links Twitter"><a class="iconMobile"
-                                        href="https://twitter.com/unfotografocuu?s=08" target="_blank"
-                                        onclick="NavSocial();"><i class="fab fa-twitter"></i></a></div>
-                                <div class="social-mobile-links Telegram"><a class="iconMobile"
-                                        href="https://t.me/andres_gardea" target="_blank" onclick="NavSocial();"><i
-                                            class="fab fa-telegram"></i></a>
-                                </div>
-                                <div class="social-mobile-links GitHub"><a class="iconMobile"
-                                        href="https://github.com/AndresGardea/UnFotografomasCuu" target="_blank"><i
-                                            class="fab fa-github" onclick="NavSocial();"></i></a></div>
-                                <div class="social-mobile-links Correo" onclick="NavSocial();"><a class="iconMobile"
-                                        href="mailto:unfotografomascuu@gmail.com"><i class="far fa-envelope"></i></a>
-                                </div>
+                <div class="nav-container">
+                    <div class="nav">
+                        <div class="social-links">
+                            <div class="nav-logo">Logo</div>
+                            <div class="nav-socials">
+                                <a href="">Facebook</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://www.instagram.com/andres.gardea/" target="_blank">Instagram</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://twitter.com/gardea_andres" target="_blank">Twitter</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://unfotografomascuu.com/" target="_blank">unfotografomascuu</a>
                             </div>
                         </div>
-                    </nav>
-
-                    <div class="menu-btn" id="menu-btn" onclick="BtnOC();">
-                        <div class="menu-btn__burger"></div>
+                        <div class="nav-section-container">
+                            <div class="nav-section-link">
+                                <a id="nav-Activator-1" href="#photo" data-scroll-to>Destacado</a>
+                            </div>
+                            <div id="nav-Activator-2" class="nav-section-link">
+                                <a href="#articles" data-scroll-to>Articulos</a>
+                            </div>
+                            <div id="nav-Activator-3" class="nav-section-link">
+                                <a href="#design" data-scroll-to>Diseño</a>
+                            </div>
+                        </div>
+                        <div class="nav-footer">
+                            <p>Pagina hecha por <a href="https://www.instagram.com/andres.gardea"
+                                    target="_blank"><b>@Andres Gardea</b></a></p>
+                        </div>
                     </div>
+                </div>
+            </header>
 
-                </header>
+            <section class="home-area" id="home" data-scroll-section data-scroll-section-id="section1">
+                <div class="home-text-container" data-scroll>
+                    <h2 data-scroll data-scroll-speed="4" data-scroll-delay=".1" id="txt-home-1" class="home-text">
+                        UnFotografoMasCuu</h2>
+                    <p data-scroll data-scroll-speed="4" data-scroll-delay=".2" id="txt-home-2" class="home-text">El
+                        claro
+                        ejemplo del
+                        adolescente que
+                        se
+                        cree fotógrafo por tener una cámara</p>
+                    <div data-scroll data-scroll-speed="4" data-scroll-delay=".3" class="btn-home">
+                        <a href="#photo" data-scroll-to>
+                            <h4 id="txt-home-3">»</h4>
+                        </a>
+                    </div>
+                </div>
+                <div id="home" class="home-image-container">
+                    <picture>
+                        <source srcset="Multimedia/Index/parallax-movile.webp" type="image/webp"
+                            media="(max-width: 799px)">
+                        <source srcset="Multimedia/Index/parallax.webp" type="image/webp" media="(min-width: 800px)">
+
+                        <img class="home-image" data-scroll data-scroll-sticky data-scroll-target="#home"
+                            src="Multimedia/Index/parallax.webp" alt=""></img>
+                    </picture>
+                </div>
             </section>
 
-            <div class="content">
-                <section class="parallax-area" id="home" data-scroll-section data-scroll-section-id="section1">
-                    <div class="parallax-text-container" data-scroll>
-                        <h2 data-scroll data-scroll-speed="4" data-scroll-delay=".1" id="txt-parallax-1"
-                            class="parallax-text">
-                            UnFotografoMasCuu</h2>
-                        <p data-scroll data-scroll-speed="4" data-scroll-delay=".2" id="txt-parallax-2"
-                            class="parallax-text">El
-                            claro
-                            ejemplo del
-                            adolescente que
-                            se
-                            cree fotógrafo por tener una cámara</p>
-                        <div data-scroll data-scroll-speed="4" data-scroll-delay=".3" class="btn-parallax">
-                            <a href="#about" data-scroll-to>
-                                <h4 id="txt-parallax-3">»</h4>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="parallax" class="parallax-image-container">
-                        <picture class="img-article art-size-banner anim-banner">
-                            <source srcset="Multimedia/Index/parallax-movile.webp" type="image/webp"
-                                media="(max-width: 799px)">
-                            <source srcset="Multimedia/Index/parallax.webp" type="image/webp"
-                                media="(min-width: 800px)">
+            <section class="photo-area" id="photo" data-scroll-section data-scroll-section-id="section2">
 
-                            <img class="parallax-image" data-scroll data-scroll-sticky data-scroll-target="#parallax"
-                                src="Multimedia/Index/parallax.webp" alt=""></img>
-                        </picture>
-                    </div>
-                </section>
-
-                <section class="about-area" id="about" data-scroll-section data-scroll-section-id="section2">
-                    <div class="text-part-about txt-revelar" data-scroll data-scroll-speed="3"
-                        data-scroll-class="revelar" data-scroll-repeat="true">
-                        <blockquote class="text">
-                            Mi nombre es Andrés Gardea, soy un diseñador y fotografo de la ciudad de Chihuahua
-                            <cite class="text">
-                                — Andrés Gardea
-                            </cite>
-                        </blockquote>
-                    </div>
-
-                    <div class="img-part">
-                        <img loading="lazy" src="Multimedia/Index/profile.webp"
-                            alt="Soy Andres Gardea un fotografo de la Ciudad de Chihuahua" />
-                    </div>
-                </section>
-
-                <section class="service-area" id="articles" data-scroll-section data-scroll-section-id="section3">
-                    
-                    <div class="Article-Section" id="Polinizadores">
-                        <div class="Article-Section-Img">
-                            <div class="img-middle">
-                                <img loading="lazy" src="Multimedia/Pictures/005.webp"
-                                    alt="Abeja polinizando una flor morada." />
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Articulos/Polinizadores.html">
-                                        <h5>+</h5>
-                                    </a>
+                <div class="photo-container">
+                    <div class="photo-section" id="photo-section-1">
+                        <div class="photo-text-container">
+                            <h1 class="photo-title" onclick="SectionView1();">Colibries</h1>
+                            <div class="photo-text-secondary">
+                                <h1 class="photo-secondary-title">Colibries en Chihuahua</h1>
+                                <p class="photo-text">Los colibríes son pequeñas aves que podemos encontrar en
+                                    prácticamente
+                                    cualquier zona del continente americano,cumplen un papel fundamental en la
+                                    polinizacion
+                                    y muchos datos sobre ellos son impresionantes...</p>
+                                <div class="article-btn from-left"><a
+                                        href="Secundarias/Articulos/ColibriesChihuahua.html">+</a>
+                                    <a class="anim-btn" href="Secundarias/Articulos/ColibriesChihuahua.html">Leer
+                                        Mas...</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="Article-Section-Txt">
-                            <date>2022</date>
-                            <h2>Polinizadores</h2>
-                            <div>
-                                <p>Aunque es una labor que creemos que es unica o principalmente realizada por las
-                                    abejas la
-                                    polinización es realizada por muchisimos mas animales.</p>
-                                <p>Ademas de las abejas que todos conocemos podemos mencionar otros insectos como
-                                    abejorros
-                                    o mariposas ademas de.......</p>
-                            </div>
-                            <div class="article-btn from-left-footer"><a
-                                    href="Secundarias/Articulos/Polinizadores.html">+</a>
-                                <h4 class="anim-btn">Leer Mas...</h4>
-                            </div>
+                        <div class="img_wrapper" onclick="SectionView1();">
+                            <img src="Multimedia/Index/ColibriesChihuahua.webp"
+                                alt="Pequeño Colibri en la Ciudad de Chihuahua">
                         </div>
                     </div>
-
-                    <div class="Article-Section" id="Zopilotes">
-                        <div class="Article-Section-Img">
-                            <div class="img-middle">
-                                <img loading="lazy" src="Multimedia/Zopilotes/portada-muestra.webp"
-                                    alt="Zopilotes llegando a la ciudad de Chihuahua" />
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Articulos/Articulo Zopilotes.html">
-                                        <h5>+</h5>
-                                    </a>
+                    <div class="photo-section" id="photo-section-2">
+                        <div class="photo-text-container">
+                            <h1 class="photo-title" onclick="SectionView2();">Zopilotes</h1>
+                            <div class="photo-text-secondary">
+                                <h1 class="photo-secondary-title">Zopilotes en Chihuahua</h1>
+                                <p class="photo-text">Aunque son especies endémicas de la región se han visto obligados
+                                    a
+                                    adentrarse a la ciudad debido al rápido crecimiento de la mancha urbana que ha
+                                    destruido, modificado o desplazado su hábitat natural.<br>
+                                    También se le conoce como buitre cabecirrojo, buitre americano o simplemente
+                                    Zopilote. <br>
+                                    Pertenece a la especie Cathartes Aura tambien llamado Zopilote Aura, es una de las
+                                    grandes especies de aves del continente americano...</p>
+                                <div class="article-btn from-left"><a
+                                        href="Secundarias/Articulos/ZopilotesChihuahua.html">+</a>
+                                    <a class="anim-btn" href="Secundarias/Articulos/ZopilotesChihuahua.html">Leer
+                                        Mas...</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="Article-Section-Txt">
-                            <date>2020-2022</date>
-                            <h2>Zopilotes en la Ciudad de Chihuahua</h2>
-                            <div>
-                                <p>Aunque son especies endémicas de la región se han visto obligados a adentrarse a
-                                    la ciudad debido al rápido crecimiento de la mancha urbana que ha destruido,
-                                    modificado
-                                    o desplazado
-                                    su hábitat natural.</p>
-                                <p>También se le conoce como buitre cabecirrojo, buitre americano o
-                                    simplemente Zopilote. Pertenece a la especie Cathartes Aura tambien llamado
-                                    Zopilote Aura, es una de las grandes especies de aves del continente
-                                    americano...</p>
+                        <div class="img_wrapper" onclick="SectionView2();">
+                            <img src="Multimedia/Index/ZopilotesChihuahua.webp"
+                                alt="Zopilote descansando en un arbol en la ciudad de Chihuahua">
+                        </div>
+                    </div>
+                    <div class="photo-section" id="photo-section-3">
+                        <div class="photo-text-container">
+                            <h1 class="photo-title" onclick="SectionView3();">Namurachi</h1>
+                            <div class="photo-text-secondary">
+                                <h1 class="photo-secondary-title">El cañón de Namurachi</h1>
+                                <p class="photo-text">Es un parque ecologico ubicado a unos 130km
+                                    de la ciudad de Chihuahua. <br>
+                                    Es una formacion rocosa esculpida por el agua a lo largo de millones de años que ha
+                                    ido dejando a su paso no solo el imponente cañón sino que tambien una gran cantida
+                                    de cuevas que es lo que actualmente le da su nombre a este parque...</p>
+                                <div class="article-btn from-left"><a href="Secundarias/Articulos/Namurachi.html">+</a>
+                                    <a class="anim-btn" href="Secundarias/Articulos/Namurachi.html">Leer Mas...</a>
+                                </div>
                             </div>
-                            <div class="article-btn from-left-footer"><a
-                                    href="Secundarias/Articulos/Articulo Zopilotes.html">+</a>
-                                <a class="anim-btn anim-a" href="Secundarias/Articulos/Articulo Zopilotes.html">
-                                    Leer Mas...</a>
+                        </div>
+                        <div class="img_wrapper" onclick="SectionView3();">
+                            <img src="Multimedia/Index/Namurachi.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="articles-area" id="articles" data-scroll-section data-scroll-section-id="section3">
+                
+                <div class="Article-Section" id="Polinizadores">
+                    <div class="Article-Section-Img">
+                        <div class="img-middle">
+                            <img loading="lazy" src="Multimedia/Index/Polinizadores.webp"
+                                alt="Abeja polinizando una flor morada." />
+                            <div class="MoreBtn">
+                                <a href="Secundarias/Articulos/Polinizadores.html">
+                                    <h5>+</h5>
+                                </a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="Article-Section" id="Colibries">
-                        <div class="Article-Section-Img">
-                            <div class="img-middle">
-                                <img loading="lazy" src="Multimedia/Colibries/portada-muestra.webp"
-                                    alt="Un pequeño colibrí color verde descansando en una rama" />
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Articulos/ColibriesChihuahua.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="Article-Section-Txt">
+                        <h2>Polinizadores</h2>
+                        <div>
+                            <p>Aunque es una labor que creemos que es unica o principalmente realizada por las
+                                abejas la
+                                polinización es realizada por muchisimos mas animales.</p>
+                            <p>Ademas de las abejas que todos conocemos podemos mencionar otros insectos como
+                                abejorros
+                                o mariposas ademas de.......</p>
                         </div>
-                        <div class="Article-Section-Txt">
-                            <date>2021-2022</date>
-                            <h2>Colibries en Chihuahua</h2>
-                            <div>
-                                <p>Los colibríes son pequeñas aves que podemos encontrar en prácticamente cualquier
-                                    zona del continente americano,cumplen un papel fundamental en la polinizacion y
-                                    muchos datos sobre ellos son impresionantes....
-                                </p>
-                            </div>
-                            <div class="article-btn from-left-footer"><a
-                                    href="Secundarias/Articulos/ColibriesChihuahua.html"> +</a>
-                                <a class="anim-btn anim-a" href="Secundarias/Articulos/ColibriesChihuahua.html">Leer
-                                    Mas...</a>
+                        <div class="article-btn from-left-footer"><a
+                                href="Secundarias/Articulos/Polinizadores.html">+</a>
+                            <a class="anim-btn" href="Secundarias/Articulos/Polinizadores.html">Leer Mas...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Article-Section" id="Carpintero">
+                    <div class="Article-Section-Img">
+                        <div class="img-middle">
+                            <img loading="lazy" src="Multimedia/Index/Carpintero.webp"
+                                alt="Foto del cañón de namurachi" />
+                            <div class="MoreBtn">
+                                <a href="Secundarias/Galerias/Carpinteros.html">
+                                    <h5>+</h5>
+                                </a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="Article-Section" id="Namurachi">
-                        <div class="Article-Section-Img">
-                            <div class="img-middle">
-                                <img loading="lazy" src="Multimedia/Pictures/214(Movile).webp"
-                                    alt="Foto del cañón de namurachi" />
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Articulos/Namurachi.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="Article-Section-Txt">
+                        <h2>Pajaros Carpinteros</h2>
+                        <div>
+                            <p>El cañón de Namurachi es un parque ecologico ubicado a unos 130km de la ciudad de
+                                Chihuahua.</p>
+                            <p>Es una formacion rocosa esculpida por el agua a lo largo de millones de años que ha
+                                ido
+                                dejando a su paso no solo el imponente cañón sino que tambien una gran cantida de
+                                cuevas
+                                que es lo que actualmente le da su nombre a este parque.......</p>
                         </div>
-                        <div class="Article-Section-Txt">
-                            <date>2022</date>
-                            <h2>El Cañón de Namurachi</h2>
-                            <div>
-                                <p>El cañón de Namurachi es un parque ecologico ubicado a unos 130km de la ciudad de
-                                    Chihuahua.</p>
-                                <p>Es una formacion rocosa esculpida por el agua a lo largo de millones de años que ha
-                                    ido
-                                    dejando a su paso no solo el imponente cañón sino que tambien una gran cantida de
-                                    cuevas
-                                    que es lo que actualmente le da su nombre a este parque.......</p>
-                            </div>
-                            <div class="article-btn from-left-footer"><a
-                                    href="Secundarias/Articulos/Namurachi.html">+</a>
-                                <h4 class="anim-btn">Leer Mas...</h4>
+                        <div class="article-btn from-left-footer"><a href="Secundarias/Galerias/Carpinteros.html">+</a>
+                            <a class="anim-btn" href="Secundarias/Galerias/Carpinteros.html">Leer Mas...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Article-Section" id="Cotorras">
+                    <div class="Article-Section-Img">
+                        <div class="img-middle">
+                            <img loading="lazy" src="Multimedia/Index/Cotorras.webp"
+                                alt="Cotorra argentina en el centro de Chihuahua" />
+                            <div class="MoreBtn">
+                                <a href="Secundarias/Articulos/CotorraArgentina.html">
+                                    <h5>+</h5>
+                                </a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="Article-Section" id="Cotorras">
-                        <div class="Article-Section-Img">
-                            <div class="img-middle">
-                                <img loading="lazy" src="Multimedia/Pictures/042.webp"
-                                    alt="Cotorra argentina en el centro de Chihuahua" />
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Articulos/Articulo Cotorras.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="Article-Section-Txt">
+                        <h2>Cotorras Argentinas en Chihuahua</h2>
+                        <div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum autem eos repudiandae
+                                quis nesciunt necessitatibus est facere ipsa sed, dolore et exercitationem minus
+                                quisquam ex recusandae? Optio enim repellendus deserunt?.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iure debitis
+                                enim ut, nisi aut, saepe porro labore non amet earum blanditiis similique quasi illo
+                                accusantium fugit odio sunt laborum rerum veritatis? Ducimus fuga dolorem harum
+                                explicabo. Ullam, dolore vel.......</p>
                         </div>
-                        <div class="Article-Section-Txt">
-                            <date>2021</date>
-                            <h2>Cotorras Argentinas en Chihuahua</h2>
-                            <div>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum autem eos repudiandae
-                                    quis nesciunt necessitatibus est facere ipsa sed, dolore et exercitationem minus
-                                    quisquam ex recusandae? Optio enim repellendus deserunt?.</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iure debitis
-                                    enim ut, nisi aut, saepe porro labore non amet earum blanditiis similique quasi illo
-                                    accusantium fugit odio sunt laborum rerum veritatis? Ducimus fuga dolorem harum
-                                    explicabo. Ullam, dolore vel.......</p>
-                            </div>
-                            <div class="article-btn from-left-footer"><a
-                                    href="Secundarias/Articulos/Articulo Cotorras.html">+</a>
-                                <h4 class="anim-btn">Leer Mas...</h4>
-                            </div>
+                        <div class="article-btn from-left-footer"><a
+                                href="Secundarias/Articulos/CotorraArgentina.html">+</a>
+                            <a class="anim-btn"  href="Secundarias/Articulos/CotorraArgentina.html">Leer Mas...</a>
                         </div>
-                    </div>              
-                    
-                </section>
-
-                <section class="port-area" id="services" data-scroll-section data-scroll-section-id="section4">
-
-                    <div id="pinSection" class="pinned-quote">
-                        <blockquote data-scroll data-scroll-sticky data-scroll-target="#pinSection" class="text">
-                            <div class="esp"></div>
-                            Se estan acabando las maneras de equivocarse.
-                            <cite>
-                                — Generador de Texto
-                            </cite>
-                            <div class="esp"></div>
-                        </blockquote>
                     </div>
+                </div>
 
-                    <div id="Fotos">
-                        <div class="img-container size-i">
-                            <div class="img-contain">
-                                <img loading="lazy" src="Multimedia/Pictures/056.webp" alt="Pajarito comiendo semillas">
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Individuales/Prueba Indv.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-container size-i">
-                            <div class="img-contain">
-                                <img loading="lazy" src="Multimedia/Pictures/202 (Recortada).webp"
-                                    alt="Pajarito comiendo semillas">
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Individuales/Prueba Indv.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-container size-i">
-                            <div class="img-contain">
-                                <img loading="lazy" src="Multimedia/Pictures/003.webp" alt="Pajarito comiendo semillas">
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Individuales/Prueba Indv.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-container size-i">
-                            <div class="img-contain">
-                                <img loading="lazy" src="Multimedia/Pictures/061 (Recortada).webp"
-                                    alt="Pajarito comiendo semillas">
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Individuales/Prueba Indv.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-container size-i">
-                            <div class="img-contain">
-                                <img loading="lazy" src="Multimedia/Pictures/002.webp" alt="Pajarito comiendo semillas">
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Individuales/Prueba Indv.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-container size-i">
-                            <div class="img-contain">
-                                <img loading="lazy" src="Multimedia/Pictures/059.webp" alt="Pajarito comiendo semillas">
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Individuales/Prueba Indv.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-container size-i">
-                            <div class="img-contain">
-                                <img loading="lazy" src="Multimedia/Pictures/020.webp" alt="Pajarito comiendo semillas">
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Individuales/Prueba Indv.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-container size-i">
-                            <div class="img-contain">
-                                <img loading="lazy" src="Multimedia/Pictures/074.webp" alt="Pajarito comiendo semillas">
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Individuales/Prueba Indv.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-container size-i">
-                            <div class="img-contain">
-                                <img loading="lazy" src="Multimedia/Pictures/210 (Recortada).webp"
-                                    alt="Pajarito comiendo semillas">
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Individuales/Prueba Indv.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-container size-i">
-                            <div class="img-contain">
-                                <img loading="lazy" src="../../Multimedia/Pictures/125.webp"
-                                    alt="Pajarito comiendo semillas">
-                                <div class="MoreBtn">
-                                    <a href="Secundarias/Individuales/Prueba Indv.html">
-                                        <h5>+</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </section>
-
-                <section class="contact-area" id="design" data-scroll-section data-scroll-section-id="section5">
-                    <div class="text-part">
-                        <h2 class="text">Mis Sesiones</h2>
-                        <p class="text">A lo largo de lo que
-                            va de
-                            este año
-                            y del año pasado por la pandemia no he podido salir pero he intentado continuar tomando
-                            fotos y sobre todo de mis favoritas son estas fotos de la fauna urbana desde pequeños
-                            pájaros hasta los grandes Zopilotes o Buitres que cada vez se adentran más en la ciudad o
-                            las pequeñas abejas que hacen su trabajo de polinización, obviamente no soy ni un fotógrafo
-                            ni un intento de biólogo así que probablemente no sean las especies específicas, si sabes
-                            que tipo de pájaro es con todo gusto puedes comunicarte para que pueda ponerlo
-                            correctamente.
-                        </p>
-                    </div>
-
-                    <div id="Sesiones">
-                        <div class="Galeria-Sesiones-1" id="Zopilotes">
-                            <div class="middle">
-                                <div class="img-middle">
-                                    <img loading="lazy" src="Multimedia/Pictures/029.webp"
-                                        alt="Zopilote llegando a su hogar en San Felipe Chihuahua" />
-                                    <div class="MoreBtn">
-                                        <a href="Secundarias/Galerias/Zopilotes.html">
-                                            <h5>+</h5>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="left">
-                                <div class="content">
-                                    <date>Canon T7</date>
-                                    <h2>Zopilotes en Chihuahua</h2>
-                                    <p>También conocido como Buitre Americano Cabecirrojo o
-                                        Zopilote Aura estos últimos años a estado adentrándose en la ciudad, estas fotos
-                                        fueron tomadas en el centro en la colonia San Felipe del Real, realizando a
-                                        diarios viajes al sur y norte de la ciudad y volviendo alrededor de las 4 o
-                                        5 de la tarde para dormir en los grandes árboles de San Felipe.</p>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/044.webp"
-                                        alt="Foto de Zopilote en el centro de Chihuahua" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/025.webp"
-                                        alt="Zopilote volando en el cielo de Chihuahua" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/027.webp"
-                                        alt="Varios Zopilotes descansando en un arbol de Sa felipe" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/045.webp"
-                                        alt="Buitre cabeza roja en Chihuahua" /></div>
-                            </div>
-                        </div>
-
-                        <div class="Galeria-Sesiones-2" id="Colibri">
-                            <div class="middle">
-                                <div class="img-middle">
-                                    <img loading="lazy" src="Multimedia/Pictures/082.webp"
-                                        alt="Colibri tomando agua de un bebedero." />
-                                    <div class="MoreBtn">
-                                        <a href="Secundarias/Galerias/Colibries.html">
-                                            <h5>+</h5>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="left title">
-                                <div class="content">
-                                    <date>Canon T7</date>
-                                    <h2>Colibri</h2>
-                                    <p>Fotos de varios colibries de diferentes tamanos y colores.</p>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/085.webp"
-                                        alt="Colibri en un comedero" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/167 (Recortada).webp"
-                                        alt="Colibri volando" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/172.webp"
-                                        alt="Colibri descansando en un bebedero" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/121 (Recortada).webp"
-                                        alt="Colibri en el centro dfe Chihuahua" /></div>
-                            </div>
-                        </div>
-
-                        <div class="Galeria-Sesiones-1" id="Pajarito">
-                            <div class="middle">
-                                <div class="img-middle">
-                                    <img loading="lazy" src="Multimedia/Pictures/013.webp"
-                                        alt="Un pajarito juntando materiales para poder hacer su nido" />
-                                    <div class="MoreBtn">
-                                        <a href="Secundarias/Galerias/Pinzon Mexicano.html">
-                                            <h5>+</h5>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="left">
-                                <div class="content">
-                                    <date>Canon T7</date>
-                                    <h2>Pinzón Mexicano</h2>
-                                    <p>No estoy completamente seguro de que si sean esa especie pero están todo el año
-                                        en la ciudad llendo de un lado para otro ya sea buscando comida o agua o
-                                        materiales para hacer sus nidos como se ven en algunas de las fotos. Tanto este
-                                        como otros rojos, en mi experiencia son muy cantadores.</p>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/009.webp"
-                                        alt="Pinzón Mexicano" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/011.webp"
-                                        alt="Pajaro llevando materiales para su nido descansando" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/012.webp"
-                                        alt="Pinzón descansando en un cable" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/010.webp"
-                                        alt="Pinzón Mexicano descansando" /></div>
-                            </div>
-                        </div>
-
-                        <div class="Galeria-Sesiones-2" id="Abejas">
-                            <div class="middle">
-                                <div class="img-middle">
-                                    <img loading="lazy" src="Multimedia/Pictures/005.webp"
-                                        alt="Abeja polinizando flor morada" />
-                                    <div class="MoreBtn">
-                                        <a href="Secundarias/Galerias/Abejas.html">
-                                            <h5>+</h5>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="left title">
-                                <div class="content">
-                                    <date>Canon T7</date>
-                                    <h2>Abejas</h2>
-                                    <p>Lamada en nahuatl Xicotli a ciertos tipos de abejas o abejorros que ya no son tan
-                                        comunes de ver cumplen un papel fundamental en el ecosistema.</p>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/006.webp"
-                                        alt="Abejas realizando su trabajo" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/001.webp"
-                                        alt="Abejas polinizando" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/007.webp"
-                                        alt="Varias abejas en unas flores" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/008.webp"
-                                        alt="Abeja polinizando flores blancas" /></div>
-                            </div>
-                        </div>
-
-                        <div class="Galeria-Sesiones-1" id="Cotorra-Argentina">
-                            <div class="middle">
-                                <div class="img-middle">
-                                    <img loading="lazy" src="Multimedia/Pictures/042.webp"
-                                        alt="Cotorra Argentina en Chihuahua" />
-                                    <div class="MoreBtn">
-                                        <a href="Secundarias/Galerias/Cotorras.html">
-                                            <h5>+</h5>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="left">
-                                <div class="content">
-                                    <date>Canon T7</date>
-                                    <h2>Cotorra Argentina</h2>
-                                    <p>No estoy completamente seguro de que si sean esa especie pero están todo el año
-                                        en la ciudad llendo de un lado para otro ya sea buscando comida o agua o
-                                        materiales para hacer sus nidos como se ven en algunas de las fotos. Tanto este
-                                        como otros rojos, en mi experiencia son muy cantadores.</p>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/035.webp"
-                                        alt="Cotorra en Chihuahua" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/149 (Recortada).webp"
-                                        alt="Cotorras descansando en un poste en Chihuahua" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/072.webp"
-                                        alt="Cotorras Argentinas en Chihuahua Chihuahua Mexico" /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/032.webp"
-                                        alt="Fotografia de Cotorra Argentinas en Chihuahua" /></div>
-                            </div>
-                        </div>
-
-                        <div class="Galeria-Sesiones-2" id="Carpintero">
-                            <div class="middle">
-                                <div class="img-middle">
-                                    <img loading="lazy" src="Multimedia/Pictures/099 (Recortado).webp"
-                                        alt="Pajaro Carpintero Volando" />
-                                    <div class="MoreBtn">
-                                        <a href="Secundarias/Galerias/Carpinteros.html">
-                                            <h5>+</h5>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="left">
-                                <div class="content">
-                                    <date>Canon T7</date>
-                                    <h2>Carpintero Mexicano</h2>
-                                    <p>Los machos tienen una gorra roja, llegaron a finales del verano.</p>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/093.webp"
-                                        alt="Carpintero Mexicano macho." /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/112.webp"
-                                        alt="Carpintero Mexicano hembra." /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/148.webp"
-                                        alt="Carpintero picoteando un bambu." /></div>
-                                <div class="tile"><img loading="lazy" src="Multimedia/Pictures/096.webp"
-                                        alt="Pajaro Carpintero en Chihuahua" /></div>
+                <div class="Article-Section" id="FaunaUrbana">
+                    <div class="Article-Section-Img">
+                        <div class="img-middle">
+                            <img loading="lazy" src="Multimedia/Index/Pajaro.webp"
+                                alt="Cotorra argentina en el centro de Chihuahua" />
+                            <div class="MoreBtn">
+                                <a href="Secundarias/Galerias/FaunaUrbana.html">
+                                    <h5>+</h5>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </section>
-
-                <section class="Footer" id="footer" data-scroll-section data-scroll-section-id="section6">
-                    <footer>
-                        <div class="FooterInfo">
-                            <div class="left box">
-                                <h6>Hacerca de Mi</h6>
-                                <div class="content">
-                                    <p>Estoy empezando en la fotografia y aunque por la situacion actual no he podido
-                                        tomar
-                                        todas las fotos me gustaria o por flojera todas las que podria tomar si me
-                                        gustaria
-                                        mucho aprender.</p>
-                                    <div class="Social-Footer">
-                                        <div class="footer-btn from-left-footer"><a class="iconMobile"
-                                                href="https://twitter.com/unfotografocuu?s=08" target="_blank"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <h4>@unfotografocuu</h4>
-                                        </div>
-                                        <div class="footer-btn from-left-footer"><a class="iconMobile"
-                                                href="https://t.co/XdIwIDNkr3?amp=1" target="_blank"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <h4>@unfotografomascuu</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="center box">
-                                <h6>Informacion</h6>
-                                <div class="content">
-                                    <div class="footer-btn from-left-footer"><a class="fab fa-google-drive"
-                                            href="https://drive.google.com/drive/folders/17Upno49Bbr61Yz7B_ZA55s1FS7aL5PTa?usp=sharing"
-                                            target="_blank"></a>
-                                        <h4>Fotos Originales</h4>
-                                    </div>
-
-                                    <div class="footer-btn from-left-footer"><a class="fab fa-github"
-                                            href="https://github.com/unfotografomascuu/UnFotografomasCuu/tree/2.6.3"
-                                            target="_blank"></a>
-                                        <h4>Codigo de la Pagina</h4>
-                                    </div>
-
-                                    <div class="footer-btn from-left-footer"><a class="far fa-envelope"
-                                            href="mailto:unfotografomascuu@gmail.com"></a>
-                                        <h4>unfotografomascuu<br>@gmail.com</h4>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="right box">
-                                <h6>Experimental</h6>
-                                <div class="content">
-                                </div>
-                                <div class="prox">
-                                    <div class="select">
-                                        <h4 id="theme_selector">Tema</h4>
-                                        <select class="select__input" id="selTheme">
-                                            <option value="auto">Auto</option>
-                                            <option value="light">Light</option>
-                                            <option value="dark">Dark</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="Article-Section-Txt">
+                        <h2>Fauna Urbana en Chihuahua</h2>
+                        <div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum autem eos repudiandae
+                                quis nesciunt necessitatibus est facere ipsa sed, dolore et exercitationem minus
+                                quisquam ex recusandae? Optio enim repellendus deserunt?.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iure debitis
+                                enim ut, nisi aut, saepe porro labore non amet earum blanditiis similique quasi illo
+                                accusantium fugit odio sunt laborum rerum veritatis? Ducimus fuga dolorem harum
+                                explicabo. Ullam, dolore vel.......</p>
                         </div>
-                    </footer>
-                    <div class="TextoPequeño">
-                        <p>Pagina hecha por un estudiante de Programacion</p>
+                        <div class="article-btn from-left-footer"><a
+                                href="Secundarias/Galerias/FaunaUrbana.html">+</a>
+                            <a class="anim-btn"  href="Secundarias/Galerias/FaunaUrbana.html">Leer Mas...</a>
+                        </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
+            <section class="design-area" id="design" data-scroll-section data-scroll-section-id="section4">
+
+            </section>
+
+            <footer class="footer-area" id="footer" data-scroll-section data-scroll-section-id="section5">
+                <div class="footer-social">
+                    <div class="footer-btn from-left-footer" id="Twitter-Sec"><a class="iconMobile"
+                            href="https://twitter.com/unfotografocuu" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <h4>@unfotografocuu</h4>
+                    </div>
+                    <div class="footer-btn from-left-footer" id="Instagram-Sec"><a class="iconMobile"
+                            href="https://www.instagram.com/unfotografomascuu/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <h4>@unfotografomascuu</h4>
+                    </div>
+                </div>
+
+                <div class="footer-text">
+                    <p>Fotografias tomadas por <a href="https://www.instagram.com/unfotografomascuu/"
+                            target="_blank">@Andres Gardea</a></p>
+                </div>
+            </footer>
         </main>
+
+
     </div>
 
 
@@ -793,16 +411,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-
-
     <script src="index.js"></script>
     <script src="Scripts/barbaConfig.js" type="module"></script>
 
-    <script src="Scripts/btn.min.js"></script>
     <script src="Scripts/definitivedark.min.js"></script>
     <script src="Scripts/nav.min.js"></script>
     <script src="Scripts/sticky.min.js"></script>
-    <script src="Scripts/lightbox.min.js"></script>
+    <script src="Scripts/section.min.js"></script>
     <script src="Scripts/animaciones.min.js"></script>
 </body>
 

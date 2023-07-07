@@ -50,7 +50,7 @@
     <script src="../../Scripts/locomotive-scroll.min.js"></script>
 </head>
 
-<body data-barba="wrapper" id="wrapper">
+<body data-barba="wrapper" onmouseover="Sticky();">
 
     <div class="transition-container">
         <div class="transition">
@@ -101,13 +101,50 @@
     </div>
 
 
-    <div class="contenido" data-scroll-container onwheel="Sticky();">
-        <main data-barba="container" data-barba-namespace="articulo-colibries" class="container pagina-articulo">
+    <div class="contenido" data-scroll-container>
+        <main data-barba="container" data-barba-namespace="ArticuloPolinizadores" class="container pagina-articulo">
 
-            <header class="NavBar-2 nav-container anim-nav">
-                <a id="logo-2" class="anim-nav-element" href="../../index.html">UnFotografomasCuu</a>
-                <a href="../../index.html" class="back-btn anim-nav-element" id="back-to-home"><i
-                        class="fas fa-long-arrow-alt-left"></i></a>
+            <header class="NavBar-2" id="Nav-Section" data-scroll-section-id="section0">
+                <nav class="nav-bar">
+                    <h6 class="logo-text">UnFotografomasCUU</h6>
+                    <div class="menu-toggle">
+                        <div id="menu-toggle-btn" onclick="animNav();">
+                            <span class="menu-btn nav-activator"></span>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="nav-container">
+                    <div class="nav">
+                        <div class="social-links">
+                            <div class="nav-logo">Logo</div>
+                            <div class="nav-socials">
+                                <a href="">Facebook</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://www.instagram.com/andres.gardea/" target="_blank">Instagram</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://twitter.com/gardea_andres" target="_blank">Twitter</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://unfotografomascuu.com/" target="_blank">unfotografomascuu</a>
+                            </div>
+                        </div>
+                        <div class="nav-section-container">
+                            <div class="nav-section-link">
+                                <a id="nav-Activator-1" href="../../index.html" data-scroll-to>Home</a>
+                            </div>
+                            <div id="nav-Activator-2" class="nav-section-link">
+                                <a href="#Titulo" data-scroll-to>Informacion</a>
+                            </div>
+                        </div>
+                        <div class="nav-footer">
+                            <p>Pagina hecha por <a href="https://www.instagram.com/andres.gardea"
+                                    target="_blank"><b>@Andres Gardea</b></a></p>
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <section class="content-article" id="text" data-scroll-section data-scroll-section-id="g-section0">
@@ -121,23 +158,24 @@
                     <img src="../../Multimedia/Abejas/portada-desktop.webp" alt="Abeja en una Flor.">
                 </picture>
 
-                <h2 class="anim-gallery article-title">Polinizadores</h2><br>
+                <div class="article-space" id="Titulo"></div>
+                <h2 class="article-title">Polinizadores</h2><br>
 
-                <p class="anim-gallery">La <b>polinización</b> es el proceso donde se transfiere el polen desde el
+                <p>La <b>polinización</b> es el proceso donde se transfiere el polen desde el
                     <b>estambre</b> hasta el <b>pistilo</b>. Siendo el proceso por medio del cual las plantas
                     se reproducen. Por lo cual es un proceso ecológico fundamental dentro del ecosistema. Y debido a la
                     incapacidad o dificultad que tienen las plantas de realizarlo por sí mismas los polinizadores forman
                     parte fundamental del proceso de reproducción de las plantas.
                 </p><br>
-                <p class="anim-gallery">Aunque es una labor que creemos que es única o principalmente realizada por las
+                <p>Aunque es una labor que creemos que es única o principalmente realizada por las
                     abejas la polinización es una labor realizada por muchísimos más animales. Puede ser realizada de
                     múltiples formas ya sea gracias a la fuerza del viento o agua o a la intervención de animales como
                     <b>abejas</b>, <b>colibríes</b>, <b>murcielagos</b>, <b>mariposas</b> u otros insectos que en su
                     búsqueda de alimento (néctar) llevan el polen de una flor a otra contribuyendo así al proceso de
                     polinización.
                 </p><br>
-                <p class="anim-gallery">Existen <b>2 tipos</b> de polinización:</p>
-                <ul class="article-list anim-gallery">
+                <p>Existen <b>2 tipos</b> de polinización:</p>
+                <ul class="article-list">
                     <li class="article-point">-<b>Alógama/Cruzada:</b> Cuando por diferentes medios como lo pueden ser
                         insectos, aves, el viento o el agua el polen pasa de una flor a otra y la fecunda. Esta se suele
                         dar ya sea por el viento como en el caso del césped/pasto o las coniferas o a través de insectos
@@ -147,11 +185,11 @@
 
 
 
-                <h3 class="anim-gallery article-subtitle"> Las Abejas</h3>
-                <p class="anim-gallery">La Abeja Auropea <b>(Apis Mellifera)</b> es el tipo de abeja en el que todos
+                <h3 class="article-subtitle"> Las Abejas</h3>
+                <p>La Abeja Auropea <b>(Apis Mellifera)</b> es el tipo de abeja en el que todos
                     solemos pensar cuando nos imaginamos una abjeja. También se le conoce como abeja doméstica o abeja
                     melífera.</p><br>
-                <p class="anim-gallery">Aunque no son originarias de nuestro continente sino que son originarias del
+                <p>Aunque no son originarias de nuestro continente sino que son originarias del
                     norte de áfrica y de las costas europeas del mediterraneo al ser introducidas en practicamente todo
                     el mundo es el tipo de abeja que generalmente todos conocemos y es en lo primero que pensamos cuando
                     nos imaginamos una abeja,al ser una especies introducida invasoras que en algunos casos desplazado o
@@ -159,7 +197,7 @@
                     de las abejas locales que prefieren flores autóctonas estas no suelen polinizadas por lo que puede
                     llegar a afectar el ecosistema favoreciendo la aparición o reproduccion de otras especies invasoras.
                 </p><br>
-                <p class="anim-gallery">Forman parte fundamental del correcto funcionamiento de la cadena trofica y
+                <p>Forman parte fundamental del correcto funcionamiento de la cadena trofica y
                     del mantenimiento del ecosistema por ello es muy importante el que los apollemos aunque sea solo
                     facilitandoles o dandoles mas lugares para que puedan continuar con la polinizacion. Esto lo podemos
                     hacer ya sea plantando flores (de preferencia autoctonas) o colocando bebederos de los que puedan
@@ -168,8 +206,9 @@
                     para que puedan tomar fotos de las mejores maneras. </p><br>
 
                 <div class="article-gallery">
-                    <figure class="img-container size-g anim-gallery">
-                        <div class="img-contain">
+                    <figure class="img-container size-g">
+                        <div class="img-gallery-contain">
+
                             <img src="../../Multimedia/Abejas/003.webp" alt="Abeja polinizando una flor.">
                         </div>
                         <div class="info">
@@ -179,19 +218,19 @@
                                 </p>
                             </div>
                     </figure>
-                    <figure class="article-gallery-text anim-gallery">
+                    <figure class="article-gallery-text">
                         <h2>Xicotli </h2>
                         <p>Un tipo de abeja mielifera mas grande que la que todos conocemos a la que en nahuatl se le
                             dice Xicotli.</p>
                     </figure>
                 </div>
 
-                <p class="anim-gallery">Aunque hay especies que han sido introducidas como la Apis Mellifera más
+                <p>Aunque hay especies que han sido introducidas como la Apis Mellifera más
                     conocida como abeja melífera o abeja europea, existen especies de abejas parecidas a
                     las abejas que todos conocemos nativas de méxico y centroamérica, de las cuales se han registrado
                     15 especies de abejas nativas:</p><br>
 
-                <ul class="article-list anim-gallery">
+                <ul class="article-list">
                     <li class="article-point">-<b>El Abejorro Zumbador</b> (Bombus Sonorus)</li>
                     <li class="article-point">-<b>Tetragonisca Angustula</b> (Ajyus)</li>
                     <li class="article-point">-<b>Scaura Argyrea</b> (K'amas kap')</li>
@@ -199,7 +238,7 @@
                     <li class="article-point">-<b> Melipona Solani</b> (Jach K'ojo')</li>
                 </ul>
 
-                <p class="anim-gallery">Y aunque la domesticación de estas abejas data de tiempos prehispánicos cosa que
+                <p>Y aunque la domesticación de estas abejas data de tiempos prehispánicos cosa que
                     les da una gran importancia no solo ambiental sino que también cultural actualmente se ven
                     amenazadas por el rápido aumento en el uso de otras especies de abejas en granjas industriales y la
                     invasión de otras especies que aunque no estén tan bien adaptadas al medio si se reproducen de
@@ -207,91 +246,27 @@
 
                 <div class="article-gallery">
                     <figure class="img-container size-g">
-                        <div class="img-contain">
-                            <img src="../../Multimedia/Abejas/004.webp"
-                                alt="Abejas trabajando juntas para polinizar varias flores.">
-                        </div>
-                        <div class="info">
-                            <div class="text-img">
-                                <div class="img-btn" src="../../Multimedia/Abejas/004.webp"
-                                    alt="Abejas trabajando juntas para polinizar varias flores." onclick="ZoomBtn();">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="../../Multimedia/Abejas/004.webp"
+                            alt="Abejas trabajando juntas para polinizar varias flores.">
                     </figure>
                     <figure class="img-container size-g">
-                        <div class="img-contain">
-                            <img src="../../Multimedia/Abejas/008.webp" alt="Abeja bebiendo Agua.">
-                        </div>
-                        <div class="info">
-                            <div class="text-img">
-                                <div class="img-btn" src="../../Multimedia/Abejas/008.webp" alt="Aunque obtener gran parte de los liquidos que necesitan del nectar, las abejas 
-                                    aun asi tienen que beber agua, pueden hacerlo de rocio de las flores o de bebederos 
-                                    que encuentren." onclick="ZoomBtn();">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="../../Multimedia/Abejas/008.webp" alt="Abeja bebiendo Agua.">
                     </figure>
                     <figure class="img-container size-g">
-                        <div class="img-contain">
-                            <img src="../../Multimedia/Abejas/033.webp" alt="Abeja en una lavanda.">
-                        </div>
-                        <div class="info">
-                            <div class="text-img">
-                                <div class="img-btn" src="../../Multimedia/Abejas/033.webp" alt="A las abejas les gustan la lavanda, las petunias, las margaritas, los claveles, los geranios y los girasoles 
-                                    ademas de las hierbas, como la menta, el romero, la albahaca y el tomillo."
-                                    onclick="ZoomBtn();">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="../../Multimedia/Abejas/033.webp" alt="Abeja en una lavanda.">
                     </figure>
                     <figure class="img-container size-g">
-                        <div class="img-contain">
-                            <img src="../../Multimedia/Abejas/027.webp" alt="Abeja en una pequeña flor rosada.">
-                        </div>
-                        <div class="info">
-                            <div class="text-img">
-                                <div class="img-btn" src="../../Multimedia/Abejas/027.webp"
-                                    alt="Abeja en una especie de margarita rosada." onclick="ZoomBtn();">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="../../Multimedia/Abejas/027.webp" alt="Abeja en una pequeña flor rosada.">
                     </figure>
                     <figure class="img-container size-g">
-                        <div class="img-contain">
-                            <img src="../../Multimedia/Abejas/007.webp" alt="Abeja en una flor balnca.">
-                        </div>
-                        <div class="info">
-                            <div class="text-img">
-                                <div class="img-btn" src="../../Multimedia/Abejas/007.webp" alt="Abeja en una margarita"
-                                    onclick="ZoomBtn();">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="../../Multimedia/Abejas/007.webp" alt="Abeja en una flor balnca.">
                     </figure>
                     <figure class="img-container size-g">
-                        <div class="img-contain">
-                            <img src="../../Multimedia/Abejas/005.webp" alt="Abeja en una pequeña flor balnca.">
-                        </div>
-                        <div class="info">
-                            <div class="text-img">
-                                <div class="img-btn" src="../../Multimedia/Abejas/005.webp"
-                                    alt="Abejas en las flores de una Piracanta (Pyracantha angustifolia)."
-                                    onclick="ZoomBtn();">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </figure>
+                        <img src="../../Multimedia/Abejas/005.webp" alt="Abeja en una pequeña flor balnca.">
                     </figure>
                 </div>
                 <h3 class="article-subtitle"> Los Abejorros</h3>
-                <p class="anim-gallery">El Abejorro Carpintero <b>(Xylocopa fimbriata)</b> es un tipo de abejorro...
+                <p>El Abejorro Carpintero <b>(Xylocopa fimbriata)</b> es un tipo de abejorro...
                     Lorem
                     ipsum, dolor sit amet consectetur adipisicing elit. Adipisci deserunt modi voluptatibus
                     exercitationem architecto cum!</p>
@@ -306,7 +281,7 @@
                 <figcaption class="pie-foto">Un Abejorro Carpintero.</figcaption>
 
                 <h3 class="article-subtitle">Jardines para Polinizadores</h3>
-                <p class="anim-gallery">Debido a la importancia que tienen para el buen mantenimiento del ecosistema el
+                <p>Debido a la importancia que tienen para el buen mantenimiento del ecosistema el
                     tener un <b>jardín para polinizadores</b> es una gran idea y es un pequeño granito de arena que cada
                     uno
                     podemos poner para que puedan seguir cumpliendo su labor, aun así esto es algo que se tiene que
@@ -319,18 +294,18 @@
                     recomendado que pensemos o tengamos en cuenta la cantidad de cuidado que les podremos dar. </p><br>
 
                 <h3 class="article-subtitle">Polinización en Ambiente Urbano</h3>
-                <p class="anim-gallery">Con el crecimiento de las zonas urbanizadas y la consecuente
+                <p>Con el crecimiento de las zonas urbanizadas y la consecuente
                     reducción de entornos naturales muchas especies se han visto afectadas o desplazadas, y aunque
                     podríamos pensar que los polinizadores son de los grupos más afectados por la desaparición o
                     reducción de la flora en algunos casos si se dan las condiciones adecuadas estos se pueden ver
                     beneficiados por el crecimiento de las ciudades.</p><br>
-                <p class="anim-gallery">Naturalmente con el crecimiento de la mancha urbana se reduce la diversidad de
+                <p>Naturalmente con el crecimiento de la mancha urbana se reduce la diversidad de
                     especies que podemos encontrar. Y aunque los insectos y otros polinizadores también se ven
                     afectados
                     esto no interrumpe el proceso de la polinización ya que aunque algunos pueden ser desplazados
                     completamente o parcialmente otros entre ellos abejas y abejorros continúan realizando su labor
                     en algunos casos viéndose beneficiados y aumentando sus números.</p><br>
-                <p class="anim-gallery">En un estudio realizado por el Centro Alemán de
+                <p>En un estudio realizado por el Centro Alemán de
                     Investigación Integrativa de Biodiversidad (iDiv) en colaboración con la Universidad Martin Luther
                     Halle-Wittenberg (MLU) y el Centro Helmholtz de Investigación Ambiental (UFZ) se descubrió que en un
                     centro urbano con una buena presencia de jardines, parque y otras zonas verdes las que se encuentran
@@ -349,25 +324,12 @@
                 <a href="https://www.gob.mx/semarnat%7Cpolinizadores/articulos/que-es-y-como-realizar-tu-jardin-de-polinizadores"
                     class="article-font" target="_blank">¿Qué es y cómo realizar tú jardín de polinizadores? - Gobierno
                     de Mexico</a>
-
-
             </section>
 
 
-            <footer class="footer-sec" data-scroll-section data-scroll-section-id="g-section3">
+            <footer class="footer-area" data-scroll-section data-scroll-section-id="g-section3">
 
-                <div class="controler-section-sec">
-                    <div class="select_sec">
-                        <h4 id="theme_selector">Tema</h4>
-                        <select class="select__input" id="selTheme">
-                            <option value="auto">Auto</option>
-                            <option value="light">Light</option>
-                            <option value="dark">Dark</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="Social-Footer-Sec">
+                <div class="footer-social">
                     <div class="footer-btn from-left-footer" id="Twitter-Sec"><a class="iconMobile"
                             href="https://twitter.com/unfotografocuu" target="_blank"><i class="fab fa-twitter"></i></a>
                         <h4>@unfotografocuu</h4>
@@ -380,23 +342,12 @@
                 </div>
 
 
-                <div class="TextoPequeño-Sec">
+                <div class="footer-text">
                     <p>Fotografias tomadas por <a href="https://www.instagram.com/unfotografomascuu/"
                             target="_blank">@Andres Gardea</a></p>
                 </div>
             </footer>
 
-            <section class="lightbox" id="ligthbox" data-scroll-sticky data-scroll-target="">
-                <div class="lightbox-content" id="lg">
-                    <div class="img-show">
-                        <img class="img-lightbox" src="" alt="">
-                    </div>
-                    <p class="copy"></p>
-                    <div class="close-btn" onclick="CloseBtn();">
-                        <h1 class="close">+</h1>
-                    </div>
-                </div>
-            </section>
         </main>
     </div>
 
@@ -411,12 +362,12 @@
 
     <script src="../../index.js"></script>
     <script src="../../Scripts/barbaConfig.js" type="module"></script>
-    <script src="../../Scripts/btn.min.js"></script>
     <script src="../../Scripts/definitivedark.min.js"></script>
-    <script src="../../Scripts/lightbox.min.js"></script>
     <script src="../../Scripts/animaciones.min.js"></script>
     <script src="../../Scripts/nav.min.js"></script>
     <script src="../../Scripts/sticky.min.js"></script>
+    <script src="../../Scripts/section.min.js"></script>
+
 
 </body>
 

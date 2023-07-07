@@ -30,7 +30,7 @@
     <script src="../../Scripts/locomotive-scroll.min.js"></script>
 </head>
 
-<body data-barba="wrapper" id="wrapper">
+<body data-barba="wrapper" onmouseover="Sticky();">
 
     <div class="transition-container">
         <div class="transition">
@@ -81,23 +81,63 @@
         </div>
     </div>
     
-    <div class="contenido" data-scroll-container onwheel="Sticky();">
-        <main data-barba="container" data-barba-namespace="Prueba" class="container pagina-imagen">
+    <div class="contenido" data-scroll-container>
+        <main data-barba="container" data-barba-namespace="GaleriaCotorras" class="container pagina-imagen">
 
             <div class="Nav-Space"></div>
+            <header class="NavBar-2" id="Nav-Section" data-scroll-section-id="section0">
+                <nav class="nav-bar">
+                    <h6 class="logo-text">UnFotografomasCUU</h6>
+                    <div class="menu-toggle">
+                        <div id="menu-toggle-btn" onclick="animNav();">
+                            <span class="menu-btn nav-activator"></span>
+                        </div>
+                    </div>
+                </nav>
 
-            <header class="NavBar-2 nav-container anim-nav">
-                <a id="logo-2" class="anim-nav-element" href="../../index.html">UnFotografomasCuu</a>
-                <a href="../../index.html" class="back-btn anim-nav-element" id="back-to-home"><i
-                        class="fas fa-long-arrow-alt-left"></i></a>
+                <div class="nav-container">
+                    <div class="nav">
+                        <div class="social-links">
+                            <div class="nav-logo">Logo</div>
+                            <div class="nav-socials">
+                                <a href="">Facebook</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://www.instagram.com/andres.gardea/" target="_blank">Instagram</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://twitter.com/gardea_andres" target="_blank">Twitter</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://unfotografomascuu.com/" target="_blank">unfotografomascuu</a>
+                            </div>
+                        </div>
+                        <div class="nav-section-container">
+                            <div class="nav-section-link">
+                                <a id="nav-Activator-1" href="../../index.html" data-scroll-to>Home</a>
+                            </div>
+                            <div id="nav-Activator-2" class="nav-section-link">
+                                <a href="#Titulo" data-scroll-to>Informacion</a>
+                            </div>
+                            <div id="nav-Activator-3" class="nav-section-link">
+                                <a href="#Fotos" data-scroll-to>Mas Fotos</a>
+                            </div>
+                        </div>
+                        <div class="nav-footer">
+                            <p>Pagina hecha por <a href="https://www.instagram.com/andres.gardea"
+                                    target="_blank"><b>@Andres Gardea</b></a></p>
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <section class="texto-pagina-imagen" id="text" data-scroll-section data-scroll-section-id="g-section0">
                 <div class="text-part-img">
-                    <h2 class="anim-gallery">Prueba de las Galeria GSAP+BarbaJS</h2><br>
-                    <p class="anim-gallery">La cotorra Argentina es una especie no nativa que generalmente se suele
+                    <h2 class="
+">Prueba de las Galeria GSAP+BarbaJS</h2><br>
+                    <p>La cotorra Argentina es una especie no nativa que generalmente se suele
                         introducir como mascotas que por un motivo u otro se terminan escapando y repoduciendo.</p><br>
-                    <p class="anim-gallery">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
                         aspernatur sequi,
                         necessitatibus et repellendus quisquam ex assumenda modi tempore architecto quam, saepe
                         voluptates ducimus vero ipsa quo eveniet quae deleniti? Ipsum iste quod tenetur earum
@@ -107,7 +147,7 @@
                         doloribus id voluptates quos dolores cum consectetur! Ea, quaerat nesciunt. Laborum, magni
                         animi beatae sequi doloremque facere eveniet dicta cupiditate ut commodi totam, ullam
                         expedita possimus id quae!</p><br>
-                    <p class="anim-gallery">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nobis
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nobis
                         molestias!
                         Reprehenderit porro labore veniam eligendi nesciunt, aut mollitia error ab qui cupiditate
                         ullam perspiciatis iste, dicta earum impedit repellat dignissimos? Voluptas illo maxime esse
@@ -122,11 +162,12 @@
                         architecto laborum obcaecati commodi quaerat eius non similique doloribus nesciunt, dolorum
                         quas, tempore delectus, expedita placeat!</p>
 
-                    <div class="img-text anim-gallery">
+                    <div class="img-text 
+">
                         <div class="image-mask"></div>
                     </div>
 
-                    <p class="anim-gallery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
                         ducimus possimus dolor
                         cumque? Distinctio sunt perferendis non. Rerum tempora similique facere enim sit dolorum
                         temporibus, molestiae eligendi obcaecati cumque dolores nobis tenetur, vel labore quia
@@ -140,11 +181,11 @@
                 </div>
             </section>
 
-            <section class="imagen-completa" id="gallery" data-scroll-section data-scroll-section-id="g-section2">
+            <section class="gallary-page-container" id="gallery" data-scroll-section data-scroll-section-id="g-section2">
 
-                <div class="img-container size-3"  onclick="ZoomBtn();">
+                <div class="img-container size-3" >
                     <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Pictures/035.webp"
+                        <img  loading="lazy" src="../../Multimedia/Pictures/035.webp"
                             alt="Cotorra argentina en Chihuahua." />
                     </div>
                     <div class="info">
@@ -163,9 +204,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-container size-6" onclick="ZoomBtn();">
+                <div class="img-container size-6">
                     <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Pictures/150.webp"
+                        <img  loading="lazy" src="../../Multimedia/Pictures/150.webp"
                             alt="Cotorras descansando en un cable de la luz." />
                     </div>
                     <div class="info">
@@ -184,9 +225,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-container size-1" onclick="ZoomBtn();">
+                <div class="img-container size-1">
                     <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Pictures/073.webp"
+                        <img  loading="lazy" src="../../Multimedia/Pictures/073.webp"
                             alt="Cotorra Argentina descansando en una higuera." />
                     </div>
                     <div class="info">
@@ -205,9 +246,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-container size-6" onclick="ZoomBtn();">
+                <div class="img-container size-6">
                     <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Pictures/069.webp"
+                        <img  loading="lazy" src="../../Multimedia/Pictures/069.webp"
                             alt="Cotorra Argentina comiendo higos" />
                     </div>
                     <div class="info">
@@ -226,9 +267,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-container size-3" onclick="ZoomBtn();">
+                <div class="img-container size-3">
                     <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Pictures/033.webp"
+                        <img  loading="lazy" src="../../Multimedia/Pictures/033.webp"
                             alt="Grupo de Cotorras en Chihuahua" />
                     </div>
                     <div class="info">
@@ -247,9 +288,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-container size-3" onclick="ZoomBtn();">
+                <div class="img-container size-3">
                     <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Pictures/070.webp"
+                        <img  loading="lazy" src="../../Multimedia/Pictures/070.webp"
                             alt="Cotorra en Chihuahua" />
                     </div>
                     <div class="info">
@@ -268,9 +309,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-container size-3" onclick="ZoomBtn();">
+                <div class="img-container size-3">
                     <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Pictures/042.webp"
+                        <img  loading="lazy" src="../../Multimedia/Pictures/042.webp"
                             alt="Foto de una Cotorra descansando en un arbol." />
                     </div>
                     <div class="info">
@@ -289,9 +330,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-container size-3" onclick="ZoomBtn();">
+                <div class="img-container size-3">
                     <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Pictures/071.webp"
+                        <img  loading="lazy" src="../../Multimedia/Pictures/071.webp"
                             alt="Cotorra Argentina descansando en una higuera." />
                     </div>
                     <div class="info">
@@ -312,7 +353,7 @@
                 </div>
             </section>
 
-            <footer class="footer-sec" data-scroll-section data-scroll-section-id="g-section3">
+            <footer class="footer-area" data-scroll-section data-scroll-section-id="g-section3">
 
                 <div class="controler-section-sec">
                     <div class="select_sec">
@@ -325,7 +366,7 @@
                     </div>
                 </div>
 
-                <div class="Social-Footer-Sec">
+                <div class="footer-social">
                     <div class="footer-btn from-left-footer" id="Twitter-Sec"><a class="iconMobile"
                             href="https://twitter.com/unfotografocuu" target="_blank"><i
                                 class="fab fa-twitter"></i></a>
@@ -338,22 +379,12 @@
                 </div>
 
 
-                <div class="TextoPequeño-Sec">
+                <div class="footer-text">
                     <p>Fotografias tomadas por <a href="https://www.instagram.com/unfotografomascuu/" target="_blank">@Andres Gardea</a></p>
                 </div>
             </footer>
 
-            <section class="lightbox" id="ligthbox" data-scroll-sticky data-scroll-target="">
-                <div class="lightbox-content" id="lg">
-                    <div class="img-show">
-                        <img class="img-lightbox" src="" alt="">
-                    </div>
-                    <p class="copy"></p>
-                    <div class="close-btn" onclick="CloseBtn();">
-                        <h1 class="close">+</h1>
-                    </div>
-                </div>
-            </section>
+            
 
         </main>
     </div>
@@ -367,12 +398,12 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="../../index.js"></script>
     <script src="../../Scripts/barbaConfig.js" type="module"></script>
-    <script src="../../Scripts/btn.min.js"></script>
     <script src="../../Scripts/definitivedark.min.js"></script>
-    <script src="../../Scripts/lightbox.min.js"></script>
     <script src="../../Scripts/animaciones.min.js"></script>
     <script src="../../Scripts/nav.min.js"></script>
     <script src="../../Scripts/sticky.min.js"></script>
+    <script src="../../Scripts/section.min.js"></script>
+
 
 </body>
 

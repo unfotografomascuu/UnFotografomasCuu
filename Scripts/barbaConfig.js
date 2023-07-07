@@ -35,11 +35,6 @@ barba.init({
                 pageTransition();
                 loaderText();
                 loadBar();
-                contantAnimation();
-            },
-
-            async enter() {
-                contantAnimation();
             }
         }
     ],

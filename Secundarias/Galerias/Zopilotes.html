@@ -36,7 +36,7 @@
     <script src="../../Scripts/locomotive-scroll.min.js"></script>
 </head>
 
-<body data-barba="wrapper" id="wrapper">
+<body data-barba="wrapper" onmouseover="Sticky();">
 
     <div class="transition-container">
         <div class="transition">
@@ -86,512 +86,191 @@
     </div>
     </div>
 
-    <div class="contenido" data-scroll-container onwheel="Sticky();">
-        <main data-barba="container" data-barba-namespace="Prueba" class="container pagina-imagen">
+    <div class="contenido" data-scroll-container>
+        <main data-barba="container" data-barba-namespace="GaleriaZopilotes" class="container pagina-imagen">
 
             <div class="Nav-Space"></div>
 
-            <header class="NavBar-2 nav-container anim-nav">
-                <h1 id="logo-2" class="anim-nav-element" href="../../index.html">UnFotografomasCuu</h1>
-                <a href="../Articulos/Articulo Zopilotes.html" class="back-btn anim-nav-element" id="back-to-home"><i
-                        class="fas fa-long-arrow-alt-left"></i></a>
+            <header class="NavBar-2" id="Nav-Section" data-scroll-section-id="section0">
+                <nav class="nav-bar">
+                    <h6 class="logo-text">UnFotografomasCUU</h6>
+                    <div class="menu-toggle">
+                        <div id="menu-toggle-btn" onclick="animNav();">
+                            <span class="menu-btn nav-activator"></span>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="nav-container">
+                    <div class="nav">
+                        <div class="social-links">
+                            <div class="nav-logo">Logo</div>
+                            <div class="nav-socials">
+                                <a href="">Facebook</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://www.instagram.com/andres.gardea/" target="_blank">Instagram</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://twitter.com/gardea_andres" target="_blank">Twitter</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://unfotografomascuu.com/" target="_blank">unfotografomascuu</a>
+                            </div>
+                        </div>
+                        <div class="nav-section-container">
+                            <div class="nav-section-link">
+                                <a id="nav-Activator-1" href="../../index.html" data-scroll-to>Home</a>
+                            </div>
+                            <div id="nav-Activator-2" class="nav-section-link">
+                                <a href="../Articulos/ZopilotesChihuahua.html" data-scroll-to>Mas Informacion</a>
+                            </div>
+                        </div>
+                        <div class="nav-footer">
+                            <p>Pagina hecha por <a href="https://www.instagram.com/andres.gardea"
+                                    target="_blank"><b>@Andres Gardea</b></a></p>
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <section class="texto-pagina-imagen" id="text" data-scroll-section data-scroll-section-id="g-section0">
                 <div id="pinSection" class="text-part-img">
                     <blockquote data-scroll data-scroll-sticky data-scroll-target="#pinSection" class="pinText">
                         <div class="esp-gallery"></div>
-                        <h2 class="anim-gallery">Zopilotes en Chihuahua</h2>
-                        <p class="anim-gallery">Probablemente debido al rápido crecimiento de la mancha urbana y a la
+                        <h2 class="">Zopilotes en Chihuahua</h2>
+                        <p>Probablemente debido al rápido crecimiento de la mancha urbana y a la
                             pérdida o desplazamiento de sus hábitat naturales se han visto obligados o llevado a llegar
                             a
                             los grande árboles de varias colonias del centro de la ciudad, esto debido al gran tamaño
                             que tiene estos y a que son de los pocos árboles de ese tamaño que podemos encontrar en la
                             ciudad.</p>
-                        <p class="anim-gallery">Buscan este tipo de árboles (bastante altos) ya que esto les facilita el
+                        <p>Buscan este tipo de árboles (bastante altos) ya que esto les facilita el
                             poder salir de ellos únicamente planeando sin tener que gastar energía para aletear y
                             elevarse hacia una corriente de aire que les permita subir aún más.</p>
-                        <p class="anim-gallery">Debido a esto se les ha visto particularmente en colonias como San
+                        <p>Debido a esto se les ha visto particularmente en colonias como San
                             Felipe una colonia bastante vieja y con muchos árboles de estos tipos aunque también se los
                             ha visto en colonias de las afuera de la ciudad y cerca de las presas.</p>
-                        <p class="anim-gallery">Al ser una colonia tan céntrica y con una variedad de servicios como
+                        <p>Al ser una colonia tan céntrica y con una variedad de servicios como
                             pueden ser hospitales, clínicas y funerarias ha llevado a que se crea que vienen en busca de
                             esto, aunque esto no es cierto ya que lo único que buscan es un lugar donde descansar y
                             pasar la noche o recuperar fuerzas para seguir su camino.</p>
 
-                        <div class="img-text anim-gallery">
-                            <div class="image-mask"></div>
-                        </div>
 
-                        <p class="anim-gallery">Al comenzar a caer la tarde (alrededor de las 4 o 5) comienzan a llegar
+                        <p>Al comenzar a caer la tarde (alrededor de las 4 o 5) comienzan a llegar
                             o solos o en grupos de no más de 20 aunque junto con los últimos rayos del sol se han visto
                             grupos de alrededor de 100 ejemplares llegando y peleando por un lugar para descansar.</p>
-                            <p class="anim-gallery">El hecho de que se vean obligados a adentrarse tanto en la ciudad nos
-                                debería poner a pensar en cómo el desarrollo ya sea correcto o no de esta afecta a las
-                                especies que habitaban desde antes esta región. Además existen muchos mitos y prejuicios
-                                hacia especies como esta si quieres ver más información acerca de los Zopilotes puedes
-                                encontrarla en el siguiente artículo...</p>
+                        <p>El hecho de que se vean obligados a adentrarse tanto en la ciudad nos
+                            debería poner a pensar en cómo el desarrollo ya sea correcto o no de esta afecta a las
+                            especies que habitaban desde antes esta región. Además existen muchos mitos y prejuicios
+                            hacia especies como esta si quieres ver más información acerca de los Zopilotes puedes
+                            encontrarla en el siguiente artículo...</p>
 
-                        <div class="gallery-btn from-left-footer"><a class="fas fa-long-arrow-alt-left"
-                                href="../Articulos/Articulo Zopilotes.html"></a>
-                            <a class="anim-btn anim-a" href="../Articulos/Articulo Zopilotes.html">Articulo completo
-                                hacerca de los Zopilotes Aurta</a>
+                        <div class="article-btn from-left"><a class="fas fa-long-arrow-alt-left"
+                                href="../Articulos/ZopilotesChihuahua.html"></a>
+                            <a class="anim-btn" href="../Articulos/ZopilotesChihuahua.html">
+                                Articulo completo hacerca de los Colibríes</a>
                         </div>
-                        <div class="esp"></div>
                     </blockquote>
                 </div>
             </section>
 
-            <section class="imagen-completa" id="gallery" data-scroll-section data-scroll-section-id="g-section2">
-                <div class="img-container size-1" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/063.webp"
-                            alt="Zopilotes llagando a un arbol en el centro de Chihuahua." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/063.webp"
-                                alt="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum culpa dignissimos expedita distinctio fuga consectetur ad sequi, officiis fugiat adipisci!">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+            <section class="gallary-page-container" id="gallery" data-scroll-section
+                data-scroll-section-id="g-section2">
+                <div class="img-container size-1">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/063.webp"
+                        alt="Zopilotes llagando a un arbol en el centro de Chihuahua." />
                 </div>
 
-                <div class="img-container size-6" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/065.webp"
-                            alt="Zopilote volando con un cielo nublado de fondo" />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/065.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-6">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/065.webp"
+                        alt="Zopilote volando con un cielo nublado de fondo" />
                 </div>
-                <div class="lateral-text text-1 anim-gallery">
+                <div class="lateral-text text-1">
                     <h2>Zopilote</h2>
                     <p>Pertenecen a la especie Cathartes Aura y se le suele conocer como buitre cabecirrojo.</p>
                 </div>
 
-                <div class="img-container size-1" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/017.webp"
-                            alt="Zopilotes descansando en un arbol con la luna de fondo." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/017.webp"
-                                alt="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum culpa dignissimos expedita distinctio fuga consectetur ad sequi, officiis fugiat adipisci!">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-1">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/017.webp"
+                        alt="Zopilotes descansando en un arbol con la luna de fondo." />
                 </div>
 
-                <div class="img-container size-3" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/014.webp"
-                            alt="Zopilote descansando en un espectacular de la ciudad de Chihuahua." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/014.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-3">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/014.webp"
+                        alt="Zopilote descansando en un espectacular de la ciudad de Chihuahua." />
                 </div>
-                <div class="img-container size-6" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/013.webp"
-                            alt="Zopilotes descansando entre los edificios/casas de Chihuauhua." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/013.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-6">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/013.webp"
+                        alt="Zopilotes descansando entre los edificios/casas de Chihuauhua." />
                 </div>
 
 
-                <div class="img-container size-6" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/041.webp"
-                            alt="Zopilotes aterrizando en un arbol." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/041.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-6">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/041.webp"
+                        alt="Zopilotes aterrizando en un arbol." />
                 </div>
-                <div class="img-container size-3" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/071.webp"
-                            alt="Zopilote iluminado por la calida luz del atardecer." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/071.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-3">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/071.webp"
+                        alt="Zopilote iluminado por la calida luz del atardecer." />
                 </div>
 
-                <div class="img-container size-3" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/045.webp"
-                            alt="Zopilotes planeando para descansar en un arbol." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/045.webp"
-                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis ipsum expedita natus ratione autem, exercitationem adipisci iste consequatur earum corrupti libero.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-3">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/045.webp"
+                        alt="Zopilotes planeando para descansar en un arbol." />
                 </div>
-                <div class="img-container size-3" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/048.webp"
-                            alt="Zopiote Aura aleteando para descansar en un arbol." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/048.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-3">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/048.webp"
+                        alt="Zopiote Aura aleteando para descansar en un arbol." />
                 </div>
-                <div class="img-container size-3" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/050(Recortado).webp"
-                            alt="Zopilote descansando sobre una casa en Chihuahua." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/050.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-3">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/050(Recortado).webp"
+                        alt="Zopilote descansando sobre una casa en Chihuahua." />
+                </div>
+                <div class="img-container size-2">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/033.webp"
+                        alt="Foto de un Zopilote encontrando un espacio donde descansar." />
+                </div>
+                <div class="img-container size-2">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/040.webp" alt="Zopilote aterrizando." />
                 </div>
 
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/033.webp"
-                            alt="Foto de un Zopilote encontrando un espacio donde descansar." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/033.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/009.webp"
+                        alt="Zopilote en un paisaje urbano." />
                 </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/040.webp"
-                            alt="Zopilote aterrizando." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/040.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/029.webp"
+                        alt="Zopilote intentando aterrizar." />
                 </div>
 
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/009.webp"
-                            alt="Zopilote en un paisaje urbano." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/009.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/029.webp"
-                            alt="Zopilote intentando aterrizar." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/029.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-3">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/023(Recortado).webp"
+                        alt="Zopilote con un cielo ligeramente nublado de fondo." />
                 </div>
 
-                <div class="img-container size-3" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/023(Recortado).webp"
-                            alt="Zopilote con un cielo ligeramente nublado de fondo." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/023.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-6">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/057.webp"
+                        alt="Zopilote Volando entre los arboles." />
                 </div>
-                <div class="img-container size-6" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/057.webp"
-                            alt="Zopilote Volando entre los arboles." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/057.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container size-2">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/001.webp"
+                        alt="Zopilote Volando con un cielo completamente nublado." />
+                </div>
+                <div class="img-container size-2">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/072.webp"
+                        alt="Zopilote iluminado con la luz del Atardecer." />
+                </div>
+                <div class="img-container size-1">
+                    <img loading="lazy" src="../../Multimedia/Zopilotes/027.webp"
+                        alt="Zopilote Volando al Atardecer iluminado por una luz rojiza." />
                 </div>
 
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/001.webp"
-                            alt="Zopilote Volando con un cielo completamente nublado." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/001.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="img-container size-2" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/072.webp"
-                            alt="Zopilote iluminado con la luz del Atardecer." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/072.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="img-container size-1" onclick="ZoomBtn();">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Zopilotes/027.webp"
-                            alt="Zopilote Volando al Atardecer iluminado por una luz rojiza." />
-                    </div>
-                    <div class="info">
-                        <div class="text-img">
-                            <h3>Cathartes Aura</h3>
-                            <p>Conocido tambien como: <br>
-                                buitre americano,<br>
-                                buitre cabecirrojo,<br>
-                                aura tiñosa,<br>
-                                gallinazo de cabeza roja o <br>
-                                simplemente como Zopilote
-                            </p>
-                            <div class="img-btn" src="../../Multimedia/Zopilotes/027.webp"
-                                alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
-                                <i class="fas fa-search-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </section>
 
-            <footer class="footer-sec" data-scroll-section data-scroll-section-id="g-section3">
+            <footer class="footer-area" data-scroll-section data-scroll-section-id="g-section3">
 
-                <div class="controler-section-sec">
-                    <div class="select_sec">
-                        <h4 id="theme_selector">Tema</h4>
-                        <select class="select__input" id="selTheme">
-                            <option value="auto">Auto</option>
-                            <option value="light">Light</option>
-                            <option value="dark">Dark</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="Social-Footer-Sec">
+                <div class="footer-social">
                     <div class="footer-btn from-left-footer" id="Twitter-Sec"><a class="iconMobile"
                             href="https://twitter.com/unfotografocuu" target="_blank"><i class="fab fa-twitter"></i></a>
                         <h4>@unfotografocuu</h4>
@@ -604,23 +283,14 @@
                 </div>
 
 
-                <div class="TextoPequeño-Sec">
+                <div class="footer-text">
                     <p>Fotografias tomadas por <a href="https://www.instagram.com/unfotografomascuu/"
-                            target="_blank">@Andres Gardea</a></p>
+                            target="_blank">@Andres
+                            Gardea</a></p>
                 </div>
             </footer>
 
-            <section class="lightbox" id="ligthbox" data-scroll-sticky data-scroll-target="">
-                <div class="lightbox-content" id="lg">
-                    <div class="img-show">
-                        <img class="img-lightbox" src="" alt="">
-                    </div>
-                    <p class="copy"></p>
-                    <div class="close-btn" onclick="CloseBtn();">
-                        <h1 class="close">+</h1>
-                    </div>
-                </div>
-            </section>
+
 
         </main>
     </div>
@@ -636,12 +306,12 @@
 
     <script src="../../index.js"></script>
     <script src="../../Scripts/barbaConfig.js" type="module"></script>
-    <script src="../../Scripts/btn.min.js"></script>
     <script src="../../Scripts/definitivedark.min.js"></script>
-    <script src="../../Scripts/lightbox.min.js"></script>
     <script src="../../Scripts/animaciones.min.js"></script>
     <script src="../../Scripts/nav.min.js"></script>
     <script src="../../Scripts/sticky.min.js"></script>
+    <script src="../../Scripts/section.min.js"></script>
+
 
 </body>
 

@@ -49,7 +49,7 @@
     <script src="../../Scripts/locomotive-scroll.min.js"></script>
 </head>
 
-<body data-barba="wrapper" id="wrapper">
+<body data-barba="wrapper" onmouseover="Sticky();">
 
     <div class="transition"></div>
     <div class="first-block"></div>
@@ -72,24 +72,65 @@
         </div>
     </div>
 
-    <div class="contenido" data-scroll-container onwheel="Sticky();">
+    <div class="contenido" data-scroll-container>
         <main data-barba="container" data-barba-namespace="Prueba" class="container pagina-imagen">
 
             <div class="Nav-Space"></div>
 
-            <header class="NavBar-2 nav-container anim-nav">
-                <a id="logo-2" class="anim-nav-element" href="../../index.html">UnFotografomasCuu</a>
-                <a href="../../index.html" class="back-btn anim-nav-element" id="back-to-home"><i
-                        class="fas fa-long-arrow-alt-left"></i></a>
+            <header class="NavBar-2" id="Nav-Section" data-scroll-section-id="section0">
+                <nav class="nav-bar">
+                    <h6 class="logo-text">UnFotografomasCUU</h6>
+                    <div class="menu-toggle">
+                        <div id="menu-toggle-btn" onclick="animNav();">
+                            <span class="menu-btn nav-activator"></span>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="nav-container">
+                    <div class="nav">
+                        <div class="social-links">
+                            <div class="nav-logo">Logo</div>
+                            <div class="nav-socials">
+                                <a href="">Facebook</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://www.instagram.com/andres.gardea/" target="_blank">Instagram</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://twitter.com/gardea_andres" target="_blank">Twitter</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="https://unfotografomascuu.com/" target="_blank">unfotografomascuu</a>
+                            </div>
+                        </div>
+                        <div class="nav-section-container">
+                            <div class="nav-section-link">
+                                <a id="nav-Activator-1" href="../../index.html" data-scroll-to>Home</a>
+                            </div>
+                            <div id="nav-Activator-2" class="nav-section-link">
+                                <a href="#Titulo" data-scroll-to>Informacion</a>
+                            </div>
+                            <div id="nav-Activator-3" class="nav-section-link">
+                                <a href="#Fotos" data-scroll-to>Mas Fotos</a>
+                            </div>
+                        </div>
+                        <div class="nav-footer">
+                            <p>Pagina hecha por <a href="https://www.instagram.com/andres.gardea"
+                                    target="_blank"><b>@Andres Gardea</b></a></p>
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <section class="texto-pagina-imagen" id="text" data-scroll-section data-scroll-section-id="i-section0">
                 <div class="text-part-img">
-                    <h2 class="anim-gallery">Prueba de la Pagina Individual con BarbaJS y Locomotive Scroll</h2><br>
-                    <p class="anim-gallery">En esta pagina lo que quiero hacer es mostrar la image en mayor calidady
+                    <h2 class="
+">Prueba de la Pagina Individual con BarbaJS y Locomotive Scroll</h2><br>
+                    <p>En esta pagina lo que quiero hacer es mostrar la image en mayor calidady
                         dejar que se le
                         pueda hacer zoom y contar un poco del contexto o algo en general hacerca de la foto.</p><br>
-                    <p class="anim-gallery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
                         ducimus
                         possimus dolor
                         cumque? Distinctio sunt perferendis non. Rerum tempora similique facere enim sit dolorum
@@ -104,10 +145,9 @@
                 </div>
             </section>
 
-            <section class="imagen-completa">
+            <section class="gallary-page-container">
                 <div class="img-container size-0">
-                    <div class="img-contain">
-                        <img class="img-g" loading="lazy" src="../../Multimedia/Pictures/001.webp" />
+                        <img  loading="lazy" src="../../Multimedia/Pictures/001.webp" />
                     </div>
                     <div class="info">
                         <div class="text-img">
@@ -118,7 +158,7 @@
                                 Distancia Focal: 240mm<br>
                                 Dimensiones: 6000x4000<br>
                             </p>
-                            <div class="img-btn" src="../../Multimedia/Pictures/001.webp" onclick="ZoomBtn();"
+                            <div class="img-btn" src="../../Multimedia/Pictures/001.webp"
                                 alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, animi.">
                                 <i class="fas fa-search-plus"></i>
                             </div>
@@ -127,17 +167,7 @@
                 </div>
             </section>
 
-            <section class="lightbox" id="ligthbox" data-scroll-sticky data-scroll-target="">
-                <div class="lightbox-content" id="lg">
-                    <div class="img-show">
-                        <img class="img-lightbox" src="" alt="">
-                    </div>
-                    <p class="copy"></p>
-                    <div class="close-btn" onclick="CloseBtn();">
-                        <h1 class="close">+</h1>
-                    </div>
-                </div>
-            </section>
+            
         </main>
     </div>
 

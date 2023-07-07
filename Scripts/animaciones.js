@@ -24,14 +24,7 @@ function loadBar() {
     tl.to(".load-bar", { duration: .8, scaleX: 0, opacity: 0, transformOrigin: "right", delay: .8 });
 }
 
-function contantAnimation() {
-    var t = gsap.timeline();
-    t.from(".anim-nav", { duration: 0.8, translateY: -50, opacity: 0, stagger: .1, delay: 4 });
-    t.from('.anim-nav-element', { duration: 0.8, translateY: -50, opacity: 0, stagger: .1, delay: .1 });
-}
-
 function pageout() {
     var t = gsap.timeline();
-        t.to(".anim-nav", { duration: 0.4, translateY: -50, opacity: 0, stagger: .1 }),
         t.to(".contenido", { duration: 0.5, opacity: 0, delay: -0.2, stagger: .1 });
 }
