@@ -590,6 +590,7 @@ img {
         width: 100vw;
         height: 100%;
         z-index: 1;
+        overflow: hidden;
     }
 
     .home-image {
@@ -665,10 +666,10 @@ img {
         display: flex;
         padding: 2rem;
         background-color: var(--background-2);
+        min-height: 100vh;
     }
 
     .photo-container {
-        height: 90vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -863,7 +864,6 @@ img {
         overflow: hidden;
         background: var(--clear);
         color: var(--text-2);
-        transition: 0.3s ease-in-out all;
     }
 
     .Article-Section-Img {
@@ -1040,6 +1040,7 @@ img {
     .article-btn:hover {
         color: var(--text-2);
         transition-delay: .5s;
+        z-index: 2;
     }
 
     .article-btn:hover:before {
