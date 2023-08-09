@@ -1,7 +1,7 @@
 function SectionView1(){
-    const photoSection1 = document.querySelector('#photo-section-1');
-    const photoSection2= document.querySelector('#photo-section-2');
-    const photoSection3 = document.querySelector('#photo-section-3');
+    const photoSection1 = document.querySelector('#scroll-section-1');
+    const photoSection2= document.querySelector('#scroll-section-2');
+    const photoSection3 = document.querySelector('#scroll-section-3');
 
     photoSection1.classList.toggle("open-section");
     photoSection2.classList.remove("open-section");
@@ -10,9 +10,9 @@ function SectionView1(){
 }
 
 function SectionView2(){
-    const photoSection1 = document.querySelector('#photo-section-1');
-    const photoSection2= document.querySelector('#photo-section-2');
-    const photoSection3 = document.querySelector('#photo-section-3');
+    const photoSection1 = document.querySelector('#scroll-section-1');
+    const photoSection2= document.querySelector('#scroll-section-2');
+    const photoSection3 = document.querySelector('#scroll-section-3');
 
     photoSection1.classList.remove("open-section");
     photoSection2.classList.toggle("open-section");
@@ -21,9 +21,9 @@ function SectionView2(){
 }
 
 function SectionView3(){
-    const photoSection1 = document.querySelector('#photo-section-1');
-    const photoSection2= document.querySelector('#photo-section-2');
-    const photoSection3 = document.querySelector('#photo-section-3');
+    const photoSection1 = document.querySelector('#scroll-section-1');
+    const photoSection2= document.querySelector('#scroll-section-2');
+    const photoSection3 = document.querySelector('#scroll-section-3');
 
     photoSection1.classList.remove("open-section");
     photoSection2.classList.remove("open-section");
