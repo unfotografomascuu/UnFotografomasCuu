@@ -16,7 +16,7 @@ function loaderText() {
         tl.to('ul.transition-l li', { duration: .8, translateX: 0, opacity: 1, transformOrigin: "left", stagger: .1, delay: .1, }),
         tl.to('ul.transition-l li', {
             opacity: 0,
-            duration: .5,
+            duration: .2,
             delay: 1.4
         });
 }
@@ -38,7 +38,7 @@ function loadBar() {
 
     tl.to(".load-bar-container", {
         opacity: 0,
-        duration: .5,
+        duration: .2,
         delay: 1.6
     });
 
