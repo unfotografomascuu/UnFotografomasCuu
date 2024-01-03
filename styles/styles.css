@@ -211,6 +211,14 @@ img {
     overflow-x: hidden;
 }
 
+.has-scroll-smooth {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
 /*Ajustar tamaño de la letra para Dispositivos Moviles*/
 
 @media (max-width: 8.5in) {
@@ -1299,6 +1307,7 @@ img {
         align-content: center;
         align-items: center;
         flex-wrap: wrap;
+        background: var(--background-1);
     }
 
     .footer-social .footer-btn {
@@ -1416,10 +1425,6 @@ img {
         text-align: justify;
     }
 
-    .anim-banner {
-        opacity: 1;
-    }
-
     .content-article {
         grid-column: 1/3;
         display: grid;
@@ -1485,10 +1490,6 @@ img {
         gap: .5rem;
         grid-row: 2/3;
         grid-column: 2/3;
-    }
-
-    .img-container {
-        opacity: 1;
     }
 
     .cta {
@@ -1693,7 +1694,6 @@ img {
         height: 50vh;
         margin-top: 2.5rem;
         overflow: hidden;
-        background: var(--clear);
         color: var(--text-2);
         transition: 0.3s ease-in-out all;
     }
@@ -1715,6 +1715,7 @@ img {
         flex-wrap: nowrap;
         justify-content: center;
         padding: 2rem 3rem;
+        background-color: var(--background-2);
     }
 
     .gallery-viewer-Txt h2 {

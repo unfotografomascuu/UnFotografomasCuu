@@ -36,7 +36,7 @@ const animateNav = () => {
 
 
 
-const animNav = () => {
+function animNav()  {
     const navBtn = document.getElementById("menu-toggle-btn");
     const navActivator1 = document.getElementById("nav-Activator-1");
     const navActivator2 = document.getElementById("nav-Activator-2");

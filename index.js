@@ -15,6 +15,18 @@ const scroll = new LocomotiveScroll({
     },
 });
 
+// Scroll update all pages
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    function ScrollUpdateDelay() {
+        setTimeout(function(){ scroll.update(); }, 500);
+   
+    }
+
+    ScrollUpdateDelay();
+});
+
 /*
     let currentScrollContainer = scrollContainer.querySelector('[data-scroll-container]')
 scroll = new LocomotiveScroll({
