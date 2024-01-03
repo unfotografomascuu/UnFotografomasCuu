@@ -22,8 +22,6 @@ barba.init({
 
                 setTimeout(function () {
                     pageTransition();
-                    loaderText();
-                    loadBar();
                 }, 200);
 
                 await delay(1700);
@@ -33,8 +31,6 @@ barba.init({
 
             async once() {
                 pageTransition();
-                loaderText();
-                loadBar();
             }
         }
     ],

@@ -171,7 +171,8 @@
     }
 }
 
-@media(max-width: 1280px) {
+@media(max-width: 600px
+) {
     .loader {
         gap: 1.5rem;
     }
