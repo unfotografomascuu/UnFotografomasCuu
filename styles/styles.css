@@ -14,37 +14,13 @@
 
 @font-face {
     font-family: Titulo;
-    src: url(../Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
-    font-display: block;
-}
-
-@font-face {
-    font-family: SubTitulo;
-    src: url(../Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+    src: url(../Fonts/PlayfairDisplay-VariableFont_wght.ttf);
     font-display: block;
 }
 
 @font-face {
     font-family: Texto;
-    src: url(../Fonts/Fahkwang/Fahkwang-Light.ttf);
-    font-display: block;
-}
-
-@font-face {
-    font-family: Links;
-    src: url(../Fonts/Fahkwang/Fahkwang-Light.ttf);
-    font-display: block;
-}
-
-@font-face {
-    font-family: Texto-2;
-    src: url(../Fonts/Fahkwang/Fahkwang-ExtraLight.ttf);
-    font-display: block;
-}
-
-@font-face {
-    font-family: Texto-3;
-    src: url(../Fonts/Fahkwang/Fahkwang-SemiBold.ttf);
+    src: url(../Fonts/Fahkwang-Light.ttf);
     font-display: block;
 }
 
@@ -128,7 +104,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Subtitulo';
+    font-family: 'Titulo';
     font-size: 2rem;
 }
 
@@ -139,9 +115,8 @@ h3 {
 }
 
 h4 {
-    font-family: 'Links';
+    font-family: 'Texto';
     font-size: 1rem;
-    font-weight: 500;
     text-decoration: none;
 }
 
@@ -170,7 +145,7 @@ figcaption {
 }
 
 a {
-    font-family: 'Links';
+    font-family: 'Texto';
     font-size: 1.2rem;
     font-weight: 400;
     text-decoration: none;
@@ -202,25 +177,25 @@ blockquote {
 }
 
 cite {
-    font-family: 'Subtitulo';
+    font-family: 'Titulo';
     font-style: italic;
     font-size: 2rem;
     display: block;
 }
 
 date {
-    font-family: 'Links';
+    font-family: 'Texto';
     font-size: 1.2rem;
     left: 0;
     color: #777;
 }
 
 b {
-    font-family: 'Texto-3';
+    font-family: 'Texto';
 }
 
 figcaption {
-    font-family: 'Texto-2';
+    font-family: 'Texto';
     font-size: 1rem;
 }
 
@@ -514,7 +489,7 @@ img {
 }
 
 .Contenido section {
-    min-height: 100vh;
+    min-height: 70vh;
     width: 100vw;
 }
 
@@ -641,7 +616,6 @@ img {
     }
 
     .img_wrapper img {
-        opacity: 1;
         top: 0;
         left: 0;
         transform: scale(1.4);
@@ -806,7 +780,7 @@ img {
     }
 }
 
-/*-----Seccion de los Articulos Individuales-----*/
+/*-----Articles Area (Articulos)-----*/
 
 @media(min-width: 1px) {
     .articles-area {
@@ -823,7 +797,7 @@ img {
         margin-top: 2.5rem;
         margin-bottom: 1.5rem;
         overflow: hidden;
-        background: var(--clear);
+        background-color: var(--background-2);
         color: var(--text-2);
     }
 
@@ -1274,13 +1248,29 @@ img {
     }
 }
 
-/*-----Footer-----*/
+/*-----About Me Area-----*/
+@media(min-width: 1px) {
+    .about-area{
+        background-color: var(--background-2);
+        padding: 2rem;
+    }
+
+    #About-Me{
+        background-color: var(--background-1);
+    }
+}
+
+@media(max-width: 600px) {
+
+}
+
+/*-----Footer Area-----*/
 @media(min-width: 1px) {
     .footer-area {
         grid-row: 3/4;
         grid-column: 1/3;
         color: var(--text-2);
-        background: var(--background-1);
+        background: var(--background-2);
         width: 100%;
         padding: 0;
     }
@@ -1298,7 +1288,7 @@ img {
         align-items: center;
         flex-wrap: nowrap;
         color: var(--text-1);
-        background-color: #1b1b1b;
+        background: var(--background-1);
     }
 
     .footer-social {
@@ -1376,8 +1366,6 @@ img {
     }
 
 }
-
-
 
 /*----------Paginas Secundarias----------*/
 
@@ -1531,7 +1519,6 @@ img {
         margin-top: 8vh;
     }
 }
-
 
 /*Estructura de las Paginas de los Articulos*/
 @media(min-width: 1px) {
@@ -1695,7 +1682,6 @@ img {
         width: 90%;
     }
 }
-
 
 /*Galeria relacionada de las paginas de los Articulos*/
 @media(min-width: 1px) {
@@ -1894,9 +1880,6 @@ img {
     .gallery-viewer-Txt h2 {
         width: 100%;
     }
-}
-
-@media(max-width: 600px) {
 
     .pagina-imagen,
     .pagina-articulo {
@@ -2028,21 +2011,6 @@ img {
         width: 100%;
         height: 100%;
     }
-}
-
-@media(max-width: 600px) {
-    .art-size-1 {
-        width: 90%;
-    }
-
-    .art-size-2 {
-        width: 90%;
-    }
-
-    .art-size-3 {
-        width: 98%;
-    }
-
 }
 
 /*---Responsive Imagenes de los Articulos---*/
