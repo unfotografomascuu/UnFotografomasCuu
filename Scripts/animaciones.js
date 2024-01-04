@@ -10,7 +10,6 @@ function pageTransition() {
         tl.set(".second-block", { left: "-100%" });
 }
 
-
 function pageout() {
     var t = gsap.timeline();
     t.to(".contenido", { duration: 0.5, opacity: 0, delay: -0.2, stagger: .1 });

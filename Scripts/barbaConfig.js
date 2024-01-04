@@ -37,7 +37,7 @@ barba.init({
 
 });
 
-barba.hooks.beforeLeave(() => { 
+barba.hooks.beforeLeave(() => {
     scroll.destroy();
 });
 
@@ -46,6 +46,4 @@ barba.hooks.after(() => {
     scroll.scrollTo('top');
     animNav();
 });
-
-
 
