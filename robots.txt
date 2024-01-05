@@ -5,3 +5,4 @@ Disallow: Multimedia/Maps/Presas.webp
 Disallow: Multimedia/Pictures/Region(Movile).webp
 Disallow: Multimedia/Pictures/San Felipe copia.webp
 Disallow: Multimedia/Pictures/San Felipe ND.webp
+Disallow: Multimedia/Index/parallax.webp
