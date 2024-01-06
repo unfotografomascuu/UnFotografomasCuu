@@ -114,7 +114,7 @@ h3 {
     font-weight: bold;
 }
 
-h4 {
+p {
     font-family: 'Texto';
     font-size: 1rem;
     text-decoration: none;
@@ -217,7 +217,7 @@ img {
     right: 0;
     bottom: 0;
     left: 0;
-  }
+}
 
 /*Ajustar tamaño de la letra para Dispositivos Moviles*/
 
@@ -316,7 +316,7 @@ img {
         background: var(--clear);
         max-height: 5rem;
         color: var(--text-2);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
     }
 
     #menu-toggle-btn {
@@ -386,7 +386,7 @@ img {
         align-items: center;
         visibility: hidden;
         z-index: 100;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
     }
 
     .nav {
@@ -461,7 +461,7 @@ img {
     .nav-bar {
         background: var(--clear);
         color: var(--text-2);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
     }
 
     .nav-logo {
@@ -896,7 +896,7 @@ img {
         height: 100%;
         z-index: 1;
         background: #262626;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
         opacity: 0;
         mix-blend-mode: multiply;
         transition: 0.5s;
@@ -973,7 +973,7 @@ img {
         align-self: center;
     }
 
-    .article-btn h4 {
+    .article-btn p {
         grid-column: 3/4;
     }
 
@@ -1053,8 +1053,10 @@ img {
         align-self: center;
     }
 
-    .footer-btn h4 {
+    .footer-btn p {
         grid-column: 3/4;
+        overflow: hidden;
+        margin: 0;
     }
 
     .footer-btn:before,
@@ -1141,7 +1143,7 @@ img {
         height: 100%;
         z-index: 1;
         background: #262626;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
         opacity: 0;
         mix-blend-mode: multiply;
         transition: 0.5s;
@@ -1258,19 +1260,17 @@ img {
 
 /*-----About Me Area-----*/
 @media(min-width: 1px) {
-    .about-area{
+    .about-area {
         background-color: var(--background-2);
         padding: 2rem;
     }
 
-    #About-Me{
+    #About-Me {
         background-color: var(--background-1);
     }
 }
 
-@media(max-width: 600px) {
-
-}
+@media(max-width: 600px) {}
 
 /*-----Footer Area-----*/
 @media(min-width: 1px) {
@@ -1308,6 +1308,7 @@ img {
         align-items: center;
         flex-wrap: wrap;
         background: var(--background-1);
+        z-index: 1;
     }
 
     .footer-social .footer-btn {
@@ -1354,18 +1355,19 @@ img {
 
     .footer-social {
         width: 100%;
+        height: auto;
         display: grid;
-        grid-template-columns: 10% 80% 10%;
-        grid-template-rows: 48% 4% 48%;
+        grid-template-columns: 1.3rem 1fr 1.3rem;
+        grid-template-rows: 1rem 1fr 1rem 1fr 1rem;
     }
 
     .footer-social #Instagram-Sec {
-        grid-row: 1/2;
+        grid-row: 2/3;
         grid-column: 2/3;
     }
 
     .footer-social #Twitter-Sec {
-        grid-row: 3/4;
+        grid-row: 4/5;
         grid-column: 2/3;
     }
 
@@ -1401,14 +1403,14 @@ img {
 
     .NavBar-2 .nav-bar {
         max-height: 6vh;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
         background: var(--clear);
         z-index: 101;
     }
 
     .NavBar-2 .nav-bar.sticky {
         max-height: 6vh;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
     }
 
 
@@ -1576,18 +1578,19 @@ img {
         margin-top: .5rem;
         margin-bottom: .5rem;
     }
-    .content-article h1{
+
+    .content-article h1 {
         font-size: 2.6rem;
         margin-top: 1.5rem;
         margin-bottom: 0.5rem;
     }
 
-    .content-article h2{
-        font-size: 2rem;
+    .content-article h2 {
+        font-size: 1.8rem;
     }
 
-    .content-article h3{
-        font-size: 1.6rem;
+    .content-article h3 {
+        font-size: 1.8rem;
         font-family: Titulo;
     }
 
@@ -1635,6 +1638,7 @@ img {
 
     .content-article h3 {
         width: calc(100% - 2.6rem);
+        text-align: center;
     }
 
     .content-article p {
@@ -1674,6 +1678,8 @@ img {
     .article-gallery,
     .article-gallery-wide {
         justify-content: space-evenly;
+        margin-bottom: 0.8rem;
+        margin-top: 0.8rem;
     }
 
     .article-gallery-img {
@@ -1798,7 +1804,7 @@ img {
         height: 100%;
         z-index: 1;
         background: #262626;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
         opacity: 0;
         mix-blend-mode: multiply;
         transition: 0.5s;
@@ -1873,7 +1879,8 @@ img {
     .gallery-viewer-Img {
         grid-row: 1/2;
         grid-column: 1/2;
-        height: 100% !important;    }
+        height: 100% !important;
+    }
 
     .gallery-viewer-Img img {
         height: 100%;
