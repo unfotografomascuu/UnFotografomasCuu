@@ -386,7 +386,7 @@ img {
         align-items: center;
         visibility: hidden;
         z-index: 100;
-        backdrop-filter: blur(1px);
+        backdrop-filter: blur(0.5px);
     }
 
     .nav {
@@ -786,6 +786,21 @@ img {
     .photo-section.open-section .photo-secondary-title {
         opacity: 1;
     }
+
+    
+    .photo-text-secondary .article-btn a{
+        color: var(--text-2);
+    }
+
+    .photo-text-secondary .from-left:before {
+        border: 1px solid var(--text-2);
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .photo-text-secondary .article-btn:hover:after {
+        background: var(--clear-btn-1);
+    }
 }
 
 /*-----Articles Area (Articulos)-----*/
@@ -826,6 +841,7 @@ img {
         flex-wrap: nowrap;
         justify-content: center;
         padding: 2rem 3rem;
+        color: var(--text-1);;
     }
 
     .Article-Section-Txt h2 {
@@ -878,11 +894,11 @@ img {
         z-index: 1;
     }
 
-    .Article-Section-Img .MoreBtn h5 {
+    .Article-Section-Img .MoreBtn a {
         opacity: 0;
         transform: rotate(45deg);
         transition: .8s;
-        font-size: 5rem;
+        font-size: 4rem;
         color: var(--text-1);
         padding: 10rem;
     }
@@ -906,7 +922,7 @@ img {
         opacity: 1;
     }
 
-    .Article-Section-Img:hover h5 {
+    .Article-Section-Img:hover a {
         opacity: 1;
         transform: rotate(0deg);
     }
@@ -954,7 +970,7 @@ img {
     .article-btn {
         position: relative;
         padding: 1rem 1.2rem;
-        color: var(--text-2);
+        color: var(--text-1);
         text-transform: uppercase;
         transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
         cursor: pointer;
@@ -968,7 +984,7 @@ img {
     }
 
     .article-btn a {
-        color: var(--text-2);
+        color: var(--text-1);
         grid-column: 2/3;
         align-self: center;
     }
@@ -986,7 +1002,7 @@ img {
     }
 
     .article-btn:hover {
-        color: var(--text-2);
+        color: var(--text-1);
         transition-delay: .5s;
         z-index: 2;
     }
@@ -1013,7 +1029,7 @@ img {
     .from-left:before,
     .from-left-footer:before {
         right: 0;
-        border: 1px solid var(--text-2);
+        border: 1px solid var(--text-1);
         border-left: 0;
         border-right: 0;
     }
@@ -1268,6 +1284,24 @@ img {
     #About-Me {
         background-color: var(--background-1);
     }
+
+    #About-Me .Article-Section-Txt {
+        color: var(--text-2);
+    }
+
+    #About-Me .article-btn a{
+        color: var(--text-2);
+    }
+
+    #About-Me .from-left-footer:before {
+        border: 1px solid var(--text-2);
+        border-left: 0;
+        border-right: 0;
+    }
+
+    #About-Me .article-btn:hover:after {
+        background: var(--clear-btn-1);
+    }
 }
 
 @media(max-width: 600px) {}
@@ -1295,7 +1329,7 @@ img {
         align-content: center;
         align-items: center;
         flex-wrap: nowrap;
-        color: var(--text-1);
+        color: var(--text-2);
         background: var(--background-1);
     }
 
@@ -1716,7 +1750,7 @@ img {
         height: 50vh;
         margin-top: 2.5rem;
         overflow: hidden;
-        color: var(--text-2);
+        color: var(--text-1);
         transition: 0.3s ease-in-out all;
     }
 
@@ -1786,11 +1820,12 @@ img {
         z-index: 1;
     }
 
-    .gallery-viewer-Img .MoreBtn h5 {
+    .gallery-viewer-Img .MoreBtn a{
         opacity: 0;
         transform: rotate(45deg);
         transition: .8s;
-        font-size: 5rem;
+        font-size: 4rem;
+        font-weight: 100;
         color: var(--text-1);
         padding: 10rem;
     }
@@ -1814,10 +1849,20 @@ img {
         opacity: 1;
     }
 
-    .gallery-viewer-Img:hover h5 {
+    .gallery-viewer-Img:hover a{
         opacity: 1;
         transform: rotate(0deg);
     }
+
+    .gallery-viewer .article-btn a{
+        color: var(--text-1);
+    }
+
+    .gallery-viewer .from-left-footer:before{
+        border: 1px solid var(--text-1);
+        border-left: 0;
+        border-right: 0;
+        }
 }
 
 @media(max-width: 600px) {

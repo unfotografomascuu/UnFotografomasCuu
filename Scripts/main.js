@@ -101,38 +101,7 @@ function applyTheme(theme) {
 
 animNav();
 
-function SectionView1(){
-    const photoSection1 = document.querySelector('#scroll-section-1');
-    const photoSection2= document.querySelector('#scroll-section-2');
-    const photoSection3 = document.querySelector('#scroll-section-3');
-
-    photoSection1.classList.toggle("open-section");
-    photoSection2.classList.remove("open-section");
-    photoSection3.classList.remove("open-section");
-
-}
-
-function SectionView2(){
-    const photoSection1 = document.querySelector('#scroll-section-1');
-    const photoSection2= document.querySelector('#scroll-section-2');
-    const photoSection3 = document.querySelector('#scroll-section-3');
-
-    photoSection1.classList.remove("open-section");
-    photoSection2.classList.toggle("open-section");
-    photoSection3.classList.remove("open-section");
-
-}
-
-function SectionView3(){
-    const photoSection1 = document.querySelector('#scroll-section-1');
-    const photoSection2= document.querySelector('#scroll-section-2');
-    const photoSection3 = document.querySelector('#scroll-section-3');
-
-    photoSection1.classList.remove("open-section");
-    photoSection2.classList.remove("open-section");
-    photoSection3.classList.toggle("open-section");
-
-}
+function SectionView1() { const e = document.querySelector("#photo-section-1"), o = document.querySelector("#photo-section-2"), t = document.querySelector("#photo-section-3"); e.classList.toggle("open-section"), o.classList.remove("open-section"), t.classList.remove("open-section") } function SectionView2() { const e = document.querySelector("#photo-section-1"), o = document.querySelector("#photo-section-2"), t = document.querySelector("#photo-section-3"); e.classList.remove("open-section"), o.classList.toggle("open-section"), t.classList.remove("open-section") } function SectionView3() { const e = document.querySelector("#photo-section-1"), o = document.querySelector("#photo-section-2"), t = document.querySelector("#photo-section-3"); e.classList.remove("open-section"), o.classList.remove("open-section"), t.classList.toggle("open-section") }
 
 function Sticky() {
     if (window.screen.width >= 1280 && window.screen.height >= 768) {
