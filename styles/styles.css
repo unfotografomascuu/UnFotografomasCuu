@@ -35,7 +35,7 @@
     --clear-btn-1: rgba(0, 0, 0, 0.2);
 
     /*Modo Oscuro*/
-    --dark-clear: rgba(32, 32, 32, 0.9);
+    --dark-clear: rgba(32, 32, 32, .98);
     --dark-clear-nav: rgba(32, 32, 32, 0.75);
     --dark-text-1: #ffffff;
     --dark-text-2: #ffffff;
@@ -386,7 +386,7 @@ img {
         align-items: center;
         visibility: hidden;
         z-index: 100;
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(1px);
     }
 
     .nav {
