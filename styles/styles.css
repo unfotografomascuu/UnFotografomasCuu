@@ -841,7 +841,7 @@ img {
         flex-wrap: nowrap;
         justify-content: center;
         padding: 2rem 3rem;
-        color: var(--text-1);;
+        color: var(--text-1);
     }
 
     .Article-Section-Txt h2 {
@@ -954,7 +954,6 @@ img {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-        color: var(--text-2);
         padding: 1.5rem;
     }
 
