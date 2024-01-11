@@ -20,7 +20,13 @@
 
 @font-face {
     font-family: Texto;
-    src: url(../Fonts/Fahkwang-Light.ttf);
+    src: url(../Fonts/Fahkwang-ExtraLight.ttf);
+    font-display: block;
+}
+
+@font-face {
+    font-family: SubTitulo;
+    src: url(../Fonts/Fahkwang-SemiBold.ttf);
     font-display: block;
 }
 
@@ -109,15 +115,8 @@ h2 {
 }
 
 h3 {
-    font-family: 'Texto';
+    font-family: 'Titulo';
     font-size: 1.4rem;
-    font-weight: bold;
-}
-
-p {
-    font-family: 'Texto';
-    font-size: 1rem;
-    text-decoration: none;
 }
 
 h5 {
@@ -171,6 +170,13 @@ p {
     margin-top: 1rem;
 }
 
+
+b {
+    font-family: 'SubTitulo';
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
 blockquote {
     font-family: 'Texto';
     font-size: 2.2rem;
@@ -188,10 +194,6 @@ date {
     font-size: 1.2rem;
     left: 0;
     color: #777;
-}
-
-b {
-    font-family: 'Texto';
 }
 
 figcaption {
@@ -1624,7 +1626,6 @@ img {
 
     .content-article h3 {
         font-size: 1.8rem;
-        font-family: Titulo;
     }
 
     .pie-foto {
