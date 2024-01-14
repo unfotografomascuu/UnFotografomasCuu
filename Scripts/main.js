@@ -55,11 +55,6 @@ function animNav() {
             },
         });
 
-        tl.to(".nav-container", 0.2, {
-            backdropFilter: "blur(2px)",
-            delay: -0.3,
-        });
-
         tl.from(".nav-section-link > a", 0.8, {
             opacity: 0,
             top: 60,
@@ -68,6 +63,11 @@ function animNav() {
             },
         },
             "-=0.4");
+
+        tl.to(".nav-container", 0.2, {
+            backdropFilter: "blur(2px)",
+            delay: -0.3,
+        });
 
         tl.from(".nav-footer", 0.3, {
             opacity: 0
