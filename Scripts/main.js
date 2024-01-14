@@ -18,20 +18,20 @@ function pageout() {
 function applyTheme(theme) {
     document.body.classList.remove("theme-auto", "theme-light", "theme-dark");
     document.body.classList.add(`theme-${theme}`);
-  }
-  
-  document.addEventListener("DOMContentLoaded", () => {
+}
+
+document.addEventListener("DOMContentLoaded", () => {
     const savedTheme = localStorage.getItem("theme") || "auto";
-  
+
     applyTheme(savedTheme);
-  
+
     for (const optionElement of document.querySelectorAll("#selTheme option")) {
-      optionElement.selected = savedTheme === optionElement.value;
+        optionElement.selected = savedTheme === optionElement.value;
     }
-  
-  });
-  
-  function animNav() {
+
+});
+
+function animNav() {
 
     const tl = gsap.timeline({ paused: true });
 
@@ -40,6 +40,11 @@ function applyTheme(theme) {
         tl.to(".nav-container", 0.2, {
             autoAlpha: 1,
             delay: 0.1,
+        });
+
+        tl.to(".nav-bar", 0.1, {
+            backdropFilter: "blur(0px)",
+            backgroundColor:"#ffffff00"
         });
 
         tl.to(".logo-text", 0.2, {
@@ -64,12 +69,18 @@ function applyTheme(theme) {
         },
             "-=0.4");
 
+        tl.to(".nav-container", 0.2, {
+            backdropFilter: "blur(3px)",
+            delay: 0,
+        });
+
+
         tl.from(".nav-footer", 0.3, {
             opacity: 0
         }, "-=0.5").reverse();
 
     };
-    
+
     const navBtn = document.getElementById("menu-toggle-btn");
     const navActivator1 = document.getElementById("nav-Activator-1");
     const navActivator2 = document.getElementById("nav-Activator-2");

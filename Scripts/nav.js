@@ -9,6 +9,11 @@ function animNav() {
             delay: 0.1,
         });
 
+        tl.to(".nav-bar", 0.1, {
+            backdropFilter: "blur(0px)",
+            backgroundColor:"#ffffff00"
+        });
+
         tl.to(".logo-text", 0.2, {
 
         },
@@ -31,12 +36,18 @@ function animNav() {
         },
             "-=0.4");
 
+        tl.to(".nav-container", 0.2, {
+            backdropFilter: "blur(3px)",
+            delay: 0,
+        });
+
+
         tl.from(".nav-footer", 0.3, {
             opacity: 0
         }, "-=0.5").reverse();
 
     };
-    
+
     const navBtn = document.getElementById("menu-toggle-btn");
     const navActivator1 = document.getElementById("nav-Activator-1");
     const navActivator2 = document.getElementById("nav-Activator-2");

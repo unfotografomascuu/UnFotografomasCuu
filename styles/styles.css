@@ -41,7 +41,7 @@
     --clear-btn-1: rgba(0, 0, 0, 0.2);
 
     /*Modo Oscuro*/
-    --dark-clear: rgba(32, 32, 32, .98);
+    --dark-clear: rgba(32, 32, 32, 0.9);
     --dark-clear-nav: rgba(32, 32, 32, 0.75);
     --dark-text-1: #ffffff;
     --dark-text-2: #ffffff;
@@ -310,7 +310,7 @@ img {
         z-index: 101;
         padding: 0em 2em;
         transition: 0.6s;
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(4px);
         color: var(--text-2);
     }
 
@@ -318,7 +318,7 @@ img {
         background: var(--clear);
         max-height: 5rem;
         color: var(--text-2);
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(4px);
     }
 
     #menu-toggle-btn {
@@ -388,7 +388,6 @@ img {
         align-items: center;
         visibility: hidden;
         z-index: 100;
-        backdrop-filter: blur(0.5px);
     }
 
     .nav {
@@ -463,7 +462,7 @@ img {
     .nav-bar {
         background: var(--clear);
         color: var(--text-2);
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(4px);
     }
 
     .nav-logo {
@@ -1438,14 +1437,14 @@ img {
 
     .NavBar-2 .nav-bar {
         max-height: 6vh;
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(4px);
         background: var(--clear);
         z-index: 101;
     }
 
     .NavBar-2 .nav-bar.sticky {
         max-height: 6vh;
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(4px);
     }
 
 
