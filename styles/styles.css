@@ -32,7 +32,7 @@
 
 :root {
     /*Modo Claro*/
-    --clear: rgba(255, 255, 255, 0.9);
+    --clear: rgba(255, 255, 255, 0.95);
     --clear-nav: rgba(255, 255, 255, 0.75);
     --text-1: #ffffff;
     --text-2: #222222;
@@ -41,7 +41,7 @@
     --clear-btn-1: rgba(0, 0, 0, 0.2);
 
     /*Modo Oscuro*/
-    --dark-clear: rgba(32, 32, 32, 0.9);
+    --dark-clear: rgba(32, 32, 32, 0.95);
     --dark-clear-nav: rgba(32, 32, 32, 0.75);
     --dark-text-1: #ffffff;
     --dark-text-2: #ffffff;

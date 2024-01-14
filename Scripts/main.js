@@ -44,13 +44,8 @@ function animNav() {
 
         tl.to(".nav-bar", 0.1, {
             backdropFilter: "blur(0px)",
-            backgroundColor:"#ffffff00"
+            backgroundColor: "#ffffff00"
         });
-
-        tl.to(".logo-text", 0.2, {
-
-        },
-            "-+0.1");
 
         tl.from(".social-links > div", 0.4, {
             opacity: 0,
@@ -58,6 +53,11 @@ function animNav() {
             stagger: {
                 amount: 0.4,
             },
+        });
+
+        tl.to(".nav-container", 0.2, {
+            backdropFilter: "blur(2px)",
+            delay: -0.3,
         });
 
         tl.from(".nav-section-link > a", 0.8, {
@@ -68,12 +68,6 @@ function animNav() {
             },
         },
             "-=0.4");
-
-        tl.to(".nav-container", 0.3, {
-            backdropFilter: "blur(3px)",
-            delay: 0,
-        });
-
 
         tl.from(".nav-footer", 0.3, {
             opacity: 0
