@@ -69,7 +69,7 @@ function animNav() {
         },
             "-=0.4");
 
-        tl.to(".nav-container", 0.2, {
+        tl.to(".nav-container", 0.3, {
             backdropFilter: "blur(3px)",
             delay: 0,
         });
