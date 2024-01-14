@@ -65,8 +65,8 @@ function animNav() {
             "-=0.4");
 
         tl.to(".nav-container", 0.2, {
-            backdropFilter: "blur(2px)",
-            delay: -0.3,
+            backdropFilter: "blur(1px)",
+            delay: -0.2,
         });
 
         tl.from(".nav-footer", 0.3, {
