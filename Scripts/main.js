@@ -64,10 +64,10 @@ function animNav() {
         },
             "-=0.4");
 
-        tl.to(".nav-container", 0.1, {
-            backdropFilter: "blur(1px)",
-            delay: -0.2,
-        });
+        // tl.to(".nav-container", 0.1, {
+        //     backdropFilter: "blur(1px)",
+        //     delay: -0.2,
+        // });
 
         tl.from(".nav-footer", 0.3, {
             opacity: 0
