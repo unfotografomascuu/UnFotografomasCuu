@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
 	<loc>https://unfotografomascuu.com/</loc>
-	<lastmod>2023-07-11T06:17:14+01:00</lastmod>
+	<lastmod>2024-01-19T07:31:19+01:00</lastmod>
 	<priority>1.0</priority>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Loaders/Colibries%28Desktop%29.webp</image:loc>
@@ -31,10 +31,13 @@
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Index/Pajaro.webp</image:loc>
 	</image:image>
+	<image:image>
+			<image:loc>https://unfotografomascuu.com/Multimedia/Index/profile.webp</image:loc>
+	</image:image>
 </url>
 <url>
 	<loc>https://unfotografomascuu.com/Secundarias/Articulos/ColibriesChihuahua.html</loc>
-	<lastmod>2023-07-11T06:17:14+01:00</lastmod>
+	<lastmod>2024-01-19T07:31:19+01:00</lastmod>
 	<priority>0.6</priority>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/portada-desktop.webp</image:loc>
@@ -49,16 +52,31 @@
 			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/012.webp</image:loc>
 	</image:image>
 	<image:image>
-			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/050.webp</image:loc>
-	</image:image>
-	<image:image>
-			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/104.webp</image:loc>
-	</image:image>
-	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/100.webp</image:loc>
 	</image:image>
 	<image:image>
-			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/014.webp</image:loc>
+			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/096.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/153.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/190.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/166.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/070.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/194.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/152.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/162.webp</image:loc>
 	</image:image>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/portada-secundaria.webp</image:loc>
@@ -66,7 +84,7 @@
 </url>
 <url>
 	<loc>https://unfotografomascuu.com/Secundarias/Articulos/ZopilotesChihuahua.html</loc>
-	<lastmod>2023-07-11T06:17:14+01:00</lastmod>
+	<lastmod>2024-01-19T07:31:19+01:00</lastmod>
 	<priority>0.6</priority>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Loaders/Zopilotes%28Desktop%29.webp</image:loc>
@@ -113,7 +131,7 @@
 </url>
 <url>
 	<loc>https://unfotografomascuu.com/Secundarias/Articulos/Namurachi.html</loc>
-	<lastmod>2023-07-11T06:17:14+01:00</lastmod>
+	<lastmod>2024-01-19T07:31:19+01:00</lastmod>
 	<priority>0.6</priority>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Loaders/Namurachi%28Desktop%29.webp</image:loc>
@@ -187,7 +205,7 @@
 </url>
 <url>
 	<loc>https://unfotografomascuu.com/Secundarias/Articulos/Polinizadores.html</loc>
-	<lastmod>2023-07-11T06:17:14+01:00</lastmod>
+	<lastmod>2024-01-19T07:31:19+01:00</lastmod>
 	<priority>0.6</priority>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Loaders/Abejas%28Desktop%29.webp</image:loc>
@@ -217,12 +235,15 @@
 			<image:loc>https://unfotografomascuu.com/Multimedia/Abejas/005.webp</image:loc>
 	</image:image>
 	<image:image>
-			<image:loc>https://unfotografomascuu.com/Multimedia/Abejas/013.webp</image:loc>
+			<image:loc>https://unfotografomascuu.com/Multimedia/Abejas/059.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://unfotografomascuu.com/Multimedia/Abejas/048.webp</image:loc>
 	</image:image>
 </url>
 <url>
 	<loc>https://unfotografomascuu.com/Secundarias/Galerias/Carpinteros.html</loc>
-	<lastmod>2023-07-11T06:17:14+01:00</lastmod>
+	<lastmod>2024-01-19T07:31:19+01:00</lastmod>
 	<priority>0.6</priority>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Loaders/Carpintero%28Desktop%29.webp</image:loc>
@@ -263,7 +284,7 @@
 </url>
 <url>
 	<loc>https://unfotografomascuu.com/Secundarias/Galerias/FaunaUrbana.html</loc>
-	<lastmod>2023-07-11T06:17:14+01:00</lastmod>
+	<lastmod>2024-01-19T07:31:19+01:00</lastmod>
 	<priority>0.6</priority>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Pictures/125.webp</image:loc>
@@ -297,8 +318,13 @@
 	</image:image>
 </url>
 <url>
+	<loc>https://unfotografomascuu.com/index.html</loc>
+	<lastmod>2024-01-19T07:31:20+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
 	<loc>https://unfotografomascuu.com/Secundarias/Galerias/Colibries.html</loc>
-	<lastmod>2023-07-11T06:17:14+01:00</lastmod>
+	<lastmod>2024-01-19T07:31:20+01:00</lastmod>
 	<priority>0.6</priority>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/103.webp</image:loc>
@@ -317,9 +343,6 @@
 	</image:image>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/107.webp</image:loc>
-	</image:image>
-	<image:image>
-			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/070.webp</image:loc>
 	</image:image>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Colibries/045%28Recortada%29.webp</image:loc>
@@ -354,7 +377,7 @@
 </url>
 <url>
 	<loc>https://unfotografomascuu.com/Secundarias/Galerias/Zopilotes.html</loc>
-	<lastmod>2023-07-11T06:17:16+01:00</lastmod>
+	<lastmod>2024-01-19T07:31:21+01:00</lastmod>
 	<priority>0.6</priority>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Zopilotes/065.webp</image:loc>
@@ -413,7 +436,7 @@
 </url>
 <url>
 	<loc>https://unfotografomascuu.com/Secundarias/Galerias/Namurachi.html</loc>
-	<lastmod>2023-07-11T06:17:16+01:00</lastmod>
+	<lastmod>2024-01-19T07:31:22+01:00</lastmod>
 	<priority>0.6</priority>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Namurachi/043.webp</image:loc>
@@ -448,7 +471,7 @@
 </url>
 <url>
 	<loc>https://unfotografomascuu.com/Secundarias/Galerias/Polinizadores.html</loc>
-	<lastmod>2023-07-11T06:17:17+01:00</lastmod>
+	<lastmod>2024-01-19T07:31:22+01:00</lastmod>
 	<priority>0.6</priority>
 	<image:image>
 			<image:loc>https://unfotografomascuu.com/Multimedia/Pictures/001.webp</image:loc>
