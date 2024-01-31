@@ -14,7 +14,7 @@ barba.init({
     transitions: [
         {
 
-            async leave(data) {
+            async leave() {
 
                 const done = this.async();
 

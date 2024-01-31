@@ -32,56 +32,24 @@
 
 :root {
     /*Modo Claro*/
-    --clear: rgba(255, 255, 255, 0.95);
-    --clear-nav: rgba(255, 255, 255, 0.75);
+    --clear: rgba(245, 245, 245, 0.94);
     --text-1: #ffffff;
     --text-2: #222222;
     --background-1: #ffffff;
     --background-2: #262626;
     --clear-btn-1: rgba(0, 0, 0, 0.2);
 
-    /*Modo Oscuro*/
-    --dark-clear: rgba(32, 32, 32, 0.98);
-    --dark-clear-nav: rgba(32, 32, 32, 0.75);
-    --dark-text-1: #ffffff;
-    --dark-text-2: #ffffff;
-    --dark-background-1: #111111;
-    --dark-background-2: #262626;
-    --dark-clear-btn-1: rgba(255, 255, 255, 0.2);
-}
-
-body.theme-dark {
-    --clear: var(--dark-clear);
-    --clear-nav: var(--dark-clear-nav);
-    --text-1: var(--dark-text-1);
-    --text-2: var(--dark-text-2);
-    --background-1: var(--dark-background-1);
-    --background-2: var(--dark-background-2);
-    --clear-btn-1: var(--dark-clear-btn-1);
-}
-
-
-@media (prefers-color-scheme: light) {
-    body.theme-light {
-        --clear: rgba(255, 255, 255, 0.9);
-        --clear-nav: rgba(255, 255, 255, 0.75);
-        --text-1: #ffffff;
-        --text-2: #222222;
-        --background-1: #ffffff;
-        --background-2: #262626;
-        --clear-btn-1: rgba(0, 0, 0, 0.2);
-    }
 }
 
 @media (prefers-color-scheme: dark) {
-    body.theme-auto {
-        --clear: var(--dark-clear);
-        --clear-nav: var(--dark-clear-nav);
-        --text-1: var(--dark-text-1);
-        --text-2: var(--dark-text-2);
-        --background-1: var(--dark-background-1);
-        --background-2: var(--dark-background-2);
-        --clear-btn-1: var(--dark-clear-btn-1);
+    :root {
+        /*Modo Oscuro*/
+        --clear: rgba(32, 32, 32, 0.98);
+        --text-1: #ffffff;
+        --text-2: #ffffff;
+        --background-1: #111111;
+        --background-2: #262626;
+        --clear-btn-1: rgba(255, 255, 255, 0.2);
     }
 }
 
@@ -314,11 +282,33 @@ img {
         color: var(--text-2);
     }
 
+    .open {
+        width: 100vw;
+        height: 6vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        z-index: 101;
+        padding: 0em 2em;
+        transition: 0.6s;
+        backdrop-filter: blur(0px);
+        background-color: "#ffffff00";
+    }
+
     .nav-bar.sticky {
         background: var(--clear);
         max-height: 5rem;
         color: var(--text-2);
         backdrop-filter: blur(2px);
+    }
+
+    .open.sticky {
+        backdrop-filter: "blur(0px)";
+        background-color: "#ffffff00"
     }
 
     #menu-toggle-btn {
@@ -380,13 +370,12 @@ img {
         width: 100%;
         height: 100vh;
         top: 0;
+        left: 100%;
         color: var(--text-2);
         background: var(--clear);
-        transition: all 0.3s;
         display: flex;
         justify-content: center;
         align-items: center;
-        visibility: hidden;
         z-index: 100;
     }
 
@@ -788,8 +777,8 @@ img {
         opacity: 1;
     }
 
-    
-    .photo-text-secondary .article-btn a{
+
+    .photo-text-secondary .article-btn a {
         color: var(--text-2);
     }
 
@@ -1012,7 +1001,7 @@ img {
     }
 
     .article-btn:hover:after {
-        background: var(--dark-clear-btn-1);
+        background: var(--clear-btn-1);
         transition-delay: .35s;
         width: 100.5%;
     }
@@ -1289,7 +1278,7 @@ img {
         color: var(--text-2);
     }
 
-    #About-Me .article-btn a{
+    #About-Me .article-btn a {
         color: var(--text-2);
     }
 
@@ -1421,22 +1410,7 @@ img {
         height: 4rem;
     }
 
-    .NavBar-2 {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 5;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        grid-row: 1/2;
-        grid-column: 1/2;
-    }
-
-
     .NavBar-2 .nav-bar {
-        max-height: 6vh;
         backdrop-filter: blur(2px);
         background: var(--clear);
         z-index: 101;
@@ -1819,7 +1793,7 @@ img {
         z-index: 1;
     }
 
-    .gallery-viewer-Img .MoreBtn a{
+    .gallery-viewer-Img .MoreBtn a {
         opacity: 0;
         transform: rotate(45deg);
         transition: .8s;
@@ -1848,20 +1822,20 @@ img {
         opacity: 1;
     }
 
-    .gallery-viewer-Img:hover a{
+    .gallery-viewer-Img:hover a {
         opacity: 1;
         transform: rotate(0deg);
     }
 
-    .gallery-viewer .article-btn a{
+    .gallery-viewer .article-btn a {
         color: var(--text-1);
     }
 
-    .gallery-viewer .from-left-footer:before{
+    .gallery-viewer .from-left-footer:before {
         border: 1px solid var(--text-1);
         border-left: 0;
         border-right: 0;
-        }
+    }
 }
 
 @media(max-width: 600px) {

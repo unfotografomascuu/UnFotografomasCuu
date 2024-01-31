@@ -1,35 +1,106 @@
 function pageTransition() {
     var tl = gsap.timeline();
-    tl.to(".first-block", { duration: 1.8, width: "100%", left: "0%", ease: "power4.inOut" }),
-        tl.to(".transition", { duration: 0, opacity: 1, delay: -0.3 }),
-        tl.to(".first-block", { duration: 1.4, width: "100%", left: "100%", ease: "power4.inOut", delay: 0.4 }),
-        tl.to(".second-block", { duration: 1.4, width: "100%", left: "0%", ease: "power4.inOut" }),
-        tl.to(".second-block", { duration: 1.1, width: "100%", left: "100%", ease: "power4.inOut", delay: 0.4 }),
-        tl.to(".transition", { duration: 0, opacity: 0, delay: -1.2 }),
-        tl.to(".contenido", { duration: 0.5, opacity: 1, delay: -0.5 }),
-        tl.set(".second-block", { left: "-100%" });
+    tl.to(".first-block", {
+        duration: 1.2,
+        width: "100%",
+        left: "0%",
+        ease: "power4.inOut"
+    });
+
+    tl.to(".transition", {
+        duration: 0,
+        opacity: 1,
+        delay: -0.1
+    });
+
+    tl.to(".first-block", {
+        duration: 1.2,
+        width: "100%",
+        left: "100%",
+        ease: "power4.inOut",
+    });
+
+    // tl.to(".nav-bar ,.open", {
+    //     opacity: 0,
+    //     top: "-10vh",
+    // });
+
+    tl.to(".second-block", {
+        duration: 1.2,
+        width: "100%",
+        left: "0%",
+        ease: "power4.inOut"
+    });
+
+    tl.to(".second-block", {
+        duration: 0.8,
+        width: "100%",
+        left: "100%",
+        ease: "power4.inOut",
+    });
+
+    tl.to(".transition", {
+        duration: 0,
+        opacity: 0,
+        delay: -1.2
+    });
+
+    tl.to(".second-block", {
+        duration: 0.8,
+        left: "100%",
+    });
+
+    tl.to(".contenido", {
+        duration: 0.8,
+        opacity: 1,
+        delay: -1.3
+    });
+
+    tl.to(".first-block, .second-block", {
+        duration: 0,
+        opacity: 0
+    });
+
+    // tl.to(".nav-bar, .open", {
+    //     opacity: 1,
+    //     top: "0",
+    //     ease: "power3.inOut",
+    //     duration: 0.8,
+    //     delay: -2
+    // });
+
+    tl.to(".first-block, .second-block", {
+        duration: 1.2,
+        width: "0%",
+        left: "0",
+        ease: "power4.inOut",
+    });
+
+    tl.to(".first-block, .second-block", {
+        duration: 0,
+        opacity: 1
+    });
 }
 
 function pageout() {
     var t = gsap.timeline();
-    t.to(".contenido", { duration: 0.5, opacity: 0, delay: -0.2, stagger: .1 });
+    t.to(".open", {
+        duration: 0,
+        className: "nav-bar"
+    });
+
+    // t.to(".nav-bar", {
+    //     top: "-10vh",
+    //     ease: "power3.inOut",
+    //     duration: 0.4,
+    // });
+
+    t.to(".contenido", { 
+        duration: 0.4, 
+        opacity: 0, 
+        delay: .1, 
+    });
 }
-
-function applyTheme(theme) {
-    document.body.classList.remove("theme-auto", "theme-light", "theme-dark");
-    document.body.classList.add(`theme-${theme}`);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const savedTheme = localStorage.getItem("theme") || "auto";
-
-    applyTheme(savedTheme);
-
-    for (const optionElement of document.querySelectorAll("#selTheme option")) {
-        optionElement.selected = savedTheme === optionElement.value;
-    }
-
-});
 
 function animNav() {
 
@@ -37,14 +108,17 @@ function animNav() {
 
     function animateNav() {
 
-        tl.to(".nav-container", 0.2, {
+        tl.to(".nav-container", 0.8, {
             autoAlpha: 1,
             delay: 0.1,
+            left: "0%",
+            ease: "power4.inOut"
         });
 
         tl.to(".nav-bar", 0.1, {
-            backdropFilter: "blur(0px)",
-            backgroundColor: "#ffffff00"
+
+            className: "open"
+
         });
 
         tl.from(".social-links > div", 0.4, {
@@ -111,7 +185,7 @@ function SectionView1() { const e = document.querySelector("#photo-section-1"), 
 function Sticky() {
     if (window.screen.width >= 1280 && window.screen.height >= 768) {
         scroll.on("scroll", (position) => {
-            position.scroll.y > 100 ? document.querySelector('.nav-bar').classList.add('sticky') : document.querySelector('.nav-bar').classList.remove('sticky');
+            position.scroll.y > 100 ? document.querySelector('.nav-bar, .open').classList.add('sticky') : document.querySelector('.nav-bar, .open').classList.remove('sticky');  
         })
     }
 };
