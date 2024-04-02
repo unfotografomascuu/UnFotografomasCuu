@@ -22,9 +22,9 @@ barba.init({
 
                 setTimeout(function () {
                     pageTransition();
-                }, 200);
+                }, 800);
 
-                await delay(1700);
+                await delay(400);
                 done();
 
             },

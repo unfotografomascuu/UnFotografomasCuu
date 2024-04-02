@@ -20,16 +20,33 @@ function pageTransition() {
         ease: "power4.inOut",
     });
 
-    // tl.to(".nav-bar ,.open", {
-    //     opacity: 0,
-    //     top: "-10vh",
-    // });
+    tl.to(".transition img", {
+        left: 0,
+        stagger: 0.3,
+        ease: "power4.out",
+        duration: 1.8,
+        delay: -1.35
+    });
+
+    tl.to(".transition img", {
+        left: "110%",
+        stagger: -0.1,
+        ease: "power4.inOut",
+        duration: 1.5,
+    });
 
     tl.to(".second-block", {
         duration: 1.2,
         width: "100%",
         left: "0%",
-        ease: "power4.inOut"
+        ease: "power4.inOut",
+        delay: -1.45
+    });
+        
+    tl.to(".transition-container", {
+        duration: 0,
+        backgroundColor:"#ffffff00",
+        delay: 0
     });
 
     tl.to(".second-block", {
@@ -50,7 +67,7 @@ function pageTransition() {
         left: "100%",
     });
 
-    tl.to(".contenido", {
+    tl.to(".content", {
         duration: 0.8,
         opacity: 1,
         delay: -1.3
@@ -61,19 +78,15 @@ function pageTransition() {
         opacity: 0
     });
 
-    // tl.to(".nav-bar, .open", {
-    //     opacity: 1,
-    //     top: "0",
-    //     ease: "power3.inOut",
-    //     duration: 0.8,
-    //     delay: -2
-    // });
-
     tl.to(".first-block, .second-block", {
-        duration: 1.2,
+        duration: 0,
         width: "0%",
         left: "0",
-        ease: "power4.inOut",
+    });
+
+    tl.to(".transition img", {
+        left: "-110%",
+        duration: 0,
     });
 
     tl.to(".first-block, .second-block", {
@@ -89,16 +102,9 @@ function pageout() {
         className: "nav-bar"
     });
 
-    // t.to(".nav-bar", {
-    //     top: "-10vh",
-    //     ease: "power3.inOut",
-    //     duration: 0.4,
-    // });
-
-    t.to(".contenido", { 
+    t.to(".content", { 
         duration: 0.4, 
-        opacity: 0, 
-        delay: .1, 
+        opacity: 0
     });
 }
 
@@ -137,11 +143,6 @@ function animNav() {
             },
         },
             "-=0.4");
-
-        // tl.to(".nav-container", 0.1, {
-        //     backdropFilter: "blur(1px)",
-        //     delay: -0.2,
-        // });
 
         tl.from(".nav-footer", 0.3, {
             opacity: 0
