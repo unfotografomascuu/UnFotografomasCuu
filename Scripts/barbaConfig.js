@@ -47,3 +47,6 @@ barba.hooks.after(() => {
     animNav();
 });
 
+setTimeout(function () { scroll.update(); console.log('update scroller') }, 5000);
+
+
