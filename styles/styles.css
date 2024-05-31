@@ -1515,6 +1515,7 @@ html.has-scroll-dragging {
     display: grid;
     grid-template-columns: 1fr 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr 1fr;
     padding: 0rem 0rem 4rem 0rem;
+    background-color: var(--background-1);
 }
 
 .content-article * {
